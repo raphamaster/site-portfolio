@@ -15,5 +15,19 @@
       <guid>http://localhost:1313/blog/data-lakehouse/</guid>
       <description>&lt;h2 id=&#34;estrutura-e-estilização&#34;&gt;Estrutura e Estilização&lt;/h2&gt;&#xA;&lt;p&gt;O conteúdo completo do artigo só será carregado ao clicar em &amp;ldquo;Ler mais&amp;rdquo;&amp;hellip;&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>GitHub Radar</title>
+      <link>http://localhost:1313/projects/github-radar/</link>
+      <pubDate>Fri, 25 Oct 2024 10:00:00 -0300</pubDate>
+      <guid>http://localhost:1313/projects/github-radar/</guid>
+      <description>&lt;h2 id=&#34;desafio-e-solução&#34;&gt;Desafio e Solução&lt;/h2&gt;&#xA;&lt;p&gt;[Aqui virá o texto detalhado do case study&amp;hellip;]&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MCP Automotivo</title>
+      <link>http://localhost:1313/projects/mcp-automotivo/</link>
+      <pubDate>Fri, 25 Oct 2024 10:00:00 -0300</pubDate>
+      <guid>http://localhost:1313/projects/mcp-automotivo/</guid>
+      <description>&lt;h2 id=&#34;desafio-e-solução&#34;&gt;Desafio e Solução&lt;/h2&gt;&#xA;&lt;p&gt;[Aqui virá o texto detalhado do case study&amp;hellip;]&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

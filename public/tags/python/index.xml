@@ -6,14 +6,35 @@
     <description>Recent content in Python on Raphael Franco | Data Engineer</description>
     <generator>Hugo</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 01 Sep 2025 10:00:00 -0300</lastBuildDate>
+    <lastBuildDate>Thu, 09 Oct 2025 10:00:00 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fires Risk</title>
+      <link>http://localhost:1313/projects/fires-risk/</link>
+      <pubDate>Thu, 09 Oct 2025 10:00:00 -0300</pubDate>
+      <guid>http://localhost:1313/projects/fires-risk/</guid>
+      <description>&lt;h2 id=&#34;-visão-geral-do-dashboard&#34;&gt;🌎 Visão Geral do Dashboard&lt;/h2&gt;&#xA;&lt;p&gt;O relatório Power BI consolidado apresenta três páginas temáticas:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Visão Geral do Risco de Queimadas&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Indicadores de risco médio (7d MA)&lt;/li&gt;&#xA;&lt;li&gt;Série temporal de focos de fogo&lt;/li&gt;&#xA;&lt;li&gt;Distribuição espacial dos eventos por município&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Análise Meteorológica&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Relação entre temperatura média, vento máximo e focos de fogo&lt;/li&gt;&#xA;&lt;li&gt;Heatmap de risco e correlações climáticas&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Mapa de Calor Geográfico&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Distribuição dos focos e faixas de risco (Risk Band)&lt;/li&gt;&#xA;&lt;li&gt;Dados por latitude e longitude&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
     <item>
       <title>Processamento de Dados com PySpark</title>
       <link>http://localhost:1313/blog/spark/</link>
       <pubDate>Mon, 01 Sep 2025 10:00:00 -0300</pubDate>
       <guid>http://localhost:1313/blog/spark/</guid>
       <description>&lt;h2 id=&#34;estrutura-e-estilização&#34;&gt;Estrutura e Estilização&lt;/h2&gt;&#xA;&lt;p&gt;O conteúdo completo do artigo só será carregado ao clicar em &amp;ldquo;Ler mais&amp;rdquo;&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Market Data Medallion</title>
+      <link>http://localhost:1313/projects/market-data/</link>
+      <pubDate>Fri, 25 Oct 2024 10:00:00 -0300</pubDate>
+      <guid>http://localhost:1313/projects/market-data/</guid>
+      <description>&lt;h2 id=&#34;desafio-e-solução&#34;&gt;Desafio e Solução&lt;/h2&gt;&#xA;&lt;p&gt;[Aqui virá o texto detalhado do case study&amp;hellip;]&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Monitoramento Macroeconômico de Commodities (IC-Br) vs. Dólar</title>
+      <link>http://localhost:1313/projects/ic-br/</link>
+      <pubDate>Fri, 25 Oct 2024 10:00:00 -0300</pubDate>
+      <guid>http://localhost:1313/projects/ic-br/</guid>
+      <description>&lt;h2 id=&#34;desafio-e-solução&#34;&gt;Desafio e Solução&lt;/h2&gt;&#xA;&lt;p&gt;[Aqui virá o texto detalhado do case study&amp;hellip;]&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,38 +1,103 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
-
-    {{ partial "header.html" . }}
-    
-    <main class="py-32">
-        <div class="max-w-4xl mx-auto px-6">
-            
-            <div class="text-sm text-textMuted mb-8">
-                <a href="{{ "/" | relURL }}" class="hover:text-neon">Home</a> 
-                / 
-                <a href="{{ .Section | relURL }}" class="hover:text-neon">{{ .Section | humanize }}</a> 
-                / 
-                <span class="text-white">{{ .Title }}</span>
-            </div>
-
-            <h1 class="text-5xl font-extrabold text-white mb-4">{{ .Title }}</h1>
-            
-            <div class="flex items-center gap-4 text-sm text-textMuted mb-12 border-b border-white/10 pb-6">
-                <p>Publicado em: {{ .Date.Format "02 Jan 2006" }}</p>
-                <p class="flex items-center gap-1"><i class="ph ph-clock"></i> {{ .Params.reading_time | default "5" }} min de leitura</p>
-                
-                {{ with .Params.tags }}
-                    <div class="flex flex-wrap gap-2">
-                        {{ range . }}
-                            <span class="bg-surfaceHighlight text-xs px-2 py-1 rounded-full text-white">{{ . }}</span>
-                        {{ end }}
-                    </div>
-                {{ end }}
-            </div>
-
-            <article class="markdown-body prose prose-invert max-w-none text-textMuted text-lg leading-relaxed">
-                {{ .Content }}
-            </article>
+{{ define "main" }}
+<main class="py-32">
+    <div class="max-w-4xl mx-auto px-6">
+        
+        <div class="text-sm text-textMuted mb-8">
+            <a href="{{ "/" | relURL }}" class="hover:text-neon">Home</a> 
+            / 
+            <a href="{{ .Section | relURL }}" class="hover:text-neon">{{ .Section | humanize }}</a> 
+            / 
+            <span class="text-white">{{ .Title }}</span>
         </div>
-    </main>
-    
-    {{ partial "footer.html" . }}
+
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">{{ .Title }}</h1>
+        
+        <div class="flex items-center gap-4 text-sm text-textMuted mb-12 border-b border-white/10 pb-8">
+            <p>Publicado em: {{ .Date.Format "02 Jan 2006" }}</p>
+            <p class="flex items-center gap-1"><i class="ph ph-clock"></i> {{ .Params.reading_time | default "5" }} min de leitura</p>
+            
+            {{ with .Params.tags }}
+                <div class="flex flex-wrap gap-2 ml-auto">
+                    {{ range . }}
+                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">{{ . }}</span>
+                    {{ end }}
+                </div>
+            {{ end }}
+        </div>
+
+        <article class="content-body text-gray-300 text-lg leading-relaxed">
+            {{ .Content }}
+        </article>
+
+        {{ with .Params.github_url }}
+        <div class="mt-16 pt-8 border-t border-white/10">
+            <h3 class="text-white font-bold text-2xl mb-4">Código Fonte & Documentação</h3>
+            <p class="text-textMuted mb-6">Para acessar o código completo, instruções de instalação (Docker) e detalhes técnicos, acesse o repositório oficial:</p>
+            
+            <a href="{{ . }}" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 bg-[#0f172a] border border-white/10 hover:border-neon rounded-lg transition-all group hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(0,229,153,0.1)]">
+                <i class="ph ph-github-logo text-3xl group-hover:text-neon transition-colors"></i>
+                <div class="flex flex-col text-left">
+                    <span class="text-xs text-textMuted uppercase tracking-wider font-bold">GitHub Repo</span>
+                    <span class="text-white font-bold group-hover:text-neon transition-colors">Acessar Projeto Completo</span>
+                </div>
+                <i class="ph ph-arrow-square-out text-xl ml-2 text-textMuted group-hover:text-white"></i>
+            </a>
+        </div>
+        {{ end }}
+
+        <style>
+            /* Títulos */
+            .content-body h1, .content-body h2, .content-body h3 {
+                color: #f8fafc;
+                font-weight: 700;
+                margin-top: 2.5rem;
+                margin-bottom: 1rem;
+            }
+            .content-body h2 { font-size: 1.8rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem; }
+            .content-body h3 { font-size: 1.4rem; }
+
+            /* Listas */
+            .content-body ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.5rem; }
+            .content-body ol { list-style-type: decimal; padding-left: 1.5rem; margin-bottom: 1.5rem; }
+            .content-body li { margin-bottom: 0.5rem; padding-left: 0.5rem; }
+            .content-body ul ul, .content-body ol ul { list-style-type: circle; margin-top: 0.5rem; }
+
+            /* Parágrafos e Links */
+            .content-body p { margin-bottom: 1.5rem; }
+            .content-body a { color: #00E599; text-decoration: underline; text-underline-offset: 4px; }
+            .content-body strong { color: white; font-weight: 700; }
+            
+            /* Blocos de Código e Citações */
+            .content-body pre {
+                background-color: #0f172a;
+                border: 1px solid #1e293b;
+                padding: 1.5rem;
+                border-radius: 0.5rem;
+                overflow-x: auto;
+                margin-bottom: 1.5rem;
+            }
+            .content-body code { font-family: 'JetBrains Mono', monospace; font-size: 0.9em; color: #00E599; }
+            .content-body blockquote {
+                border-left: 4px solid #00E599;
+                padding-left: 1rem;
+                font-style: italic;
+                color: #94a3b8;
+                background: rgba(255,255,255,0.02);
+                padding: 1rem;
+                border-radius: 0 8px 8px 0;
+                margin-bottom: 1.5rem;
+            }
+            
+            /* Tabelas */
+            .content-body table { width: 100%; border-collapse: collapse; margin: 2rem 0; font-size: 0.95rem; }
+            .content-body th { background: #1e293b; color: white; padding: 12px; text-align: left; border: 1px solid #334155; }
+            .content-body td { padding: 12px; border: 1px solid #334155; color: #cbd5e1; }
+            .content-body tr:nth-child(even) { background: rgba(255,255,255,0.02); }
+
+            /* Imagens */
+            .content-body img { border-radius: 0.75rem; border: 1px solid rgba(255,255,255,0.1); margin: 2rem 0; width: 100%; }
+        </style>
+
+    </div>
+</main>
+{{ end }}

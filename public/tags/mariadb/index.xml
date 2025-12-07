@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MariaDB on Raphael Franco | Data Engineer</title>
+    <link>http://localhost:1313/tags/mariadb/</link>
+    <description>Recent content in MariaDB on Raphael Franco | Data Engineer</description>
+    <generator>Hugo</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Fri, 25 Oct 2024 10:00:00 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/mariadb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Market Data Medallion</title>
+      <link>http://localhost:1313/projects/market-data/</link>
+      <pubDate>Fri, 25 Oct 2024 10:00:00 -0300</pubDate>
+      <guid>http://localhost:1313/projects/market-data/</guid>
+      <description>&lt;h2 id=&#34;desafio-e-solução&#34;&gt;Desafio e Solução&lt;/h2&gt;&#xA;&lt;p&gt;[Aqui virá o texto detalhado do case study&amp;hellip;]&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Monitoramento Macroeconômico de Commodities (IC-Br) vs. Dólar</title>
+      <link>http://localhost:1313/projects/ic-br/</link>
+      <pubDate>Fri, 25 Oct 2024 10:00:00 -0300</pubDate>
+      <guid>http://localhost:1313/projects/ic-br/</guid>
+      <description>&lt;h2 id=&#34;desafio-e-solução&#34;&gt;Desafio e Solução&lt;/h2&gt;&#xA;&lt;p&gt;[Aqui virá o texto detalhado do case study&amp;hellip;]&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

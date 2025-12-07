@@ -45,7 +45,7 @@
     <nav class="fixed w-full z-50 bg-[#030712]/90 backdrop-blur-md border-b border-white/5">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <div class="font-bold text-xl tracking-tight flex items-center gap-1 font-mono">
-                <span class="neon-text">&lt;</span>Raphael Franco<span class="neon-text">/&gt;</span>
+                <span class="neon-text"></span>Raphael Franco<span class="neon-text"></span>
             </div>
             
             <div class="hidden md:flex items-center gap-8 text-sm font-medium text-textMuted">
@@ -326,27 +326,36 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
                 <span class="neon-text font-mono text-sm mb-2 block">// Portfólio</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-white">Projetos em <span class="neon-text">Destaque</span></h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Projetos em <span class="neon-text">Destaque</span></h2>  
+                <div class="text-right">
+                <a href="/projects/" class="hidden md:inline-flex text-neon items-center gap-2 text-sm font-bold hover:gap-3 transition-all">
+                    Ver todos os projetos <i class="ph ph-arrow-right"></i>
+                </a>
+            </div>                
+
             </div>
+            
+            
 
             <div class="grid md:grid-cols-2 gap-8">
                 <div class="md:col-span-2 bg-surface rounded-xl overflow-hidden border border-white/5 group">
                     <div class="grid md:grid-cols-2">
                         <div class="h-64 md:h-auto relative overflow-hidden">
-                            <img src="/img/projects/market-data-medal.png" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Data Lake">
+                            <img src="/img/projects/mcp-automotivo.png" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Data Lake">
                             <div class="absolute top-4 left-4 bg-neon text-black text-xs font-bold px-3 py-1 rounded-full">Destaque</div>
                         </div>
                         <div class="p-8 flex flex-col justify-center">
-                            <h3 class="text-2xl font-bold text-white mb-2">Market Data Medallion — FX • Índices • Cripto (Power BI)</h3>
-                            <p class="text-textMuted text-sm mb-6">Pipeline de engenharia de dados (estilo Medalhão: Bronze → Silver → Gold) para coletar câmbio, índices e cripto, armazenar no MariaDB, e visualizar em Power BI com tema dark de mercado.</p>
+                            <h3 class="text-2xl font-bold text-white mb-2">MCP – Sistema de Análise de Dados Automotivos</h3>
+                            <p class="text-textMuted text-sm mb-6">Este é um projeto MCP (Model Context Protocol) que demonstra a integração entre um modelo de IA generativa (Google Gemini) e um banco de dados MariaDB, permitindo realizar análises de dados usando linguagem natural.</p>
                             <div class="flex gap-2 mb-6">
-                                <span class="px-3 py-1 bg-surfaceHighlight rounded-full text-xs text-white">MariaDB</span>
+                                <span class="px-3 py-1 bg-surfaceHighlight rounded-full text-xs text-white">Docker</span>
                                 <span class="px-3 py-1 bg-surfaceHighlight rounded-full text-xs text-white">Python</span>
-                                <span class="px-3 py-1 bg-surfaceHighlight rounded-full text-xs text-white">Power BI</span>
+                                <span class="px-3 py-1 bg-surfaceHighlight rounded-full text-xs text-white">SQL</span>
+                                <span class="px-3 py-1 bg-surfaceHighlight rounded-full text-xs text-white">LLM - Google Gemini</span>
                             </div>
                             <div class="flex gap-4">
-                                <a href="/projects/azure-lakehouse/" class="border border-white/20 text-white px-4 py-2 rounded text-sm hover:border-neon hover:text-neon transition flex items-center gap-2"><i class="ph ph-arrow-square-out"></i> Ver Case</a>
-                                <a href="https://github.com/raphamaster/market-data-medal" target="_blank" class="text-textMuted hover:text-white flex items-center gap-2 text-sm"><i class="ph ph-github-logo"></i> GitHub</a>
+                                <a href="/projects/mcp-automotivo/" class="border border-white/20 text-white px-4 py-2 rounded text-sm hover:border-neon hover:text-neon transition flex items-center gap-2"><i class="ph ph-arrow-square-out"></i> Ver Case</a>
+                                <a href="https://github.com/raphamaster/mcp-automotivo" target="_blank" class="text-textMuted hover:text-white flex items-center gap-2 text-sm"><i class="ph ph-github-logo"></i> GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -358,7 +367,7 @@
                     </div>
                     <div class="p-6 flex-grow flex flex-col">
                         <h3 class="text-xl font-bold text-white mb-2">Fires Risk Monitor (INPE + Open-Meteo → MongoDB → Parquet → Power BI)</h3>
-                        <p class="text-textMuted text-sm mb-4">Pipeline de dados para monitorar focos de queimadas e risco associado (clima).</p>
+                        <p class="text-textMuted text-sm mb-4">Pipeline de dados para monitorar focos de queimadas e riscos associados ao clima</p>
                         <div class="flex gap-2 mb-6">
                             <span class="px-3 py-1 bg-surfaceHighlight rounded-full text-xs text-white">Python</span>                            
                             <span class="px-3 py-1 bg-surfaceHighlight rounded-full text-xs text-white">Parquet</span>
@@ -368,7 +377,7 @@
                             
                         </div>
                         <div class="mt-auto flex gap-4">
-                            <a href="/projects/sales-dashboard/" class="border border-white/20 text-white px-4 py-2 rounded text-sm hover:border-neon hover:text-neon transition flex items-center gap-2"><i class="ph ph-arrow-square-out"></i> Ver Case</a>
+                            <a href="/projects/fires-risk/" class="border border-white/20 text-white px-4 py-2 rounded text-sm hover:border-neon hover:text-neon transition flex items-center gap-2"><i class="ph ph-arrow-square-out"></i> Ver Case</a>
                             <a href="https://github.com/raphamaster/fires-risk-monitor" target="_blank" class="text-textMuted hover:text-white flex items-center gap-2 text-sm"><i class="ph ph-github-logo"></i> GitHub</a>
                         </div>
                     </div>
@@ -376,18 +385,21 @@
 
                 <div class="bg-surface rounded-xl overflow-hidden border border-white/5 group flex flex-col">
                     <div class="h-48 relative overflow-hidden">
-                        <img src="/img/projects/etl-pipeline.jpg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="ML">
+                        <img src="https://raw.githubusercontent.com/raphamaster/github_radar/main/powerbi/screenshots/Screenshot_4.png" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="ML">
                     </div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <h3 class="text-xl font-bold text-white mb-2">Automated ETL Pipeline</h3>
-                        <p class="text-textMuted text-sm mb-4">Pipeline de ingestão automatizado com Airflow e Docker.</p>
+                        <h3 class="text-xl font-bold text-white mb-2">GitHub Radar</h3>
+                        <p class="text-textMuted text-sm mb-4">Dashboard analítico para inspeção de repositórios GitHub (atividade, concentração/“bus factor”, processo/qualidade e linguagens). O projeto coleta dados via scripts Python (etl/), gera CSVs em out/ e carrega tudo em um relatório Power BI (template .pbit).</p>
                         <div class="flex gap-2 mb-6">
-                            <span class="px-3 py-1 bg-surfaceHighlight rounded-full text-xs text-white">Python</span>
-                            <span class="px-3 py-1 bg-surfaceHighlight rounded-full text-xs text-white">Airflow</span>
+                            <span class="px-3 py-1 bg-surfaceHighlight rounded-full text-xs text-white">Python</span>                            
+                            <span class="px-3 py-1 bg-surfaceHighlight rounded-full text-xs text-white">API do GitHub</span>
+                            <span class="px-3 py-1 bg-surfaceHighlight rounded-full text-xs text-white">Figma</span>
+                            <span class="px-3 py-1 bg-surfaceHighlight rounded-full text-xs text-white">Power BI</span>
+                             
                         </div>
                         <div class="mt-auto flex gap-4">
-                            <a href="/projects/etl-automation/" class="border border-white/20 text-white px-4 py-2 rounded text-sm hover:border-neon hover:text-neon transition flex items-center gap-2"><i class="ph ph-arrow-square-out"></i> Ver Case</a>
-                            <a href="#" class="text-textMuted hover:text-white flex items-center gap-2 text-sm"><i class="ph ph-github-logo"></i> GitHub</a>
+                            <a href="/projects/github-radar/" class="border border-white/20 text-white px-4 py-2 rounded text-sm hover:border-neon hover:text-neon transition flex items-center gap-2"><i class="ph ph-arrow-square-out"></i> Ver Case</a>
+                            <a href="https://github.com/raphamaster/github_radar" target="_blank" class="text-textMuted hover:text-white flex items-center gap-2 text-sm"><i class="ph ph-github-logo"></i> GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -509,7 +521,7 @@
 
     <section id="contato" class="py-24 bg-surface/30">
         <div class="max-w-3xl mx-auto px-6 text-center">
-            <span class="text-neon font-mono text-sm mb-2 block uppercase tracking-wider">Contato</span>
+            <span class="text-neon font-mono text-sm mb-2 block uppercase tracking-wider">//Contato</span>
             <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">
                 Vamos <span class="neon-text">Conversar</span>
             </h2>

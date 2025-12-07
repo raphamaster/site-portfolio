@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCP Automotivo | Raphael Franco | Data Engineer</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#030712', 
+                        surface: '#0f172a',    
+                        surfaceHighlight: '#1e293b', 
+                        neon: '#00E599',       
+                        textMain: '#f8fafc',
+                        textMuted: '#94a3b8',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    backgroundImage: {
+                        'grid-pattern': "linear-gradient(to right, #1e293b 1px, transparent 1px), linear-gradient(to bottom, #1e293b 1px, transparent 1px)",
+                    }
+                }
+            }
+        }
+    </script>
+    
+    
+    <link rel="stylesheet" href="http://localhost:1313/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="overflow-x-hidden relative bg-background">
+
+    <nav class="fixed w-full z-50 bg-[#030712]/90 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="font-bold text-xl tracking-tight flex items-center gap-1 font-mono">
+                <span class="neon-text"></span>Raphael Franco<span class="neon-text"></span>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-textMuted">
+                <a href="/" class="hover:text-neon transition-colors">Home</a>
+                <a href="/#sobre" class="hover:text-neon transition-colors">Sobre</a>
+                <a href="/#servicos" class="hover:text-neon transition-colors">Serviços</a>
+                <a href="/#portfolio" class="hover:text-neon transition-colors">Portfólio</a>
+                <a href="/#blog" class="hover:text-neon transition-colors">Blog</a>
+                <a href="/#contato" class="hover:text-neon transition-colors">Contato</a>
+            </div>
+
+            <a href="#contato" class="hidden md:inline-flex px-6 py-2.5 rounded font-bold text-sm btn-primary">
+                Agendar Consultoria
+            </a>
+        </div>
+    </nav>
+    <div id="content">
+    <div id="content" class="min-h-screen pt-20"> 
+        
+<main class="py-32">
+    <div class="max-w-4xl mx-auto px-6">
+        
+        <div class="text-sm text-textMuted mb-8">
+            <a href="/" class="hover:text-neon">Home</a> 
+            / 
+            <a href="/projects" class="hover:text-neon">Projects</a> 
+            / 
+            <span class="text-white">MCP Automotivo</span>
+        </div>
+
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">MCP Automotivo</h1>
+        
+        <div class="flex items-center gap-4 text-sm text-textMuted mb-12 border-b border-white/10 pb-8">
+            <p>Publicado em: 25 Oct 2024</p>
+            <p class="flex items-center gap-1"><i class="ph ph-clock"></i> 15 min de leitura</p>
+            
+            
+                <div class="flex flex-wrap gap-2 ml-auto">
+                    
+                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">Azure</span>
+                    
+                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">Databricks</span>
+                    
+                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">Cloud</span>
+                    
+                </div>
+            
+        </div>
+
+        <article class="content-body text-gray-300 text-lg leading-relaxed">
+            <h2 id="desafio-e-solução">Desafio e Solução</h2>
+<p>[Aqui virá o texto detalhado do case study&hellip;]</p>
+
+        </article>
+
+        
+
+        <style>
+             
+            .content-body h1, .content-body h2, .content-body h3 {
+                color: #f8fafc;
+                font-weight: 700;
+                margin-top: 2.5rem;
+                margin-bottom: 1rem;
+            }
+            .content-body h2 { font-size: 1.8rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem; }
+            .content-body h3 { font-size: 1.4rem; }
+
+             
+            .content-body ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.5rem; }
+            .content-body ol { list-style-type: decimal; padding-left: 1.5rem; margin-bottom: 1.5rem; }
+            .content-body li { margin-bottom: 0.5rem; padding-left: 0.5rem; }
+            .content-body ul ul, .content-body ol ul { list-style-type: circle; margin-top: 0.5rem; }
+
+             
+            .content-body p { margin-bottom: 1.5rem; }
+            .content-body a { color: #00E599; text-decoration: underline; text-underline-offset: 4px; }
+            .content-body strong { color: white; font-weight: 700; }
+            
+             
+            .content-body pre {
+                background-color: #0f172a;
+                border: 1px solid #1e293b;
+                padding: 1.5rem;
+                border-radius: 0.5rem;
+                overflow-x: auto;
+                margin-bottom: 1.5rem;
+            }
+            .content-body code { font-family: 'JetBrains Mono', monospace; font-size: 0.9em; color: #00E599; }
+            .content-body blockquote {
+                border-left: 4px solid #00E599;
+                padding-left: 1rem;
+                font-style: italic;
+                color: #94a3b8;
+                background: rgba(255,255,255,0.02);
+                padding: 1rem;
+                border-radius: 0 8px 8px 0;
+                margin-bottom: 1.5rem;
+            }
+            
+             
+            .content-body table { width: 100%; border-collapse: collapse; margin: 2rem 0; font-size: 0.95rem; }
+            .content-body th { background: #1e293b; color: white; padding: 12px; text-align: left; border: 1px solid #334155; }
+            .content-body td { padding: 12px; border: 1px solid #334155; color: #cbd5e1; }
+            .content-body tr:nth-child(even) { background: rgba(255,255,255,0.02); }
+
+             
+            .content-body img { border-radius: 0.75rem; border: 1px solid rgba(255,255,255,0.1); margin: 2rem 0; width: 100%; }
+        </style>
+
+    </div>
+</main>
+
+    </div>
+    </div> <footer class="bg-surface pt-20 pb-10 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <div class="md:col-span-1">
+                    <div class="font-bold text-xl tracking-tight flex items-center gap-1 mb-4 font-mono">
+                        <span class="neon-text">&lt;</span>Raphael Franco<span class="neon-text">/&gt;</span>
+                    </div>
+                    <p class="text-sm text-textMuted leading-relaxed mb-6">
+                        Engenharia de Dados & BI Intelligence.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://linkedin.com/in/raphaelfranco" class="w-10 h-10 rounded bg-surfaceHighlight flex items-center justify-center text-textMuted hover:bg-neon hover:text-black transition"><i class="fab fa-linkedin-in text-xl"></i></a>
+                        <a href="https://github.com/raphamaster" class="w-10 h-10 rounded bg-surfaceHighlight flex items-center justify-center text-textMuted hover:bg-neon hover:text-black transition"><i class="fab fa-github text-xl"></i></a>
+                    </div>
+                </div>
+
+                <div class="md:col-start-3">
+                    <h4 class="text-white font-bold mb-4">Links Rápidos</h4>
+                    <ul class="space-y-3 text-sm text-textMuted">                      
+                        <li><a href="/" class="hover:text-neon transition-colors">Home</a></li>
+                        <li><a href="/#sobre" class="hover:text-neon transition-colors">Sobre</a></li>
+                        <li><a href="/#servicos" class="hover:text-neon transition-colors">Serviços</a></li>
+                        <li><a href="/#portfolio" class="hover:text-neon transition-colors">Portfólio</a></li>
+                        <li><a href="/#blog" class="hover:text-neon transition-colors">Blog</a></li>
+                        <li><a href="/#contato" class="hover:text-neon transition-colors">Contato</a></li>
+
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4">Newsletter</h4>
+                    <p class="text-xs text-textMuted mb-4">Dicas de Engenharia de Dados no seu email.</p>
+                    <div class="flex gap-2">
+                        <input type="email" placeholder="seu@email.com" class="bg-surfaceHighlight border border-white/10 rounded px-4 py-2 w-full text-sm focus:outline-none focus:border-neon text-white">
+                        <button class="bg-neon text-black rounded p-2 hover:bg-[#00c985] transition"><i class="ph ph-paper-plane-right font-bold"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs text-textMuted">
+                <p>&copy; 2025 Raphael Franco. Todos os direitos reservados.</p>
+                <div class="font-mono mt-4 md:mt-0">
+                    <span class="neon-text">madewith  </span><span class="text-red-500">"lagrimas & código"</span>;
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+</html>

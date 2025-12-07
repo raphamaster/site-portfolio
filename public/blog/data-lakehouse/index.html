@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
-
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="pt-BR">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Construindo um Data Lakehouse no Azure | Raphael Franco | Data Engineer</title>
@@ -45,7 +44,7 @@
     <nav class="fixed w-full z-50 bg-[#030712]/90 backdrop-blur-md border-b border-white/5">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <div class="font-bold text-xl tracking-tight flex items-center gap-1 font-mono">
-                <span class="neon-text">&lt;</span>Raphael Franco<span class="neon-text">/&gt;</span>
+                <span class="neon-text"></span>Raphael Franco<span class="neon-text"></span>
             </div>
             
             <div class="hidden md:flex items-center gap-8 text-sm font-medium text-textMuted">
@@ -63,45 +62,118 @@
         </div>
     </nav>
     <div id="content">
-    
-    <main class="py-32">
-        <div class="max-w-4xl mx-auto px-6">
-            
-            <div class="text-sm text-textMuted mb-8">
-                <a href="/" class="hover:text-neon">Home</a> 
-                / 
-                <a href="/blog" class="hover:text-neon">Blog</a> 
-                / 
-                <span class="text-white">Construindo um Data Lakehouse no Azure</span>
-            </div>
+    <div id="content" class="min-h-screen pt-20"> 
+        
+<main class="py-32">
+    <div class="max-w-4xl mx-auto px-6">
+        
+        <div class="text-sm text-textMuted mb-8">
+            <a href="/" class="hover:text-neon">Home</a> 
+            / 
+            <a href="/blog" class="hover:text-neon">Blog</a> 
+            / 
+            <span class="text-white">Construindo um Data Lakehouse no Azure</span>
+        </div>
 
-            <h1 class="text-5xl font-extrabold text-white mb-4">Construindo um Data Lakehouse no Azure</h1>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">Construindo um Data Lakehouse no Azure</h1>
+        
+        <div class="flex items-center gap-4 text-sm text-textMuted mb-12 border-b border-white/10 pb-8">
+            <p>Publicado em: 15 Nov 2024</p>
+            <p class="flex items-center gap-1"><i class="ph ph-clock"></i> 8 min de leitura</p>
             
-            <div class="flex items-center gap-4 text-sm text-textMuted mb-12 border-b border-white/10 pb-6">
-                <p>Publicado em: 15 Nov 2024</p>
-                <p class="flex items-center gap-1"><i class="ph ph-clock"></i> 8 min de leitura</p>
-                
-                
-                    <div class="flex flex-wrap gap-2">
-                        
-                            <span class="bg-surfaceHighlight text-xs px-2 py-1 rounded-full text-white">Azure</span>
-                        
-                            <span class="bg-surfaceHighlight text-xs px-2 py-1 rounded-full text-white">Databricks</span>
-                        
-                            <span class="bg-surfaceHighlight text-xs px-2 py-1 rounded-full text-white">ETL</span>
-                        
-                    </div>
-                
-            </div>
+            
+                <div class="flex flex-wrap gap-2 ml-auto">
+                    
+                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">Azure</span>
+                    
+                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">Databricks</span>
+                    
+                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">ETL</span>
+                    
+                </div>
+            
+        </div>
 
-            <article class="markdown-body prose prose-invert max-w-none text-textMuted text-lg leading-relaxed">
-                <h2 id="estrutura-e-estilização">Estrutura e Estilização</h2>
+        <article class="content-body text-gray-300 text-lg leading-relaxed">
+            <h2 id="estrutura-e-estilização">Estrutura e Estilização</h2>
 <p>O conteúdo completo do artigo só será carregado ao clicar em &ldquo;Ler mais&rdquo;&hellip;</p>
 
-            </article>
-        </div>
-    </main>
-    
+        </article>
+
+        <style>
+             
+            .content-body h1, .content-body h2, .content-body h3 {
+                color: #f8fafc;  
+                font-weight: 700;
+                margin-top: 2rem;
+                margin-bottom: 1rem;
+            }
+            .content-body h2 { font-size: 1.8rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem; }
+            .content-body h3 { font-size: 1.4rem; }
+
+             
+            .content-body ul {
+                list-style-type: disc;  
+                padding-left: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+            .content-body ol {
+                list-style-type: decimal;  
+                padding-left: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+            .content-body li {
+                margin-bottom: 0.5rem;
+                padding-left: 0.5rem;
+            }
+             
+            .content-body ul ul, .content-body ol ul {
+                list-style-type: circle;
+                margin-top: 0.5rem;
+            }
+
+             
+            .content-body p { margin-bottom: 1.5rem; }
+            .content-body a { color: #00E599; text-decoration: underline; text-underline-offset: 4px; }
+            .content-body strong { color: white; font-weight: 700; }
+            
+             
+            .content-body pre {
+                background-color: #0f172a;  
+                border: 1px solid #1e293b;
+                padding: 1.5rem;
+                border-radius: 0.5rem;
+                overflow-x: auto;
+                margin-bottom: 1.5rem;
+            }
+            .content-body code {
+                font-family: 'JetBrains Mono', monospace;
+                font-size: 0.9em;
+                color: #00E599;  
+            }
+            .content-body blockquote {
+                border-left: 4px solid #00E599;
+                padding-left: 1rem;
+                font-style: italic;
+                color: #94a3b8;
+                background: rgba(255,255,255,0.02);
+                padding: 1rem;
+                border-radius: 0 8px 8px 0;
+            }
+            
+             
+            .content-body img {
+                border-radius: 0.75rem;
+                border: 1px solid rgba(255,255,255,0.1);
+                margin: 2rem 0;
+                width: 100%;
+            }
+        </style>
+
+    </div>
+</main>
+
+    </div>
     </div> <footer class="bg-surface pt-20 pb-10 border-t border-white/10">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid md:grid-cols-4 gap-12 mb-16">
@@ -150,4 +222,5 @@
         </div>
     </footer>
 </body>
+</html>
 </html>

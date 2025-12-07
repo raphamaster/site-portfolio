@@ -30,9 +30,30 @@
       <description></description>
     </item>
     <item>
+      <title>MongoDB</title>
+      <link>http://localhost:1313/tags/mongodb/</link>
+      <pubDate>Thu, 09 Oct 2025 10:00:00 -0300</pubDate>
+      <guid>http://localhost:1313/tags/mongodb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Parquet</title>
+      <link>http://localhost:1313/tags/parquet/</link>
+      <pubDate>Thu, 09 Oct 2025 10:00:00 -0300</pubDate>
+      <guid>http://localhost:1313/tags/parquet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Power BI</title>
+      <link>http://localhost:1313/tags/power-bi/</link>
+      <pubDate>Thu, 09 Oct 2025 10:00:00 -0300</pubDate>
+      <guid>http://localhost:1313/tags/power-bi/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Python</title>
       <link>http://localhost:1313/tags/python/</link>
-      <pubDate>Mon, 01 Sep 2025 10:00:00 -0300</pubDate>
+      <pubDate>Thu, 09 Oct 2025 10:00:00 -0300</pubDate>
       <guid>http://localhost:1313/tags/python/</guid>
       <description></description>
     </item>
@@ -55,6 +76,41 @@
       <link>http://localhost:1313/tags/etl/</link>
       <pubDate>Fri, 15 Nov 2024 10:00:00 -0300</pubDate>
       <guid>http://localhost:1313/tags/etl/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>API Do BCB/SGS</title>
+      <link>http://localhost:1313/tags/api-do-bcb/sgs/</link>
+      <pubDate>Fri, 25 Oct 2024 10:00:00 -0300</pubDate>
+      <guid>http://localhost:1313/tags/api-do-bcb/sgs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud</title>
+      <link>http://localhost:1313/tags/cloud/</link>
+      <pubDate>Fri, 25 Oct 2024 10:00:00 -0300</pubDate>
+      <guid>http://localhost:1313/tags/cloud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MariaDB</title>
+      <link>http://localhost:1313/tags/mariadb/</link>
+      <pubDate>Fri, 25 Oct 2024 10:00:00 -0300</pubDate>
+      <guid>http://localhost:1313/tags/mariadb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>N8n</title>
+      <link>http://localhost:1313/tags/n8n/</link>
+      <pubDate>Fri, 25 Oct 2024 10:00:00 -0300</pubDate>
+      <guid>http://localhost:1313/tags/n8n/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Postgres </title>
+      <link>http://localhost:1313/tags/postgres-/</link>
+      <pubDate>Fri, 25 Oct 2024 10:00:00 -0300</pubDate>
+      <guid>http://localhost:1313/tags/postgres-/</guid>
       <description></description>
     </item>
   </channel>
