@@ -1,0 +1,62 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#030712', 
+                        surface: '#0f172a',    
+                        surfaceHighlight: '#1e293b', 
+                        neon: '#00E599',       
+                        textMain: '#f8fafc',
+                        textMuted: '#94a3b8',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    backgroundImage: {
+                        'grid-pattern': "linear-gradient(to right, #1e293b 1px, transparent 1px), linear-gradient(to bottom, #1e293b 1px, transparent 1px)",
+                    }
+                }
+            }
+        }
+    </script>
+    
+    {{ $style := resources.Get "css/style.css" }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="overflow-x-hidden relative bg-background">
+
+    <nav class="fixed w-full z-50 bg-[#030712]/90 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="font-bold text-xl tracking-tight flex items-center gap-1 font-mono">
+                <span class="neon-text">&lt;</span>{{ .Site.Params.logoTitle }}<span class="neon-text">/&gt;</span>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-textMuted">
+                <a href="{{ "/" | relURL }}" class="hover:text-neon transition-colors">Home</a>
+                <a href="{{ "/#sobre" | relURL }}" class="hover:text-neon transition-colors">Sobre</a>
+                <a href="{{ "/#servicos" | relURL }}" class="hover:text-neon transition-colors">Serviços</a>
+                <a href="{{ "/#portfolio" | relURL }}" class="hover:text-neon transition-colors">Portfólio</a>
+                <a href="{{ "/#blog" | relURL }}" class="hover:text-neon transition-colors">Blog</a>
+                <a href="{{ "/#contato" | relURL }}" class="hover:text-neon transition-colors">Contato</a>
+            </div>
+
+            <a href="#contato" class="hidden md:inline-flex px-6 py-2.5 rounded font-bold text-sm btn-primary">
+                Agendar Consultoria
+            </a>
+        </div>
+    </nav>
+    <div id="content">

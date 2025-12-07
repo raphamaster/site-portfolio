@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Raphael Franco | Data Engineer</title>
+    <link>http://localhost:1313/tags/hugo/</link>
+    <description>Recent content in Hugo on Raphael Franco | Data Engineer</description>
+    <generator>Hugo</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Fri, 05 Dec 2025 10:00:00 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Construindo o Primeiro Artigo em Hugo</title>
+      <link>http://localhost:1313/blog/data-lakehouse/</link>
+      <pubDate>Fri, 05 Dec 2025 10:00:00 -0300</pubDate>
+      <guid>http://localhost:1313/blog/data-lakehouse/</guid>
+      <description>&lt;h2 id=&#34;estrutura-e-estilização&#34;&gt;Estrutura e Estilização&lt;/h2&gt;&#xA;&lt;p&gt;Este artigo está sendo renderizado pelo template &lt;code&gt;single.html&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;O título e as tags vieram do Front Matter (o YAML no topo).&lt;/p&gt;&#xA;&lt;h3 id=&#34;como-o-conteúdo-é-formatado&#34;&gt;Como o Conteúdo é Formatado&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Listas:&lt;/strong&gt; O Hugo converte esta lista em HTML.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Item 1: Teste de Markdown.&lt;/li&gt;&#xA;&lt;li&gt;Item 2: Com estilos do Tailwind.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Código:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;pipeline_func&lt;/span&gt;(data):&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;transform()&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+    {{ partial "header.html" . }}
+    
+    <main class="py-32">
+        <div class="max-w-4xl mx-auto px-6">
+            
+            <div class="text-sm text-textMuted mb-8">
+                <a href="{{ "/" | relURL }}" class="hover:text-neon">Home</a> 
+                / 
+                <a href="{{ .Section | relURL }}" class="hover:text-neon">{{ .Section | humanize }}</a> 
+                / 
+                <span class="text-white">{{ .Title }}</span>
+            </div>
+
+            <h1 class="text-5xl font-extrabold text-white mb-4">{{ .Title }}</h1>
+            
+            <div class="flex items-center gap-4 text-sm text-textMuted mb-12 border-b border-white/10 pb-6">
+                <p>Publicado em: {{ .Date.Format "02 Jan 2006" }}</p>
+                <p class="flex items-center gap-1"><i class="ph ph-clock"></i> {{ .Params.reading_time | default "5" }} min de leitura</p>
+                
+                {{ with .Params.tags }}
+                    <div class="flex flex-wrap gap-2">
+                        {{ range . }}
+                            <span class="bg-surfaceHighlight text-xs px-2 py-1 rounded-full text-white">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                {{ end }}
+            </div>
+
+            <article class="markdown-body prose prose-invert max-w-none text-textMuted text-lg leading-relaxed">
+                {{ .Content }}
+            </article>
+        </div>
+    </main>
+    
+    {{ partial "footer.html" . }}

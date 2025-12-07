@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+{{ partial "header.html" . }}
+    <div id="content" class="min-h-screen pt-20"> 
+        {{ block "main" . }}{{ end }}
+    </div>
+    {{ partial "footer.html" . }}
+</html>

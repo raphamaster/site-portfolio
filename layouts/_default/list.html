@@ -1,0 +1,65 @@
+{{ define "main" }}
+<main class="py-32">
+    <div class="max-w-7xl mx-auto px-6">
+        
+        <div class="text-center mb-16">
+            <span class="neon-text font-mono text-sm mb-2 block">// {{ .Section | upper }}</span>
+            <h1 class="text-4xl md:text-5xl font-bold text-white">{{ .Title | default "Conteúdo" }}</h1>
+            <p class="text-textMuted mt-4 max-w-3xl mx-auto">
+                {{ if .Content }}
+                    {{ .Content }}
+                {{ else }}
+                    {{.Description | humanize}}
+                {{ end }}
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            {{ $posts := .Pages }}
+            {{ if gt (len $posts) 0 }}
+                {{ range $posts }}
+                <a href="{{ .Permalink }}" class="bg-surface border border-white/5 p-6 rounded-xl hover:border-neon/50 transition cursor-pointer group flex flex-col justify-between">
+                    <div>
+                        <div class="flex gap-3 text-xs mb-4">
+                            {{ with .Params.tags }}
+                                {{ range first 1 . }}
+                                    <span class="bg-surfaceHighlight px-2 py-1 rounded font-mono text-white text-xs">
+                                        {{ . }}
+                                    </span>
+                                {{ end }}
+                            {{ end }}
+                            
+                            {{ if eq .Section "blog" }}
+                                {{ with .Params.reading_time }}
+                                    <span class="text-textMuted flex items-center gap-1 text-xs"><i class="ph ph-clock"></i> {{ . }} min</span>
+                                {{ end }}
+                            {{ else }}
+                                <span class="bg-neon/10 text-neon px-2 py-1 rounded font-mono text-xs">Case Study</span>
+                            {{ end }}
+                        </div>
+                        
+                        <h3 class="text-lg font-bold text-white mb-3 group-hover:text-neon transition">{{ .Title }}</h3>
+                        
+                        <p class="text-textMuted text-sm mb-4 line-clamp-2">
+                            {{ if .Params.description }}
+                                {{ .Params.description }}
+                            {{ else }}
+                                {{ .Summary }}
+                            {{ end }}
+                        </p>
+                    </div>
+                    
+                    <div class="flex justify-between items-center pt-4 border-t border-white/5 mt-auto">
+                        <span class="text-xs text-textMuted">{{ .Date.Format "02 Jan 2006" }}</span>
+                        <span class="text-neon text-xs font-bold flex items-center gap-1 group-hover:gap-2 transition-all">Ler mais <i class="ph ph-arrow-right"></i></span>
+                    </div>
+                </a>
+                {{ end }}
+            {{ else }}
+            <p class="text-center py-12 text-textMuted">Nenhum item encontrado nesta seção.</p>
+            {{ end }}
+        </div>
+    </div>
+</main>
+{{ end }}

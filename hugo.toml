@@ -1,0 +1,15 @@
+# hugo.toml
+
+baseURL = "https://raphaelfranco.dev/"
+languageCode = "pt-BR"
+title = "Raphael Franco | Data Engineer"
+theme = ""
+enableRobotsTXT = true
+
+[params]
+  description = "Portfólio de Engenharia de Dados e Business Intelligence."
+  author = "Raphael Franco"
+  logoTitle = "Raphael Franco"
+
+[outputs]
+  home = ["HTML", "RSS"]
