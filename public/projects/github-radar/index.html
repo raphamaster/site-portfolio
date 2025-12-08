@@ -78,17 +78,17 @@
         <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">GitHub Radar</h1>
         
         <div class="flex items-center gap-4 text-sm text-textMuted mb-12 border-b border-white/10 pb-8">
-            <p>Publicado em: 25 Oct 2024</p>
-            <p class="flex items-center gap-1"><i class="ph ph-clock"></i> 15 min de leitura</p>
+            <p>Publicado em: 04 Oct 2025</p>
+            <p class="flex items-center gap-1"><i class="ph ph-clock"></i> 5 min de leitura</p>
             
             
                 <div class="flex flex-wrap gap-2 ml-auto">
                     
-                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">Azure</span>
+                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">Power BI</span>
                     
-                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">Databricks</span>
+                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">Python</span>
                     
-                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">Cloud</span>
+                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">Figma</span>
                     
                 </div>
             
@@ -96,10 +96,83 @@
 
         <article class="content-body text-gray-300 text-lg leading-relaxed">
             <h2 id="desafio-e-solução">Desafio e Solução</h2>
-<p>[Aqui virá o texto detalhado do case study&hellip;]</p>
+<h1 id="github-radar--power-bi-data-engineering">GitHub Radar — Power BI (Data Engineering)</h1>
+<p>Dashboard analítico para inspeção de repositórios GitHub (atividade, concentração/“bus factor”, processo/qualidade e linguagens).
+O projeto coleta dados via scripts Python (<code>etl/</code>), gera CSVs em <code>out/</code> e carrega tudo em um relatório Power BI (template <code>.pbit</code>).</p>
+<hr>
+<h2 id="-visão-rápida">🧭 Visão rápida</h2>
+<ul>
+<li><strong>Stack</strong>: Python (ETL) + Power BI</li>
+<li><strong>Dados</strong>: API do GitHub → CSVs em <code>out/</code></li>
+<li><strong>Relatório</strong>: <code>powerbi_template/GithubRadar.pbit</code> (fonte oficial para versionamento)</li>
+<li><strong>Design</strong>: arquivos <strong>SVG</strong> e <strong>Figma</strong> em <code>powerbi/design/</code></li>
+</ul>
+<h2 id="-páginas-do-dashboard">📊 Páginas do Dashboard</h2>
+<h3 id="1-visão-geral">1) Visão Geral</h3>
+<ul>
+<li><strong>KPIs</strong>: Stars • Commits (janela) • Contribuidores Únicos • Lead Time (médio/mediano)</li>
+<li><strong>Tabela-hub</strong>: ranking por atividade/concentração com link para o repo</li>
+<li><strong>Top 10 por atividade</strong> (commits na janela)
+<img src="https://raw.githubusercontent.com/raphamaster/github_radar/refs/heads/main/powerbi/screenshots/Screenshot_1.png" alt="Visão Geral"></li>
+</ul>
+<h3 id="2-atividade">2) Atividade</h3>
+<ul>
+<li>Série temporal de commits (dia/semana) e <strong>média móvel (MM7)</strong></li>
+<li>Slicers de repo/owner/language e janela de tempo
+<img src="https://raw.githubusercontent.com/raphamaster/github_radar/refs/heads/main/powerbi/screenshots/Screenshot_2.png" alt="Atividade"></li>
+</ul>
+<h3 id="3-concentração-bus-factor">3) Concentração (Bus Factor)</h3>
+<ul>
+<li><strong>Top1 Commits %</strong> e <strong>Top3 Commits %</strong> por repositório</li>
+<li>Tabela “drill” por contribuidor (<code>login</code>, contribuições, % no repo)
+<img src="https://github.com/raphamaster/github_radar/blob/main/powerbi/screenshots/Screenshot_3.png?raw=true" alt="Concentração"></li>
+</ul>
+<h3 id="4-processo--qualidade">4) Processo / Qualidade</h3>
+<ul>
+<li><strong>Histograma</strong> de <code>lead_time_days</code> (bins) e <strong>P90/P95</strong></li>
+<li>Barras: Issues fechadas na janela por repo
+<img src="https://github.com/raphamaster/github_radar/blob/main/powerbi/screenshots/Screenshot_4.png?raw=true" alt="Processo"></li>
+</ul>
+<h3 id="5-linguagens">5) Linguagens</h3>
+<ul>
+<li><strong>Treemap</strong> % por linguagem • Barra empilhada <code>linguagem × repo</code>
+<img src="https://github.com/raphamaster/github_radar/blob/main/powerbi/screenshots/Screenshot_5.png?raw=true" alt="Linguagens"></li>
+</ul>
+<h3 id="6-layoutdesign">6) Layout/Design</h3>
+<ul>
+<li>Paleta e tipografia do tema, grid e componentes
+<img src="https://github.com/raphamaster/github_radar/blob/main/powerbi/screenshots/Screenshot_6.png?raw=true" alt="Design"></li>
+</ul>
+<blockquote>
+<p>Os arquivos vetoriais de cada página estão em <code>powerbi/design/*.svg</code> e o projeto Figma em <code>powerbi/design/GithubRadar_Design.fig</code>.</p></blockquote>
+<hr>
+<h2 id="-medidas-chave-dax--highlights">🧩 Medidas-chave (DAX) — highlights</h2>
+<ul>
+<li><strong>Atividade</strong>: <code>Commits (Janela)</code>, <code>Média Diária (30d)</code></li>
+<li><strong>Concentração</strong>: <code>Top1 Commits %</code>, <code>Top3 Commits %</code>, <code>Contribuidores Únicos</code></li>
+<li><strong>Processo</strong>: <code>Lead Time Mediano</code>, <code>Lead Time P95</code>, <code>Issues Fechadas (Janela)</code></li>
+<li><strong>Linguagens</strong>: <code>Bytes Linguagem</code>, <code>% Linguagem</code></li>
+</ul>
+<blockquote>
+<p>O modelo segue estrela: <code>RepoMeta</code> (dim) → fatos (<code>RepoCommitsDaily</code>, <code>RepoContrib</code>, <code>RepoIssuesClosed</code>, <code>RepoLang</code>). Chave: <code>RepoKey = owner &amp; &quot;/&quot; &amp; repo</code>.</p></blockquote>
+<hr>
 
         </article>
 
+        
+        <div class="mt-16 pt-8 border-t border-white/10">
+            <h3 class="text-white font-bold text-2xl mb-4">Código Fonte & Documentação</h3>
+            <p class="text-textMuted mb-6">Para acessar o código completo, instruções de instalação (Docker) e detalhes técnicos, acesse o repositório oficial:</p>
+            
+            <a href="https://github.com/raphamaster/github_radar" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 bg-[#0f172a] border border-white/10 hover:border-neon rounded-lg transition-all group hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(0,229,153,0.1)]">
+                <i class="ph ph-github-logo text-3xl group-hover:text-neon transition-colors"></i>
+                <div class="flex flex-col text-left">
+                    <span class="text-xs text-textMuted uppercase tracking-wider font-bold">GitHub Repo</span>
+                    <span class="text-white font-bold group-hover:text-neon transition-colors">Acessar Projeto Completo</span>
+                </div>
+                <i class="ph ph-arrow-square-out text-xl ml-2 text-textMuted group-hover:text-white"></i>
+            </a>
+        </div>
         
 
         <style>

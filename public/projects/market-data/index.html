@@ -3,7 +3,7 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Market Data Medallion | Raphael Franco | Data Engineer</title>
+    <title>Market Data - FX • Índices • Cripto | Raphael Franco | Data Engineer</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -72,34 +72,102 @@
             / 
             <a href="/projects" class="hover:text-neon">Projects</a> 
             / 
-            <span class="text-white">Market Data Medallion</span>
+            <span class="text-white">Market Data - FX • Índices • Cripto</span>
         </div>
 
-        <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">Market Data Medallion</h1>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">Market Data - FX • Índices • Cripto</h1>
         
         <div class="flex items-center gap-4 text-sm text-textMuted mb-12 border-b border-white/10 pb-8">
-            <p>Publicado em: 25 Oct 2024</p>
-            <p class="flex items-center gap-1"><i class="ph ph-clock"></i> 15 min de leitura</p>
+            <p>Publicado em: 03 Nov 2025</p>
+            <p class="flex items-center gap-1"><i class="ph ph-clock"></i> 5 min de leitura</p>
             
             
                 <div class="flex flex-wrap gap-2 ml-auto">
                     
+                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">Power BI</span>
+                    
                         <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">Python</span>
                     
                         <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">MariaDB</span>
-                    
-                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">Power BI</span>
                     
                 </div>
             
         </div>
 
         <article class="content-body text-gray-300 text-lg leading-relaxed">
-            <h2 id="desafio-e-solução">Desafio e Solução</h2>
-<p>[Aqui virá o texto detalhado do case study&hellip;]</p>
+            <p>Pipeline de engenharia de dados (estilo <strong>Medalhão: Bronze → Silver → Gold</strong>) para coletar <strong>câmbio</strong>, <strong>índices</strong> e <strong>cripto</strong>, armazenar no <strong>MariaDB</strong>, e visualizar em <strong>Power BI</strong> com tema dark de mercado.</p>
+<hr>
+<h2 id="-arquitetura--fluxo">🗺️ Arquitetura &amp; Fluxo</h2>
+<pre tabindex="0"><code>Fontes (APIs/CSV)
+   ├─ ECB FX (EUR-base)          → Bronze: md_bronze.ecb_fx_raw
+   ├─ PTAX USD/BRL               → Bronze: md_bronze.ptax_raw
+   ├─ Stooq (S&amp;P 500 etc.)       → Bronze: md_bronze.stooq_index_raw
+   └─ Yahoo (^BVSP) — fallback   → Bronze: md_bronze.stooq_index_raw (mesma tabela)
+
+Bronze  →  Silver (normalização) →  Gold (fatos/dimensões) →  Power BI
+</code></pre><ul>
+<li><strong>Silver</strong> consolida e padroniza colunas/schemas.</li>
+<li><strong>Gold</strong> expõe tabelas de consumo analítico (fatos e dimensões) que o Power BI usa.</li>
+</ul>
+<h3 id="principais-tabelas-gold">Principais Tabelas (Gold)</h3>
+<ul>
+<li><code>dim_calendario</code> — calendário completo (Y, M, Y-M, ISO semana etc.)</li>
+<li><code>fact_fx_daily</code> — séries de FX por <code>currency_pair</code> (USD/BRL, EUR/BRL, GBP/BRL…)</li>
+<li><code>fact_index_daily</code> — índices: <code>index_code</code> (<code>^spx</code>, <code>^bvsp</code>), <code>close_price</code>, <code>volume</code></li>
+<li><code>fact_crypto_daily</code> — cripto (BTC/BRL derivado do BTC/USD + FX quando aplicável)</li>
+</ul>
+<h2 id="-dashboard-power-bi">📊 Dashboard (Power BI)</h2>
+<p>O relatório está organizado em <strong>quatro páginas</strong>. As imagens estão em <code>./screenshots/</code>.</p>
+<h3 id="1-panorama-do-mercado">1) Panorama do Mercado</h3>
+<p><strong>Objetivo:</strong> visão rápida do período selecionado.<br>
+<strong>Conteúdo:</strong></p>
+<ul>
+<li><strong>Cards</strong> de “Último” e <strong>Variação % (Período)</strong> para USD/BRL, EUR/BRL, GBP/BRL, BTC/BRL, IBOV e S&amp;P 500</li>
+<li><strong>Linha temporal</strong> das séries FX</li>
+<li><strong>Barras</strong> de Performance % (ranking)</li>
+</ul>
+<p><strong>Imagem:</strong><br>
+<img src="https://github.com/raphamaster/market-data-medal/blob/main/screenshots/pagina1_panorama.png?raw=true" alt="Panorama do Mercado"></p>
+<hr>
+<h3 id="2-moedas-fx-em-detalhe">2) Moedas (FX) em Detalhe</h3>
+<p><strong>Objetivo:</strong> detalhar comportamento das moedas vs BRL.<br>
+<strong>Conteúdo:</strong></p>
+<ul>
+<li><strong>Small multiples</strong> (linhas) por par (USD/BRL, EUR/BRL, GBP/BRL)</li>
+<li><strong>Heatmap mensal</strong> (variação média diária)</li>
+<li><strong>Tabela diária</strong>: Fechamento, Var % d/d, MM7, Máx/Mín 30d</li>
+<li><strong>Slicers:</strong> Data e Par Cambial</li>
+</ul>
+<p><strong>Imagem:</strong><br>
+<img src="https://github.com/raphamaster/market-data-medal/blob/main/screenshots/pagina2_fx_detalhe.png?raw=true" alt="FX em Detalhe"></p>
+<hr>
+<h3 id="3-índices--cripto-risco-x-retorno">3) Índices &amp; Cripto (Risco x Retorno)</h3>
+<p><strong>Objetivo:</strong> comparar <strong>IBOV</strong>, <strong>S&amp;P 500</strong> e <strong>BTC/BRL</strong>.<br>
+<strong>Conteúdo:</strong></p>
+<ul>
+<li><strong>Scatter</strong> Risco x Retorno (YTD): <code>Retorno % YTD</code> × <code>Volatilidade 30d</code></li>
+<li><strong>Linha normalizada (=100)</strong> para comparar trajetórias</li>
+<li><strong>Tabela</strong> com: Valor Atual, Retorno % Período, Retorno % YTD, Volatilidade 30d, Drawdown Máx %</li>
+</ul>
+<p><strong>Imagem:</strong><br>
+<img src="https://github.com/raphamaster/market-data-medal/blob/main/screenshots/pagina3_indices_cripto.png?raw=true" alt="Índices &amp; Cripto"></p>
 
         </article>
 
+        
+        <div class="mt-16 pt-8 border-t border-white/10">
+            <h3 class="text-white font-bold text-2xl mb-4">Código Fonte & Documentação</h3>
+            <p class="text-textMuted mb-6">Para acessar o código completo, instruções de instalação (Docker) e detalhes técnicos, acesse o repositório oficial:</p>
+            
+            <a href="https://github.com/raphamaster/market-data-medal" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 bg-[#0f172a] border border-white/10 hover:border-neon rounded-lg transition-all group hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(0,229,153,0.1)]">
+                <i class="ph ph-github-logo text-3xl group-hover:text-neon transition-colors"></i>
+                <div class="flex flex-col text-left">
+                    <span class="text-xs text-textMuted uppercase tracking-wider font-bold">GitHub Repo</span>
+                    <span class="text-white font-bold group-hover:text-neon transition-colors">Acessar Projeto Completo</span>
+                </div>
+                <i class="ph ph-arrow-square-out text-xl ml-2 text-textMuted group-hover:text-white"></i>
+            </a>
+        </div>
         
 
         <style>

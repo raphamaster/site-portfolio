@@ -78,28 +78,95 @@
         <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">MCP Automotivo</h1>
         
         <div class="flex items-center gap-4 text-sm text-textMuted mb-12 border-b border-white/10 pb-8">
-            <p>Publicado em: 25 Oct 2024</p>
-            <p class="flex items-center gap-1"><i class="ph ph-clock"></i> 15 min de leitura</p>
+            <p>Publicado em: 28 Nov 2025</p>
+            <p class="flex items-center gap-1"><i class="ph ph-clock"></i> 5 min de leitura</p>
             
             
                 <div class="flex flex-wrap gap-2 ml-auto">
                     
-                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">Azure</span>
+                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">MCP</span>
                     
-                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">Databricks</span>
+                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">Docker</span>
                     
-                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">Cloud</span>
+                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">Python</span>
+                    
+                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">SQL</span>
+                    
+                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">MariaDB</span>
+                    
+                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">Gemini</span>
                     
                 </div>
             
         </div>
 
         <article class="content-body text-gray-300 text-lg leading-relaxed">
-            <h2 id="desafio-e-solução">Desafio e Solução</h2>
-<p>[Aqui virá o texto detalhado do case study&hellip;]</p>
+            <h1 id="-mcp--sistema-de-análise-de-dados-automotivos">🚗 MCP – Sistema de Análise de Dados Automotivos</h1>
+<p><strong>Sistema inteligente de análise de dados utilizando Google Gemini e MariaDB</strong></p>
+<h2 id="-sobre-o-projeto">📋 Sobre o Projeto</h2>
+<p>Este é um projeto <strong>MCP (Model Context Protocol)</strong> que demonstra a integração entre um modelo de IA generativa (<strong>Google Gemini</strong>) e um banco de dados <strong>MariaDB</strong>, permitindo realizar análises de dados usando linguagem natural.</p>
+<h3 id="-objetivos-educacionais">🎯 Objetivos Educacionais</h3>
+<ul>
+<li>Demonstrar na prática a comunicação entre LLMs e bancos de dados</li>
+<li>Implementar um sistema completo de análise utilizando NLP</li>
+<li>Criar um ambiente funcional com <strong>Docker + Python + SQL</strong></li>
+<li>Servir como material de estudo em IA aplicada e engenharia de dados</li>
+</ul>
+<h2 id="-tecnologias-utilizadas">🚀 Tecnologias Utilizadas</h2>
+<ul>
+<li><strong>Python 3.10+</strong></li>
+<li><strong>MariaDB 11.4</strong></li>
+<li><strong>Google Gemini 2.0 Flash</strong></li>
+<li><strong>Docker</strong></li>
+<li><strong>pandas</strong></li>
+</ul>
+<h2 id="-funcionalidades">⚙️ Funcionalidades</h2>
+<h3 id="-análise-com-linguagem-natural">🔍 Análise com Linguagem Natural</h3>
+<ul>
+<li>Perguntas diretas em português</li>
+<li>Geração automática de queries SQL</li>
+<li>Execução e interpretação inteligente dos resultados</li>
+</ul>
+<h2 id="-como-usar">💡 Como Usar</h2>
+<p>Exemplos de perguntas simples:</p>
+<pre tabindex="0"><code>&#34;Qual o faturamento total?&#34;
+&#34;Quais são os 5 produtos mais vendidos?&#34;
+&#34;Quem são os melhores vendedores?&#34;
+</code></pre><p><strong>Imagem:</strong><br>
+<img src="https://github.com/raphamaster/mcp-automotivo/blob/main/screenshots/mcp-automotivo.png?raw=true" alt="Prompt"></p>
+<p>Perguntas mais elaboradas para testar a LLMs:</p>
+<pre tabindex="0"><code>&#34;Qual categoria de produtos tem a melhor margem de lucro (diferença entre preço de venda e custo) e quantas unidades foram vendidas de cada categoria no último mês?&#34;
 
+&#34;Quais clientes do tipo &#39;Oficina&#39; têm o maior ticket médio e qual a frequência de compras deles? Mostre também o valor total gasto por cada um.&#34;
+
+&#34;Como evoluiu o faturamento mensal nos últimos 6 meses? Mostre a variação percentual mês a mês e identifique se há alguma tendência de crescimento ou queda.&#34;
+
+&#34;Compare a performance dos vendedores considerando não apenas o faturamento, mas também o número de vendas realizadas e o tempo que cada um está na empresa. Quem tem a melhor eficiência?&#34;
+
+&#34;Quais produtos têm alta demanda (muitas vendas) mas estoque baixo, representando risco de ruptura? E quais têm estoque alto mas pouca saída, representando capital parado?&#34;
+
+&#34;Qual é o produto &#39;carro-chefe&#39; de cada categoria em termos de faturamento?&#34;
+
+&#34;Existe correlação entre o valor da venda e a forma de pagamento escolhida?&#34;
+
+&#34;Quais vendedores são mais eficientes em vender produtos de alta margem?&#34;
+</code></pre>
         </article>
 
+        
+        <div class="mt-16 pt-8 border-t border-white/10">
+            <h3 class="text-white font-bold text-2xl mb-4">Código Fonte & Documentação</h3>
+            <p class="text-textMuted mb-6">Para acessar o código completo, instruções de instalação (Docker) e detalhes técnicos, acesse o repositório oficial:</p>
+            
+            <a href="https://github.com/raphamaster/mcp-automotivo" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 bg-[#0f172a] border border-white/10 hover:border-neon rounded-lg transition-all group hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(0,229,153,0.1)]">
+                <i class="ph ph-github-logo text-3xl group-hover:text-neon transition-colors"></i>
+                <div class="flex flex-col text-left">
+                    <span class="text-xs text-textMuted uppercase tracking-wider font-bold">GitHub Repo</span>
+                    <span class="text-white font-bold group-hover:text-neon transition-colors">Acessar Projeto Completo</span>
+                </div>
+                <i class="ph ph-arrow-square-out text-xl ml-2 text-textMuted group-hover:text-white"></i>
+            </a>
+        </div>
         
 
         <style>

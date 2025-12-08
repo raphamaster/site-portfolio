@@ -78,8 +78,8 @@
         <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">Pipeline Macro (BCB/SGS → Postgres → BI)</h1>
         
         <div class="flex items-center gap-4 text-sm text-textMuted mb-12 border-b border-white/10 pb-8">
-            <p>Publicado em: 25 Oct 2024</p>
-            <p class="flex items-center gap-1"><i class="ph ph-clock"></i> 15 min de leitura</p>
+            <p>Publicado em: 07 Oct 2024</p>
+            <p class="flex items-center gap-1"><i class="ph ph-clock"></i> 5 min de leitura</p>
             
             
                 <div class="flex flex-wrap gap-2 ml-auto">
@@ -97,11 +97,71 @@
         </div>
 
         <article class="content-body text-gray-300 text-lg leading-relaxed">
-            <h2 id="desafio-e-solução">Desafio e Solução</h2>
-<p>[Aqui virá o texto detalhado do case study&hellip;]</p>
+            <p>Ingestão e modelagem de séries econômicas do Banco Central (SGS) usando <strong>Docker</strong>, <strong>n8n</strong> e <strong>PostgreSQL</strong> nas camadas <strong>bronze → silver → gold</strong>, com orquestração diária e eventos simples.</p>
+<h2 id="-visão-geral">🔎 Visão Geral</h2>
+<ul>
+<li><strong>Fontes</strong>: API pública do BCB/SGS (séries 1, 11, 432, 433 por padrão)</li>
+<li><strong>Orquestração</strong>: n8n (Workflows W1–W4 + Orquestrador)</li>
+<li><strong>Persistência</strong>: Postgres (camadas bronze/silver/gold + catálogos e logs)</li>
+<li><strong>Dashboards</strong>: Power BI conectado direto no Postgres (sem CSV)</li>
+<li><strong>Eventos</strong>: spikes em USD/BRL e mudança de meta Selic gravados no banco</li>
+</ul>
+<h2 id="-arquitetura">🧱 Arquitetura</h2>
+<pre tabindex="0"><code>        +-----------------+
+        |   Orchestrator  |  (Cron 07:30 BRT)
+        +--------+--------+
+                 |
+                 v
++-------- W1: Ingest (Code) --------+
+| Get series -&gt; Build windows -&gt;    |
+| Fetch SGS -&gt; Upsert Bronze        |
++-------------------+---------------+
+                    v
+         +----------+-----------+
+         | W2: Bronze  -&gt; Silver|
+         +----------+-----------+
+                    v
+         +----------+-----------+
+         | W3: Silver -&gt; Gold   |
+         +----------+-----------+
+                    v
+         +----------+-----------+
+         | W4: Alertas (DB)     |
+         +----------------------+
+</code></pre><h2 id="imagens-prints-e-anotações-dos-workflows-n8n-e-do-dashboard">Imagens (prints) e anotações dos workflows n8n e do dashboard.</h2>
+<h2 id="conteúdo">Conteúdo</h2>
+<ul>
+<li><strong>n8n/</strong>: prints dos workflows W1–W4 e do Orquestrador</li>
+<li><strong>dashboard/</strong>: prints do Power BI</li>
+</ul>
+<h2 id="n8n--workflows">n8n — Workflows</h2>
+<h3 id="w1--ingest-sgs--bronze">W1 — Ingest (SGS → Bronze)</h3>
+<p><img src="https://github.com/raphamaster/projeto-bcb-sgs/blob/main/docs/n8n/n8n-W1-ingest-canvas.png?raw=true" alt="W1 Ingest"></p>
+<h3 id="w2--bronze--silver">W2 — Bronze → Silver</h3>
+<p><img src="https://github.com/raphamaster/projeto-bcb-sgs/blob/main/docs/n8n/n8n-W2-silver-canvas.png?raw=true" alt="W2 Silver"></p>
+<h3 id="w3--silver--gold">W3 — Silver → Gold</h3>
+<p><img src="https://github.com/raphamaster/projeto-bcb-sgs/blob/main/docs/n8n/n8n-W3-gold-canvas.png?raw=true" alt="W3 Gold"></p>
+<h3 id="w4--alertas-db">W4 — Alertas (DB)</h3>
+<p><img src="https://github.com/raphamaster/projeto-bcb-sgs/blob/main/docs/n8n/n8n-W4-alertas-canvas.png?raw=true" alt="W4 Alertas"></p>
+<h3 id="orquestrador">Orquestrador</h3>
+<p><img src="https://github.com/raphamaster/projeto-bcb-sgs/blob/main/docs/n8n/n8n-W0-orchestrator-canvas.png?raw=true" alt="Orquestrador"></p>
 
         </article>
 
+        
+        <div class="mt-16 pt-8 border-t border-white/10">
+            <h3 class="text-white font-bold text-2xl mb-4">Código Fonte & Documentação</h3>
+            <p class="text-textMuted mb-6">Para acessar o código completo, instruções de instalação (Docker) e detalhes técnicos, acesse o repositório oficial:</p>
+            
+            <a href="https://github.com/raphamaster/projeto-bcb-sgs" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 bg-[#0f172a] border border-white/10 hover:border-neon rounded-lg transition-all group hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(0,229,153,0.1)]">
+                <i class="ph ph-github-logo text-3xl group-hover:text-neon transition-colors"></i>
+                <div class="flex flex-col text-left">
+                    <span class="text-xs text-textMuted uppercase tracking-wider font-bold">GitHub Repo</span>
+                    <span class="text-white font-bold group-hover:text-neon transition-colors">Acessar Projeto Completo</span>
+                </div>
+                <i class="ph ph-arrow-square-out text-xl ml-2 text-textMuted group-hover:text-white"></i>
+            </a>
+        </div>
         
 
         <style>

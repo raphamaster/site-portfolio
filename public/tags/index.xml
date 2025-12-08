@@ -60,14 +60,21 @@
     <item>
       <title>Azure</title>
       <link>http://localhost:1313/tags/azure/</link>
-      <pubDate>Fri, 15 Nov 2024 10:00:00 -0300</pubDate>
+      <pubDate>Sat, 04 Oct 2025 10:00:00 -0300</pubDate>
       <guid>http://localhost:1313/tags/azure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud</title>
+      <link>http://localhost:1313/tags/cloud/</link>
+      <pubDate>Sat, 04 Oct 2025 10:00:00 -0300</pubDate>
+      <guid>http://localhost:1313/tags/cloud/</guid>
       <description></description>
     </item>
     <item>
       <title>Databricks</title>
       <link>http://localhost:1313/tags/databricks/</link>
-      <pubDate>Fri, 15 Nov 2024 10:00:00 -0300</pubDate>
+      <pubDate>Sat, 04 Oct 2025 10:00:00 -0300</pubDate>
       <guid>http://localhost:1313/tags/databricks/</guid>
       <description></description>
     </item>
@@ -83,13 +90,6 @@
       <link>http://localhost:1313/tags/api-do-bcb/sgs/</link>
       <pubDate>Fri, 25 Oct 2024 10:00:00 -0300</pubDate>
       <guid>http://localhost:1313/tags/api-do-bcb/sgs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Cloud</title>
-      <link>http://localhost:1313/tags/cloud/</link>
-      <pubDate>Fri, 25 Oct 2024 10:00:00 -0300</pubDate>
-      <guid>http://localhost:1313/tags/cloud/</guid>
       <description></description>
     </item>
     <item>

@@ -78,28 +78,69 @@
         <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">Monitoramento Macroeconômico de Commodities (IC-Br) vs. Dólar</h1>
         
         <div class="flex items-center gap-4 text-sm text-textMuted mb-12 border-b border-white/10 pb-8">
-            <p>Publicado em: 25 Oct 2024</p>
-            <p class="flex items-center gap-1"><i class="ph ph-clock"></i> 15 min de leitura</p>
+            <p>Publicado em: 03 Dec 2025</p>
+            <p class="flex items-center gap-1"><i class="ph ph-clock"></i> 5 min de leitura</p>
             
             
                 <div class="flex flex-wrap gap-2 ml-auto">
                     
-                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">Python</span>
+                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">Jupyter</span>
                     
-                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">MariaDB</span>
+                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">Docker</span>
                     
-                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">Power BI</span>
+                        <span class="bg-surfaceHighlight text-xs px-3 py-1 rounded-full text-white border border-white/5">Pandas</span>
                     
                 </div>
             
         </div>
 
         <article class="content-body text-gray-300 text-lg leading-relaxed">
-            <h2 id="desafio-e-solução">Desafio e Solução</h2>
-<p>[Aqui virá o texto detalhado do case study&hellip;]</p>
+            <p>Este projeto consiste em uma análise de dados ponta a ponta (ETL, Análise Exploratória e Visualização) para investigar a correlação entre o <strong>Índice de Commodities Brasil (IC-Br)</strong> e a taxa de câmbio <strong>(USD/BRL)</strong>.</p>
+<p>O objetivo é entender como a volatilidade cambial e os choques de oferta globais impactaram os preços das matérias-primas no Brasil nos últimos anos.</p>
+<h2 id="visualização-do-projeto">Visualização do Projeto</h2>
+<blockquote>
+<p><strong><a href="https://nbviewer.org/github/raphamaster/ic-br/blob/main/notebooks/Analise_ICBr.ipynb">Clique aqui para ver o Gráfico Interativo (HTML)</a></strong></p></blockquote>
+<p><img src="https://github.com/raphamaster/ic-br/blob/main/output/Screenshot_64.png?raw=true" alt="Preview do Gráfico Estático"></p>
+<h2 id="principais-insights-de-negócio">Principais Insights de Negócio</h2>
+<p>Com base na análise da série histórica (2015-Presente), destacam-se:</p>
+<ol>
+<li><strong>O &ldquo;Rali&rdquo; da Pandemia (2020-2022):</strong> A análise visual evidencia um descolamento agressivo dos preços a partir de março de 2020. A combinação de quebra nas cadeias de suprimento globais com a desvalorização do Real criou um cenário de &ldquo;tempestade perfeita&rdquo; para a inflação de custos.</li>
+<li><strong>Sensibilidade Cambial (Metais):</strong> A matriz de correlação revelou que o subíndice de <strong>Metais</strong> possui a maior correlação positiva com o Dólar (&gt; 0.70 em diversos períodos), indicando que este setor é o mais exposto à volatilidade cambial imediata.</li>
+<li><strong>Volatilidade Energética:</strong> O setor de <strong>Energia</strong> apresentou os picos de variação mais bruscos, descolando-se frequentemente do índice Agro, o que sugere dinâmicas geopolíticas (ex: OPEP, conflitos) influenciando mais que a demanda interna.</li>
+</ol>
+<h2 id="ferramentas">Ferramentas</h2>
+<ul>
+<li><strong>Linguagem:</strong> Python 3.9</li>
+<li><strong>Ambiente:</strong> Docker &amp; Jupyter Lab (Containerização para reprodutibilidade)</li>
+<li><strong>Fonte de Dados:</strong> API do Banco Central do Brasil (<code>python-bcb</code>) - SGS</li>
+<li><strong>Bibliotecas Principais:</strong>
+<ul>
+<li><code>Pandas</code>: Manipulação e tratamento de Time Series (Resampling, Merges).</li>
+<li><code>Plotly</code>: Criação de visualizações interativas para web.</li>
+<li><code>Seaborn/Matplotlib</code>: Visualizações estáticas e estatísticas.</li>
+</ul>
+</li>
+</ul>
+<h2 id="visualização-do-projeto-1">Visualização do Projeto</h2>
+<p>Abaixo, uma demonstração da interatividade da análise, permitindo correlacionar os picos do Dólar com a alta das Commodities:</p>
+<p><img src="https://github.com/raphamaster/ic-br/blob/main/output/demo_analise.gif?raw=true" alt="Demonstração da Análise"></p>
 
         </article>
 
+        
+        <div class="mt-16 pt-8 border-t border-white/10">
+            <h3 class="text-white font-bold text-2xl mb-4">Código Fonte & Documentação</h3>
+            <p class="text-textMuted mb-6">Para acessar o código completo, instruções de instalação (Docker) e detalhes técnicos, acesse o repositório oficial:</p>
+            
+            <a href="https://github.com/raphamaster/ic-br" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 bg-[#0f172a] border border-white/10 hover:border-neon rounded-lg transition-all group hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(0,229,153,0.1)]">
+                <i class="ph ph-github-logo text-3xl group-hover:text-neon transition-colors"></i>
+                <div class="flex flex-col text-left">
+                    <span class="text-xs text-textMuted uppercase tracking-wider font-bold">GitHub Repo</span>
+                    <span class="text-white font-bold group-hover:text-neon transition-colors">Acessar Projeto Completo</span>
+                </div>
+                <i class="ph ph-arrow-square-out text-xl ml-2 text-textMuted group-hover:text-white"></i>
+            </a>
+        </div>
         
 
         <style>
