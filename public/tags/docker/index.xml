@@ -6,12 +6,19 @@
     <description>Recent content in Docker on Raphael Franco | Data Engineer</description>
     <generator>Hugo</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 25 Oct 2024 10:00:00 -0300</lastBuildDate>
+    <lastBuildDate>Wed, 03 Dec 2025 10:00:00 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Monitoramento Macroeconômico de Commodities (IC-Br) vs. Dólar</title>
+      <link>http://localhost:1313/projects/ic-br/</link>
+      <pubDate>Wed, 03 Dec 2025 10:00:00 -0300</pubDate>
+      <guid>http://localhost:1313/projects/ic-br/</guid>
+      <description>&lt;p&gt;Este projeto consiste em uma análise de dados ponta a ponta (ETL, Análise Exploratória e Visualização) para investigar a correlação entre o &lt;strong&gt;Índice de Commodities Brasil (IC-Br)&lt;/strong&gt; e a taxa de câmbio &lt;strong&gt;(USD/BRL)&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;O objetivo é entender como a volatilidade cambial e os choques de oferta globais impactaram os preços das matérias-primas no Brasil nos últimos anos.&lt;/p&gt;&#xA;&lt;h2 id=&#34;visualização-do-projeto&#34;&gt;Visualização do Projeto&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://nbviewer.org/github/raphamaster/ic-br/blob/main/notebooks/Analise_ICBr.ipynb&#34;&gt;Clique aqui para ver o Gráfico Interativo (HTML)&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://github.com/raphamaster/ic-br/blob/main/output/Screenshot_64.png?raw=true&#34; alt=&#34;Preview do Gráfico Estático&#34;&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>MCP Automotivo</title>
       <link>http://localhost:1313/projects/mcp-automotivo/</link>
-      <pubDate>Fri, 25 Oct 2024 10:00:00 -0300</pubDate>
+      <pubDate>Fri, 28 Nov 2025 10:00:00 -0300</pubDate>
       <guid>http://localhost:1313/projects/mcp-automotivo/</guid>
       <description>&lt;h1 id=&#34;-mcp--sistema-de-análise-de-dados-automotivos&#34;&gt;🚗 MCP – Sistema de Análise de Dados Automotivos&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Sistema inteligente de análise de dados utilizando Google Gemini e MariaDB&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;-sobre-o-projeto&#34;&gt;📋 Sobre o Projeto&lt;/h2&gt;&#xA;&lt;p&gt;Este é um projeto &lt;strong&gt;MCP (Model Context Protocol)&lt;/strong&gt; que demonstra a integração entre um modelo de IA generativa (&lt;strong&gt;Google Gemini&lt;/strong&gt;) e um banco de dados &lt;strong&gt;MariaDB&lt;/strong&gt;, permitindo realizar análises de dados usando linguagem natural.&lt;/p&gt;&#xA;&lt;h3 id=&#34;-objetivos-educacionais&#34;&gt;🎯 Objetivos Educacionais&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Demonstrar na prática a comunicação entre LLMs e bancos de dados&lt;/li&gt;&#xA;&lt;li&gt;Implementar um sistema completo de análise utilizando NLP&lt;/li&gt;&#xA;&lt;li&gt;Criar um ambiente funcional com &lt;strong&gt;Docker + Python + SQL&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Servir como material de estudo em IA aplicada e engenharia de dados&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-tecnologias-utilizadas&#34;&gt;🚀 Tecnologias Utilizadas&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Python 3.10+&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;MariaDB 11.4&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Google Gemini 2.0 Flash&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Docker&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;pandas&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-funcionalidades&#34;&gt;⚙️ Funcionalidades&lt;/h2&gt;&#xA;&lt;h3 id=&#34;-análise-com-linguagem-natural&#34;&gt;🔍 Análise com Linguagem Natural&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Perguntas diretas em português&lt;/li&gt;&#xA;&lt;li&gt;Geração automática de queries SQL&lt;/li&gt;&#xA;&lt;li&gt;Execução e interpretação inteligente dos resultados&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-como-usar&#34;&gt;💡 Como Usar&lt;/h2&gt;&#xA;&lt;p&gt;Exemplos de perguntas simples:&lt;/p&gt;</description>
     </item>

@@ -6,21 +6,21 @@
     <description>Recent content in MariaDB on Raphael Franco | Data Engineer</description>
     <generator>Hugo</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 25 Oct 2024 10:00:00 -0300</lastBuildDate>
+    <lastBuildDate>Fri, 28 Nov 2025 10:00:00 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/mariadb/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Market Data Medallion</title>
-      <link>http://localhost:1313/projects/market-data/</link>
-      <pubDate>Fri, 25 Oct 2024 10:00:00 -0300</pubDate>
-      <guid>http://localhost:1313/projects/market-data/</guid>
-      <description>&lt;h2 id=&#34;desafio-e-solução&#34;&gt;Desafio e Solução&lt;/h2&gt;&#xA;&lt;p&gt;[Aqui virá o texto detalhado do case study&amp;hellip;]&lt;/p&gt;</description>
+      <title>MCP Automotivo</title>
+      <link>http://localhost:1313/projects/mcp-automotivo/</link>
+      <pubDate>Fri, 28 Nov 2025 10:00:00 -0300</pubDate>
+      <guid>http://localhost:1313/projects/mcp-automotivo/</guid>
+      <description>&lt;h1 id=&#34;-mcp--sistema-de-análise-de-dados-automotivos&#34;&gt;🚗 MCP – Sistema de Análise de Dados Automotivos&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Sistema inteligente de análise de dados utilizando Google Gemini e MariaDB&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;-sobre-o-projeto&#34;&gt;📋 Sobre o Projeto&lt;/h2&gt;&#xA;&lt;p&gt;Este é um projeto &lt;strong&gt;MCP (Model Context Protocol)&lt;/strong&gt; que demonstra a integração entre um modelo de IA generativa (&lt;strong&gt;Google Gemini&lt;/strong&gt;) e um banco de dados &lt;strong&gt;MariaDB&lt;/strong&gt;, permitindo realizar análises de dados usando linguagem natural.&lt;/p&gt;&#xA;&lt;h3 id=&#34;-objetivos-educacionais&#34;&gt;🎯 Objetivos Educacionais&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Demonstrar na prática a comunicação entre LLMs e bancos de dados&lt;/li&gt;&#xA;&lt;li&gt;Implementar um sistema completo de análise utilizando NLP&lt;/li&gt;&#xA;&lt;li&gt;Criar um ambiente funcional com &lt;strong&gt;Docker + Python + SQL&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Servir como material de estudo em IA aplicada e engenharia de dados&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-tecnologias-utilizadas&#34;&gt;🚀 Tecnologias Utilizadas&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Python 3.10+&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;MariaDB 11.4&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Google Gemini 2.0 Flash&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Docker&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;pandas&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-funcionalidades&#34;&gt;⚙️ Funcionalidades&lt;/h2&gt;&#xA;&lt;h3 id=&#34;-análise-com-linguagem-natural&#34;&gt;🔍 Análise com Linguagem Natural&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Perguntas diretas em português&lt;/li&gt;&#xA;&lt;li&gt;Geração automática de queries SQL&lt;/li&gt;&#xA;&lt;li&gt;Execução e interpretação inteligente dos resultados&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-como-usar&#34;&gt;💡 Como Usar&lt;/h2&gt;&#xA;&lt;p&gt;Exemplos de perguntas simples:&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Monitoramento Macroeconômico de Commodities (IC-Br) vs. Dólar</title>
-      <link>http://localhost:1313/projects/ic-br/</link>
-      <pubDate>Fri, 25 Oct 2024 10:00:00 -0300</pubDate>
-      <guid>http://localhost:1313/projects/ic-br/</guid>
-      <description>&lt;h2 id=&#34;desafio-e-solução&#34;&gt;Desafio e Solução&lt;/h2&gt;&#xA;&lt;p&gt;[Aqui virá o texto detalhado do case study&amp;hellip;]&lt;/p&gt;</description>
+      <title>Market Data - FX • Índices • Cripto</title>
+      <link>http://localhost:1313/projects/market-data/</link>
+      <pubDate>Mon, 03 Nov 2025 10:00:00 -0300</pubDate>
+      <guid>http://localhost:1313/projects/market-data/</guid>
+      <description>&lt;p&gt;Pipeline de engenharia de dados (estilo &lt;strong&gt;Medalhão: Bronze → Silver → Gold&lt;/strong&gt;) para coletar &lt;strong&gt;câmbio&lt;/strong&gt;, &lt;strong&gt;índices&lt;/strong&gt; e &lt;strong&gt;cripto&lt;/strong&gt;, armazenar no &lt;strong&gt;MariaDB&lt;/strong&gt;, e visualizar em &lt;strong&gt;Power BI&lt;/strong&gt; com tema dark de mercado.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-arquitetura--fluxo&#34;&gt;🗺️ Arquitetura &amp;amp; Fluxo&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Fontes (APIs/CSV)&#xA;   ├─ ECB FX (EUR-base)          → Bronze: md_bronze.ecb_fx_raw&#xA;   ├─ PTAX USD/BRL               → Bronze: md_bronze.ptax_raw&#xA;   ├─ Stooq (S&amp;amp;P 500 etc.)       → Bronze: md_bronze.stooq_index_raw&#xA;   └─ Yahoo (^BVSP) — fallback   → Bronze: md_bronze.stooq_index_raw (mesma tabela)&#xA;&#xA;Bronze  →  Silver (normalização) →  Gold (fatos/dimensões) →  Power BI&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Silver&lt;/strong&gt; consolida e padroniza colunas/schemas.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Gold&lt;/strong&gt; expõe tabelas de consumo analítico (fatos e dimensões) que o Power BI usa.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;principais-tabelas-gold&#34;&gt;Principais Tabelas (Gold)&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;dim_calendario&lt;/code&gt; — calendário completo (Y, M, Y-M, ISO semana etc.)&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;fact_fx_daily&lt;/code&gt; — séries de FX por &lt;code&gt;currency_pair&lt;/code&gt; (USD/BRL, EUR/BRL, GBP/BRL…)&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;fact_index_daily&lt;/code&gt; — índices: &lt;code&gt;index_code&lt;/code&gt; (&lt;code&gt;^spx&lt;/code&gt;, &lt;code&gt;^bvsp&lt;/code&gt;), &lt;code&gt;close_price&lt;/code&gt;, &lt;code&gt;volume&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;fact_crypto_daily&lt;/code&gt; — cripto (BTC/BRL derivado do BTC/USD + FX quando aplicável)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-dashboard-power-bi&#34;&gt;📊 Dashboard (Power BI)&lt;/h2&gt;&#xA;&lt;p&gt;O relatório está organizado em &lt;strong&gt;quatro páginas&lt;/strong&gt;. As imagens estão em &lt;code&gt;./screenshots/&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

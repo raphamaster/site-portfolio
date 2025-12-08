@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jupyther on Raphael Franco | Data Engineer</title>
+    <link>http://localhost:1313/tags/jupyther/</link>
+    <description>Recent content in Jupyther on Raphael Franco | Data Engineer</description>
+    <generator>Hugo</generator>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 17 Nov 2025 10:00:00 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/jupyther/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>O Agro é Tech: 3 Lições que os Dados me Ensinaram sobre Commodities</title>
+      <link>http://localhost:1313/blog/agro_dados/</link>
+      <pubDate>Mon, 17 Nov 2025 10:00:00 -0300</pubDate>
+      <guid>http://localhost:1313/blog/agro_dados/</guid>
+      <description>&lt;p&gt;Se você ainda acha que o mercado de commodities se resume a olhar para o céu e torcer por chuva, precisamos conversar. O campo e o mercado viraram laboratórios de dados, e quem não usa Inteligência Artificial e Analytics para ler o cenário, está voando às cegas.&lt;/p&gt;&#xA;&lt;p&gt;Recentemente, rodei uma análise profunda sobre o comportamento das commodities nos últimos anos. O objetivo? Sair do &amp;ldquo;achismo&amp;rdquo; e encontrar padrões matemáticos sólidos.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

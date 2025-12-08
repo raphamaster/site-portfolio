@@ -13,7 +13,7 @@
       <link>http://localhost:1313/projects/ic-br/</link>
       <pubDate>Wed, 03 Dec 2025 10:00:00 -0300</pubDate>
       <guid>http://localhost:1313/projects/ic-br/</guid>
-      <description>&lt;h2 id=&#34;desafio-e-solução&#34;&gt;Desafio e Solução&lt;/h2&gt;&#xA;&lt;p&gt;[Aqui virá o texto detalhado do case study&amp;hellip;]&lt;/p&gt;</description>
+      <description>&lt;p&gt;Este projeto consiste em uma análise de dados ponta a ponta (ETL, Análise Exploratória e Visualização) para investigar a correlação entre o &lt;strong&gt;Índice de Commodities Brasil (IC-Br)&lt;/strong&gt; e a taxa de câmbio &lt;strong&gt;(USD/BRL)&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;O objetivo é entender como a volatilidade cambial e os choques de oferta globais impactaram os preços das matérias-primas no Brasil nos últimos anos.&lt;/p&gt;&#xA;&lt;h2 id=&#34;visualização-do-projeto&#34;&gt;Visualização do Projeto&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://nbviewer.org/github/raphamaster/ic-br/blob/main/notebooks/Analise_ICBr.ipynb&#34;&gt;Clique aqui para ver o Gráfico Interativo (HTML)&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://github.com/raphamaster/ic-br/blob/main/output/Screenshot_64.png?raw=true&#34; alt=&#34;Preview do Gráfico Estático&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

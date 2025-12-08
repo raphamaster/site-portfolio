@@ -9,11 +9,11 @@
     <lastBuildDate>Thu, 06 Nov 2025 10:00:00 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/sql-server/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Tunanado sua Query</title>
+      <title>MCP com Google AI Studio</title>
       <link>http://localhost:1313/blog/tunning-sql/</link>
       <pubDate>Thu, 06 Nov 2025 10:00:00 -0300</pubDate>
       <guid>http://localhost:1313/blog/tunning-sql/</guid>
-      <description>&lt;h2 id=&#34;estrutura-e-estilização&#34;&gt;Estrutura e Estilização&lt;/h2&gt;&#xA;&lt;p&gt;O conteúdo completo do artigo só será carregado ao clicar em &amp;ldquo;Ler mais&amp;rdquo;&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Nos últimos dias, várias pessoas me perguntaram qual integração utilizei no meu projeto de MCP (Model Context Protocol) e, principalmente, onde consegui a chave de acesso do Google para utilizar os modelos Gemini. Por isso, resolvi escrever este post para centralizar todas as informações e ajudar quem está começando ou deseja testar os recursos mais recentes de IA generativa do Google.&lt;/p&gt;&#xA;&lt;p&gt;A resposta é: &lt;strong&gt;utilizei o Google AI Studio&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;O Google AI Studio é atualmente a forma mais direta, simples e gratuita (com limites de uso) para gerar credenciais de API e consumir modelos da família &lt;strong&gt;Gemini&lt;/strong&gt; em aplicações reais. Ele permite que você experimente prompts, valide entradas e saídas e, quando estiver satisfeito, gere rapidamente uma chave de API para integrar o modelo ao seu código.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

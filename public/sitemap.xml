@@ -2,26 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2025-11-06T10:00:00-03:00</lastmod>
+    <loc>http://localhost:1313/tags/docker/</loc>
+    <lastmod>2025-12-03T10:00:00-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/jupyter/</loc>
+    <lastmod>2025-12-03T10:00:00-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/ic-br/</loc>
+    <lastmod>2025-12-03T10:00:00-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/pandas/</loc>
+    <lastmod>2025-12-03T10:00:00-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/</loc>
+    <lastmod>2025-12-03T10:00:00-03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-11-06T10:00:00-03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/sql/</loc>
-    <lastmod>2025-11-06T10:00:00-03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/sql-server/</loc>
-    <lastmod>2025-11-06T10:00:00-03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/t-sql/</loc>
-    <lastmod>2025-11-06T10:00:00-03:00</lastmod>
+    <lastmod>2025-12-03T10:00:00-03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-11-06T10:00:00-03:00</lastmod>
+    <lastmod>2025-12-03T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tunning-sql/</loc>
-    <lastmod>2025-11-06T10:00:00-03:00</lastmod>
+    <loc>http://localhost:1313/blog/</loc>
+    <lastmod>2025-12-01T10:00:00-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/gemini/</loc>
+    <lastmod>2025-12-01T10:00:00-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/google/</loc>
+    <lastmod>2025-12-01T10:00:00-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ia/</loc>
+    <lastmod>2025-12-01T10:00:00-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/mcp/</loc>
+    <lastmod>2025-12-01T10:00:00-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/google_ai_studio/</loc>
+    <lastmod>2025-12-01T10:00:00-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/mariadb/</loc>
+    <lastmod>2025-11-28T10:00:00-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/mcp-automotivo/</loc>
+    <lastmod>2025-11-28T10:00:00-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/python/</loc>
+    <lastmod>2025-11-28T10:00:00-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/sql/</loc>
+    <lastmod>2025-11-28T10:00:00-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/market-data/</loc>
+    <lastmod>2025-11-03T10:00:00-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/power-bi/</loc>
+    <lastmod>2025-11-03T10:00:00-03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/fires-risk/</loc>
     <lastmod>2025-10-09T10:00:00-03:00</lastmod>
@@ -32,22 +68,7 @@
     <loc>http://localhost:1313/tags/parquet/</loc>
     <lastmod>2025-10-09T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
-    <lastmod>2025-10-09T10:00:00-03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/power-bi/</loc>
-    <lastmod>2025-10-09T10:00:00-03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/python/</loc>
-    <lastmod>2025-10-09T10:00:00-03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/azure/</loc>
-    <lastmod>2025-10-04T10:00:00-03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/cloud/</loc>
-    <lastmod>2025-10-04T10:00:00-03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/databricks/</loc>
+    <loc>http://localhost:1313/tags/figma/</loc>
     <lastmod>2025-10-04T10:00:00-03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/github-radar/</loc>
@@ -56,35 +77,29 @@
     <loc>http://localhost:1313/blog/spark/</loc>
     <lastmod>2025-09-01T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/data-lakehouse/</loc>
-    <lastmod>2024-11-15T10:00:00-03:00</lastmod>
+    <loc>http://localhost:1313/tags/azure/</loc>
+    <lastmod>2024-11-12T10:00:00-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/databricks/</loc>
+    <lastmod>2024-11-12T10:00:00-03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/etl/</loc>
-    <lastmod>2024-11-15T10:00:00-03:00</lastmod>
+    <lastmod>2024-11-12T10:00:00-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/data-lakehouse/</loc>
+    <lastmod>2024-11-12T10:00:00-03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/api-do-bcb/sgs/</loc>
-    <lastmod>2024-10-25T10:00:00-03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/mariadb/</loc>
-    <lastmod>2024-10-25T10:00:00-03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/market-data/</loc>
-    <lastmod>2024-10-25T10:00:00-03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/mcp-automotivo/</loc>
-    <lastmod>2024-10-25T10:00:00-03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/ic-br/</loc>
-    <lastmod>2024-10-25T10:00:00-03:00</lastmod>
+    <lastmod>2024-10-07T10:00:00-03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/n8n/</loc>
-    <lastmod>2024-10-25T10:00:00-03:00</lastmod>
+    <lastmod>2024-10-07T10:00:00-03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/pipeline-macro/</loc>
-    <lastmod>2024-10-25T10:00:00-03:00</lastmod>
+    <lastmod>2024-10-07T10:00:00-03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/postgres-/</loc>
-    <lastmod>2024-10-25T10:00:00-03:00</lastmod>
+    <lastmod>2024-10-07T10:00:00-03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url>

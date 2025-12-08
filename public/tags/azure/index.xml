@@ -6,28 +6,14 @@
     <description>Recent content in Azure on Raphael Franco | Data Engineer</description>
     <generator>Hugo</generator>
     <language>pt-BR</language>
-    <lastBuildDate>Sat, 04 Oct 2025 10:00:00 -0300</lastBuildDate>
+    <lastBuildDate>Tue, 12 Nov 2024 10:00:00 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/azure/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>GitHub Radar</title>
-      <link>http://localhost:1313/projects/github-radar/</link>
-      <pubDate>Sat, 04 Oct 2025 10:00:00 -0300</pubDate>
-      <guid>http://localhost:1313/projects/github-radar/</guid>
-      <description>&lt;h2 id=&#34;desafio-e-solução&#34;&gt;Desafio e Solução&lt;/h2&gt;&#xA;&lt;h1 id=&#34;github-radar--power-bi-data-engineering&#34;&gt;GitHub Radar — Power BI (Data Engineering)&lt;/h1&gt;&#xA;&lt;p&gt;Dashboard analítico para inspeção de repositórios GitHub (atividade, concentração/“bus factor”, processo/qualidade e linguagens).&#xA;O projeto coleta dados via scripts Python (&lt;code&gt;etl/&lt;/code&gt;), gera CSVs em &lt;code&gt;out/&lt;/code&gt; e carrega tudo em um relatório Power BI (template &lt;code&gt;.pbit&lt;/code&gt;).&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-visão-rápida&#34;&gt;🧭 Visão rápida&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Stack&lt;/strong&gt;: Python (ETL) + Power BI&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Dados&lt;/strong&gt;: API do GitHub → CSVs em &lt;code&gt;out/&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Relatório&lt;/strong&gt;: &lt;code&gt;powerbi_template/GithubRadar.pbit&lt;/code&gt; (fonte oficial para versionamento)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Design&lt;/strong&gt;: arquivos &lt;strong&gt;SVG&lt;/strong&gt; e &lt;strong&gt;Figma&lt;/strong&gt; em &lt;code&gt;powerbi/design/&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-páginas-do-dashboard&#34;&gt;📊 Páginas do Dashboard&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-visão-geral&#34;&gt;1) Visão Geral&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;KPIs&lt;/strong&gt;: Stars • Commits (janela) • Contribuidores Únicos • Lead Time (médio/mediano)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Tabela-hub&lt;/strong&gt;: ranking por atividade/concentração com link para o repo&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Top 10 por atividade&lt;/strong&gt; (commits na janela)&#xA;&lt;img src=&#34;powerbi/screenshots/Screenshot_1.png&#34; alt=&#34;Visão Geral&#34;&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;2-atividade&#34;&gt;2) Atividade&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Série temporal de commits (dia/semana) e &lt;strong&gt;média móvel (MM7)&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Slicers de repo/owner/language e janela de tempo&#xA;&lt;img src=&#34;powerbi/screenshots/Screenshot_2.png&#34; alt=&#34;Atividade&#34;&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;3-concentração-bus-factor&#34;&gt;3) Concentração (Bus Factor)&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Top1 Commits %&lt;/strong&gt; e &lt;strong&gt;Top3 Commits %&lt;/strong&gt; por repositório&lt;/li&gt;&#xA;&lt;li&gt;Tabela “drill” por contribuidor (&lt;code&gt;login&lt;/code&gt;, contribuições, % no repo)&#xA;&lt;img src=&#34;powerbi/screenshots/Screenshot_3.png&#34; alt=&#34;Concentração&#34;&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;4-processo--qualidade&#34;&gt;4) Processo / Qualidade&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Histograma&lt;/strong&gt; de &lt;code&gt;lead_time_days&lt;/code&gt; (bins) e &lt;strong&gt;P90/P95&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Barras: Issues fechadas na janela por repo&#xA;&lt;img src=&#34;powerbi/screenshots/Screenshot_4.png&#34; alt=&#34;Processo&#34;&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;5-linguagens&#34;&gt;5) Linguagens&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Treemap&lt;/strong&gt; % por linguagem • Barra empilhada &lt;code&gt;linguagem × repo&lt;/code&gt;&#xA;&lt;img src=&#34;powerbi/screenshots/Screenshot_5.png&#34; alt=&#34;Linguagens&#34;&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;6-layoutdesign&#34;&gt;6) Layout/Design&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Paleta e tipografia do tema, grid e componentes&#xA;&lt;img src=&#34;powerbi/screenshots/Screenshot_6.png&#34; alt=&#34;Design&#34;&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Os arquivos vetoriais de cada página estão em &lt;code&gt;powerbi/design/*.svg&lt;/code&gt; e o projeto Figma em &lt;code&gt;powerbi/design/GithubRadar_Design.fig&lt;/code&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Construindo um Data Lakehouse no Azure</title>
+      <title>Pizza com saber de Redes e Banco de Dados</title>
       <link>http://localhost:1313/blog/data-lakehouse/</link>
-      <pubDate>Fri, 15 Nov 2024 10:00:00 -0300</pubDate>
+      <pubDate>Tue, 12 Nov 2024 10:00:00 -0300</pubDate>
       <guid>http://localhost:1313/blog/data-lakehouse/</guid>
-      <description>&lt;h2 id=&#34;estrutura-e-estilização&#34;&gt;Estrutura e Estilização&lt;/h2&gt;&#xA;&lt;p&gt;O conteúdo completo do artigo só será carregado ao clicar em &amp;ldquo;Ler mais&amp;rdquo;&amp;hellip;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>MCP Automotivo</title>
-      <link>http://localhost:1313/projects/mcp-automotivo/</link>
-      <pubDate>Fri, 25 Oct 2024 10:00:00 -0300</pubDate>
-      <guid>http://localhost:1313/projects/mcp-automotivo/</guid>
-      <description>&lt;h2 id=&#34;desafio-e-solução&#34;&gt;Desafio e Solução&lt;/h2&gt;&#xA;&lt;p&gt;[Aqui virá o texto detalhado do case study&amp;hellip;]&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/P%C3%ACzzaria_Redes_Solucoes.png&#34; alt=&#34;Pìzza&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Certa vez eu estava em uma pizzaria, pronto para pagar a conta, quando reparei uma cena clássica de TI em ambiente errado, fila enorme no caixa, funcionário suando, um computador funcionando pela metade e o outro praticamente em estado de coma.&lt;/p&gt;&#xA;&lt;p&gt;Percebi que o problema era mais de tecnologia do que de atendimento e, como bom profissional de TI que não sabe ficar quieto vendo sistema travado, me ofereci para ajudar.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
