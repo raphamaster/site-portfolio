@@ -6,6 +6,8 @@
     <description>Recent content in Categories on Raphael Franco | Data Engineer</description>
     <generator>Hugo</generator>
     <language>pt-BR</language>
+    <managingEditor>raphael@exemplo.com (Raphael Franco)</managingEditor>
+    <webMaster>raphael@exemplo.com (Raphael Franco)</webMaster>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

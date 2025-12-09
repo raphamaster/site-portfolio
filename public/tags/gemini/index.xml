@@ -6,19 +6,21 @@
     <description>Recent content in Gemini on Raphael Franco | Data Engineer</description>
     <generator>Hugo</generator>
     <language>pt-BR</language>
+    <managingEditor>raphael@exemplo.com (Raphael Franco)</managingEditor>
+    <webMaster>raphael@exemplo.com (Raphael Franco)</webMaster>
     <lastBuildDate>Mon, 01 Dec 2025 10:00:00 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/gemini/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MCP com Google AI Studio</title>
       <link>http://localhost:1313/blog/google_ai_studio/</link>
-      <pubDate>Mon, 01 Dec 2025 10:00:00 -0300</pubDate>
+      <pubDate>Mon, 01 Dec 2025 10:00:00 -0300</pubDate><author>raphael@exemplo.com (Raphael Franco)</author>
       <guid>http://localhost:1313/blog/google_ai_studio/</guid>
       <description>&lt;p&gt;Nos últimos dias, várias pessoas me perguntaram qual integração utilizei no meu projeto de MCP (Model Context Protocol) e, principalmente, onde consegui a chave de acesso do Google para utilizar os modelos Gemini. Por isso, resolvi escrever este post para centralizar todas as informações e ajudar quem está começando ou deseja testar os recursos mais recentes de IA generativa do Google.&lt;/p&gt;&#xA;&lt;p&gt;A resposta é: &lt;strong&gt;utilizei o Google AI Studio&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;O Google AI Studio é atualmente a forma mais direta, simples e gratuita (com limites de uso) para gerar credenciais de API e consumir modelos da família &lt;strong&gt;Gemini&lt;/strong&gt; em aplicações reais. Ele permite que você experimente prompts, valide entradas e saídas e, quando estiver satisfeito, gere rapidamente uma chave de API para integrar o modelo ao seu código.&lt;/p&gt;</description>
     </item>
     <item>
       <title>MCP Automotivo</title>
       <link>http://localhost:1313/projects/mcp-automotivo/</link>
-      <pubDate>Fri, 28 Nov 2025 10:00:00 -0300</pubDate>
+      <pubDate>Fri, 28 Nov 2025 10:00:00 -0300</pubDate><author>raphael@exemplo.com (Raphael Franco)</author>
       <guid>http://localhost:1313/projects/mcp-automotivo/</guid>
       <description>&lt;h1 id=&#34;-mcp--sistema-de-análise-de-dados-automotivos&#34;&gt;🚗 MCP – Sistema de Análise de Dados Automotivos&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Sistema inteligente de análise de dados utilizando Google Gemini e MariaDB&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;-sobre-o-projeto&#34;&gt;📋 Sobre o Projeto&lt;/h2&gt;&#xA;&lt;p&gt;Este é um projeto &lt;strong&gt;MCP (Model Context Protocol)&lt;/strong&gt; que demonstra a integração entre um modelo de IA generativa (&lt;strong&gt;Google Gemini&lt;/strong&gt;) e um banco de dados &lt;strong&gt;MariaDB&lt;/strong&gt;, permitindo realizar análises de dados usando linguagem natural.&lt;/p&gt;&#xA;&lt;h3 id=&#34;-objetivos-educacionais&#34;&gt;🎯 Objetivos Educacionais&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Demonstrar na prática a comunicação entre LLMs e bancos de dados&lt;/li&gt;&#xA;&lt;li&gt;Implementar um sistema completo de análise utilizando NLP&lt;/li&gt;&#xA;&lt;li&gt;Criar um ambiente funcional com &lt;strong&gt;Docker + Python + SQL&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Servir como material de estudo em IA aplicada e engenharia de dados&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-tecnologias-utilizadas&#34;&gt;🚀 Tecnologias Utilizadas&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Python 3.10+&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;MariaDB 11.4&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Google Gemini 2.0 Flash&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Docker&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;pandas&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-funcionalidades&#34;&gt;⚙️ Funcionalidades&lt;/h2&gt;&#xA;&lt;h3 id=&#34;-análise-com-linguagem-natural&#34;&gt;🔍 Análise com Linguagem Natural&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Perguntas diretas em português&lt;/li&gt;&#xA;&lt;li&gt;Geração automática de queries SQL&lt;/li&gt;&#xA;&lt;li&gt;Execução e interpretação inteligente dos resultados&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-como-usar&#34;&gt;💡 Como Usar&lt;/h2&gt;&#xA;&lt;p&gt;Exemplos de perguntas simples:&lt;/p&gt;</description>
     </item>

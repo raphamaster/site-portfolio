@@ -6,12 +6,14 @@
     <description>Recent content in Redes on Raphael Franco | Data Engineer</description>
     <generator>Hugo</generator>
     <language>pt-BR</language>
+    <managingEditor>raphael@exemplo.com (Raphael Franco)</managingEditor>
+    <webMaster>raphael@exemplo.com (Raphael Franco)</webMaster>
     <lastBuildDate>Tue, 12 Nov 2024 10:00:00 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/redes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pizza com sabor de Redes e Banco de Dados</title>
       <link>http://localhost:1313/blog/pizza-redes/</link>
-      <pubDate>Tue, 12 Nov 2024 10:00:00 -0300</pubDate>
+      <pubDate>Tue, 12 Nov 2024 10:00:00 -0300</pubDate><author>raphael@exemplo.com (Raphael Franco)</author>
       <guid>http://localhost:1313/blog/pizza-redes/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/P%C3%ACzzaria_Redes_Solucoes.png&#34; alt=&#34;Pìzza&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Certa vez eu estava em uma pizzaria, pronto para pagar a conta, quando reparei uma cena clássica de TI em ambiente errado, fila enorme no caixa, funcionário suando, um computador funcionando pela metade e o outro praticamente em estado de coma.&lt;/p&gt;&#xA;&lt;p&gt;Percebi que o problema era mais de tecnologia do que de atendimento e, como bom profissional de TI que não sabe ficar quieto vendo sistema travado, me ofereci para ajudar.&lt;/p&gt;</description>
     </item>

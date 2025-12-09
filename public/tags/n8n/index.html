@@ -39,28 +39,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
-<body class="overflow-x-hidden relative bg-background">
+<body class="overflow-x-hidden relative bg-background text-slate-300">
 
     <nav class="fixed w-full z-50 bg-[#030712]/90 backdrop-blur-md border-b border-white/5">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <div class="font-bold text-xl tracking-tight flex items-center gap-1 font-mono">
-                <span class="neon-text"></span>Raphael Franco<span class="neon-text"></span>
+                <span class="neon-text">&lt;</span>Raphael Franco<span class="neon-text">/&gt;</span>
             </div>
             
             <div class="hidden md:flex items-center gap-8 text-sm font-medium text-textMuted">
-                <a href="/" class="hover:text-neon transition-colors">Home</a>
-                <a href="/#sobre" class="hover:text-neon transition-colors">Sobre</a>
-                <a href="/#servicos" class="hover:text-neon transition-colors">Serviços</a>
-                <a href="/#portfolio" class="hover:text-neon transition-colors">Portfólio</a>
-                <a href="/#blog" class="hover:text-neon transition-colors">Blog</a>
-                <a href="/#contato" class="hover:text-neon transition-colors">Contato</a>
+                <a href="http://localhost:1313/" class="hover:text-neon transition-colors">Home</a>
+                
+                <a href="http://localhost:1313/#sobre" class="hover:text-neon transition-colors">Sobre</a>
+                <a href="http://localhost:1313/#servicos" class="hover:text-neon transition-colors">Serviços</a>
+                <a href="http://localhost:1313/#portfolio" class="hover:text-neon transition-colors">Portfólio</a>
+                
+                <a href="/blog/" class="hover:text-neon transition-colors">Blog</a>
+                
+                <a href="http://localhost:1313/#contato" class="hover:text-neon transition-colors">Contato</a>
             </div>
 
-            <a href="#contato" class="hidden md:inline-flex px-6 py-2.5 rounded font-bold text-sm btn-primary">
+            <a href="http://localhost:1313/#contato" class="hidden md:inline-flex px-6 py-2.5 rounded font-bold text-sm btn-primary">
                 Agendar Consultoria
             </a>
         </div>
     </nav>
+    
     <div id="content">
     <div id="content" class="min-h-screen pt-20"> 
         
@@ -149,12 +153,12 @@
                 <div class="md:col-start-3">
                     <h4 class="text-white font-bold mb-4">Links Rápidos</h4>
                     <ul class="space-y-3 text-sm text-textMuted">                      
-                        <li><a href="/" class="hover:text-neon transition-colors">Home</a></li>
-                        <li><a href="/#sobre" class="hover:text-neon transition-colors">Sobre</a></li>
-                        <li><a href="/#servicos" class="hover:text-neon transition-colors">Serviços</a></li>
-                        <li><a href="/#portfolio" class="hover:text-neon transition-colors">Portfólio</a></li>
-                        <li><a href="/#blog" class="hover:text-neon transition-colors">Blog</a></li>
-                        <li><a href="/#contato" class="hover:text-neon transition-colors">Contato</a></li>
+                        <li><a href="http://localhost:1313/" class="hover:text-neon transition-colors">Home</a></li>
+                        <li><a href="http://localhost:1313/#sobre" class="hover:text-neon transition-colors">Sobre</a></li>
+                        <li><a href="http://localhost:1313/#servicos" class="hover:text-neon transition-colors">Serviços</a></li>
+                        <li><a href="http://localhost:1313/#portfolio" class="hover:text-neon transition-colors">Portfólio</a></li>
+                        <li><a href="http://localhost:1313/#blog" class="hover:text-neon transition-colors">Blog</a></li>
+                        <li><a href="http://localhost:1313/#contato" class="hover:text-neon transition-colors">Contato</a></li>
 
                     </ul>
                 </div>
@@ -177,8 +181,6 @@
                             e.preventDefault();
                             const email = document.getElementById('email-newsletter').value;
                             
-                            
-                            
                             const substackDomain = "raphaelfranco.substack.com"; 
                             
                             const url = `https://${substackDomain}/subscribe?email=${encodeURIComponent(email)}`;
@@ -192,7 +194,7 @@
             <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs text-textMuted">
                 <p>&copy; 2025 Raphael Franco. Todos os direitos reservados.</p>
                 <div class="font-mono mt-4 md:mt-0">
-                    <span class="neon-text">madewith  </span><span class="text-red-500">"lagrimas & código"</span>;
+                    <span class="neon-text">feito com:  </span><span class="text-red-500">"suor, lagrimas & código"</span>;
                 </div>
             </div>
         </div>
