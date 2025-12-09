@@ -1,18 +1,21 @@
-# hugo.toml
+# hugo.toml - Configuração Completa
 
 baseURL = "https://raphamaster.github.io/site-portfolio/"
 languageCode = "pt-BR"
 title = "Raphael Franco | Data Engineer"
 enableRobotsTXT = true
 
+# CONFIGURAÇÃO DE AUTOR (Para o RSS funcionar)
 [author]
   name = "Raphael Franco"
-  email = "contato@raphaelfranco.com"
+  email = "raphael@exemplo.com"
 
+# PARÂMETROS DO SITE (Usados no seu layout)
 [params]
   description = "Portfólio de Engenharia de Dados e Business Intelligence."
-  author = "Raphael Franco"
-  logoTitle = "Raphael Franco"
+  author = "Raphael Franco" 
+  logoTitle = "DataEngineer"
 
+# CONFIGURAÇÃO DE SAÍDA
 [outputs]
   home = ["HTML", "RSS"]
