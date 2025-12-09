@@ -3,16 +3,15 @@ languageCode = "pt-BR"
 title = "Raphael Franco | Data Engineer"
 enableRobotsTXT = true
 
-# CONFIGURAÇÃO OFICIAL DE AUTOR
-# O Hugo usa isso para o RSS e nós usaremos para o Rodapé também.
-[author]
-  name = "Raphael Franco"
-  email = "raphael@exemplo.com"
-
 [params]
   description = "Portfólio de Engenharia de Dados e Business Intelligence."
   logoTitle = "DataEngineer"
-  # Removemos a linha 'author' daqui para não causar conflito.
+
+  # AUTOR DENTRO DE PARAMS (Formato Moderno)
+  # Isso cria um objeto .Site.Params.author com campos name e email
+  [params.author]
+    name = "Raphael Franco"
+    email = "raphael@exemplo.com"
 
 [outputs]
   home = ["HTML", "RSS"]
