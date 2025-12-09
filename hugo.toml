@@ -3,7 +3,6 @@
 baseURL = "https://raphamaster.github.io/site-portfolio/"
 languageCode = "pt-BR"
 title = "Raphael Franco | Data Engineer"
-theme = ""
 enableRobotsTXT = true
 
 [params]
