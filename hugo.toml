@@ -3,18 +3,16 @@ languageCode = "pt-BR"
 title = "Raphael Franco | Data Engineer"
 enableRobotsTXT = true
 
-# CONFIGURAÇÃO DE AUTOR (Tabela)
-# O RSS precisa disto. NÃO transforme em author = "Raphael"
+# CONFIGURAÇÃO OFICIAL DE AUTOR
+# O Hugo usa isso para o RSS e nós usaremos para o Rodapé também.
 [author]
   name = "Raphael Franco"
   email = "raphael@exemplo.com"
 
-# PARÂMETROS GERAIS
 [params]
   description = "Portfólio de Engenharia de Dados e Business Intelligence."
-  # Mantemos esta variável 'author' aqui DENTRO de params para o seu rodapé funcionar
-  author = "Raphael Franco" 
   logoTitle = "DataEngineer"
+  # Removemos a linha 'author' daqui para não causar conflito.
 
 [outputs]
   home = ["HTML", "RSS"]

@@ -22,7 +22,7 @@ concurrency:
 
 # Define a versão do Hugo
 env:
-  HUGO_VERSION: 0.120.0 # Pode manter esta ou ajustar para a sua (0.151.0) se preferir
+  HUGO_VERSION: 0.151.0 # Pode manter esta ou ajustar para a sua (0.151.0) se preferir
 
 jobs:
   # Tarefa de Construção (Build)
