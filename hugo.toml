@@ -5,6 +5,10 @@ languageCode = "pt-BR"
 title = "Raphael Franco | Data Engineer"
 enableRobotsTXT = true
 
+[author]
+  name = "Raphael Franco"
+  email = "contato@raphaelfranco.com"
+
 [params]
   description = "Portfólio de Engenharia de Dados e Business Intelligence."
   author = "Raphael Franco"
