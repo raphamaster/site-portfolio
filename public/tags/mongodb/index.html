@@ -72,7 +72,7 @@
             <h1 class="text-4xl md:text-5xl font-bold text-white">MongoDB</h1>
             <p class="text-textMuted mt-4 max-w-3xl mx-auto">
                 
-                    Explore todos os Tagss detalhados com foco em engenharia e resultados.
+                    Experimentos, Projetos e Ideias que Merem um Lugar ao Sol
                 
             </p>
         </div>
@@ -132,7 +132,7 @@
             <div class="grid md:grid-cols-4 gap-12 mb-16">
                 <div class="md:col-span-1">
                     <div class="font-bold text-xl tracking-tight flex items-center gap-1 mb-4 font-mono">
-                        <span class="neon-text">&lt;</span>Raphael Franco<span class="neon-text">/&gt;</span>
+                        <span class="neon-text"></span>Raphael Franco<span class="neon-text"></span>
                     </div>
                     <p class="text-sm text-textMuted leading-relaxed mb-6">
                         Engenharia de Dados & BI Intelligence.
@@ -140,6 +140,9 @@
                     <div class="flex gap-4">
                         <a href="https://linkedin.com/in/raphaelfranco" class="w-10 h-10 rounded bg-surfaceHighlight flex items-center justify-center text-textMuted hover:bg-neon hover:text-black transition"><i class="fab fa-linkedin-in text-xl"></i></a>
                         <a href="https://github.com/raphamaster" class="w-10 h-10 rounded bg-surfaceHighlight flex items-center justify-center text-textMuted hover:bg-neon hover:text-black transition"><i class="fab fa-github text-xl"></i></a>
+                        <a href="https://www.instagram.com/raphael.rfranco/" class="w-10 h-10 rounded bg-surfaceHighlight flex items-center justify-center text-textMuted hover:bg-neon hover:text-black transition"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="https://www.youtube.com/@raphaelfranco/" class="w-10 h-10 rounded bg-surfaceHighlight flex items-center justify-center text-textMuted hover:bg-neon hover:text-black transition"><i class="ph ph-youtube-logo text-xl"></i></a>
+                        <a href="https://raphaelfranco.substack.com/" class="w-10 h-10 rounded bg-surfaceHighlight flex items-center justify-center text-textMuted hover:bg-neon hover:text-black transition"><i class="ph ph-pen-nib text-xl"></i></a>
                     </div>
                 </div>
 
@@ -155,15 +158,35 @@
 
                     </ul>
                 </div>
-
+                
                 <div>
                     <h4 class="text-white font-bold mb-4">Newsletter</h4>
                     <p class="text-xs text-textMuted mb-4">Dicas de Engenharia de Dados no seu email.</p>
-                    <div class="flex gap-2">
-                        <input type="email" placeholder="seu@email.com" class="bg-surfaceHighlight border border-white/10 rounded px-4 py-2 w-full text-sm focus:outline-none focus:border-neon text-white">
-                        <button class="bg-neon text-black rounded p-2 hover:bg-[#00c985] transition"><i class="ph ph-paper-plane-right font-bold"></i></button>
-                    </div>
+                    
+                    <form onsubmit="submeterSubstack(event)" class="flex gap-2">
+                        <input type="email" id="email-newsletter" placeholder="seu@email.com" required 
+                               class="bg-surfaceHighlight border border-white/10 rounded px-4 py-2 w-full text-sm focus:outline-none focus:border-neon text-white placeholder-gray-500">
+                        
+                        <button type="submit" class="bg-neon text-black rounded p-2 hover:bg-[#00c985] transition group">
+                            <i class="ph ph-paper-plane-right font-bold group-hover:translate-x-1 transition-transform"></i>
+                        </button>
+                    </form>
+
+                    <script>
+                        function submeterSubstack(e) {
+                            e.preventDefault();
+                            const email = document.getElementById('email-newsletter').value;
+                            
+                            
+                            
+                            const substackDomain = "raphaelfranco.substack.com"; 
+                            
+                            const url = `https://${substackDomain}/subscribe?email=${encodeURIComponent(email)}`;
+                            window.open(url, '_blank');
+                        }
+                    </script>
                 </div>
+
             </div>
 
             <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs text-textMuted">

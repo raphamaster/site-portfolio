@@ -79,6 +79,13 @@
       <description></description>
     </item>
     <item>
+      <title>Agro</title>
+      <link>http://localhost:1313/tags/agro/</link>
+      <pubDate>Mon, 17 Nov 2025 10:00:00 -0300</pubDate>
+      <guid>http://localhost:1313/tags/agro/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Power BI</title>
       <link>http://localhost:1313/tags/power-bi/</link>
       <pubDate>Mon, 03 Nov 2025 10:00:00 -0300</pubDate>
@@ -107,24 +114,24 @@
       <description></description>
     </item>
     <item>
-      <title>Azure</title>
-      <link>http://localhost:1313/tags/azure/</link>
+      <title>Carreira</title>
+      <link>http://localhost:1313/tags/carreira/</link>
       <pubDate>Tue, 12 Nov 2024 10:00:00 -0300</pubDate>
-      <guid>http://localhost:1313/tags/azure/</guid>
+      <guid>http://localhost:1313/tags/carreira/</guid>
       <description></description>
     </item>
     <item>
-      <title>Databricks</title>
-      <link>http://localhost:1313/tags/databricks/</link>
+      <title>Redes</title>
+      <link>http://localhost:1313/tags/redes/</link>
       <pubDate>Tue, 12 Nov 2024 10:00:00 -0300</pubDate>
-      <guid>http://localhost:1313/tags/databricks/</guid>
+      <guid>http://localhost:1313/tags/redes/</guid>
       <description></description>
     </item>
     <item>
-      <title>ETL</title>
-      <link>http://localhost:1313/tags/etl/</link>
+      <title>Trabalho</title>
+      <link>http://localhost:1313/tags/trabalho/</link>
       <pubDate>Tue, 12 Nov 2024 10:00:00 -0300</pubDate>
-      <guid>http://localhost:1313/tags/etl/</guid>
+      <guid>http://localhost:1313/tags/trabalho/</guid>
       <description></description>
     </item>
     <item>

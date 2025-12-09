@@ -15,5 +15,12 @@
       <guid>http://localhost:1313/blog/google_ai_studio/</guid>
       <description>&lt;p&gt;Nos últimos dias, várias pessoas me perguntaram qual integração utilizei no meu projeto de MCP (Model Context Protocol) e, principalmente, onde consegui a chave de acesso do Google para utilizar os modelos Gemini. Por isso, resolvi escrever este post para centralizar todas as informações e ajudar quem está começando ou deseja testar os recursos mais recentes de IA generativa do Google.&lt;/p&gt;&#xA;&lt;p&gt;A resposta é: &lt;strong&gt;utilizei o Google AI Studio&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;O Google AI Studio é atualmente a forma mais direta, simples e gratuita (com limites de uso) para gerar credenciais de API e consumir modelos da família &lt;strong&gt;Gemini&lt;/strong&gt; em aplicações reais. Ele permite que você experimente prompts, valide entradas e saídas e, quando estiver satisfeito, gere rapidamente uma chave de API para integrar o modelo ao seu código.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>O Agro é Tech: 3 Lições que os Dados me Ensinaram sobre Commodities</title>
+      <link>http://localhost:1313/blog/agro_dados/</link>
+      <pubDate>Mon, 17 Nov 2025 10:00:00 -0300</pubDate>
+      <guid>http://localhost:1313/blog/agro_dados/</guid>
+      <description>&lt;p&gt;Se você ainda acha que o mercado de commodities se resume a olhar para o céu e torcer por chuva, precisamos conversar. O campo e o mercado viraram laboratórios de dados, e quem não usa Inteligência Artificial e Analytics para ler o cenário, está voando às cegas.&lt;/p&gt;&#xA;&lt;p&gt;Recentemente, rodei uma análise profunda sobre o comportamento das commodities nos últimos anos. O objetivo? Sair do &amp;ldquo;achismo&amp;rdquo; e encontrar padrões matemáticos sólidos.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

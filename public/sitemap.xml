@@ -53,6 +53,12 @@
     <loc>http://localhost:1313/tags/sql/</loc>
     <lastmod>2025-11-28T10:00:00-03:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/agro/</loc>
+    <lastmod>2025-11-17T10:00:00-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/agro_dados/</loc>
+    <lastmod>2025-11-17T10:00:00-03:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/projects/market-data/</loc>
     <lastmod>2025-11-03T10:00:00-03:00</lastmod>
   </url><url>
@@ -74,19 +80,16 @@
     <loc>http://localhost:1313/projects/github-radar/</loc>
     <lastmod>2025-10-04T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/spark/</loc>
-    <lastmod>2025-09-01T10:00:00-03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/azure/</loc>
+    <loc>http://localhost:1313/tags/carreira/</loc>
     <lastmod>2024-11-12T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/databricks/</loc>
+    <loc>http://localhost:1313/blog/pizza-redes/</loc>
     <lastmod>2024-11-12T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/etl/</loc>
+    <loc>http://localhost:1313/tags/redes/</loc>
     <lastmod>2024-11-12T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/data-lakehouse/</loc>
+    <loc>http://localhost:1313/tags/trabalho/</loc>
     <lastmod>2024-11-12T10:00:00-03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/api-do-bcb/sgs/</loc>

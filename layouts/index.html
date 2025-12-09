@@ -151,7 +151,7 @@
                 <div class="flex flex-col sm:flex-row gap-6 mb-8 items-start">
                     <div class="flex-shrink-0 relative group">
                         <div class="absolute -inset-0.5 bg-gradient-to-r from-neon to-blue-500 rounded-full blur opacity-30 group-hover:opacity-75 transition duration-500"></div>
-                        <img src="{{ "https://github.com/raphamaster.png" | relURL }}" alt="Raphael Franco" class="relative w-24 h-24 rounded-full border-2 border-[#1e293b] object-cover">
+                        <img src="{{ "https://media.licdn.com/dms/image/v2/D4D03AQHEDhFHUZ0aSw/profile-displayphoto-shrink_800_800/B4DZUbqDCEGkAc-/0/1739925762589?e=1766620800&v=beta&t=zmrl3hNfPST-VboG08YKeoPOlHUPf6N7bK4RFtknlXA" | relURL }}" alt="Raphael Franco" class="relative w-24 h-24 rounded-full border-2 border-[#1e293b] object-cover">
                     </div>
                     
                     <div class="space-y-4">
@@ -175,7 +175,9 @@
 
                         <div class="text-textMuted text-base leading-relaxed">
                             <p class="mb-4">
-                                Sou <strong class="text-white">Raphael Franco</strong>. Especialista em transformar dados brutos em <span class="text-white font-semibold">ativos estratégicos</span>.
+                                Sou <strong class="text-white">Raphael Franco</strong>. Especialista em Engenharia e arquitetura de dados. 
+                                Atuo na construção de pipelines de ETL/ELT e na <span class="text-white font-semibold">visualização estratégica</span> de dados, garantindo 
+                                que grandes volumes de informação sejam processados com segurança e apresentados com clareza para a tomada de decisão."
                             </p>
                             <p>
                                 <span class="text-neon font-bold">Minha especialidade:</span> 
@@ -224,43 +226,100 @@
             </div>
         </div>
     </section>
-
+    
     <section id="servicos" class="py-24">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
-                <span class="neon-text font-mono text-sm mb-2 block">// Serviços</span>
+                <span class="neon-text font-mono text-sm mb-2 block">// Soluções</span>
                 <h2 class="text-3xl md:text-4xl font-bold text-white">Como posso <span class="neon-text">ajudar você</span></h2>
             </div>
 
             <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-surface border border-white/5 p-8 rounded-xl hover:border-neon/50 transition duration-300 group">
+                
+                <div class="bg-surface border border-white/5 p-8 rounded-xl hover:border-neon/50 transition duration-300 group flex flex-col">
                     <div class="w-12 h-12 rounded bg-surfaceHighlight flex items-center justify-center mb-6 text-neon text-2xl group-hover:bg-neon group-hover:text-black transition">
                         <i class="ph ph-cloud"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 text-white">Engenharia de Dados</h3>
-                    <p class="text-textMuted text-sm mb-6">Arquitetura de pipelines ETL/ELT, otimização de <span class="text-neon font-bold">performance</span> em Bancos de Dados, incluindo ajustes e <span class="text-neon font-semibold">otimização</span> de consultas SQL, e <span class="text-neon font-semibold">modernização</span> da infraestrutura na nuvem.</p>
-                    <!--<a href="#" class="text-neon text-sm font-bold flex items-center gap-2 hover:gap-3 transition-all">Saiba mais <i class="ph ph-arrow-right"></i></a>-->
+                    <h3 class="text-xl font-bold mb-2 text-white">Engenharia de Dados</h3>
+                    <p class="text-textMuted text-xs mb-6 h-10">Construção de infraestrutura robusta e escalável na nuvem.</p>
+                    
+                    <ul class="space-y-3 text-textMuted text-sm mb-8 flex-grow">
+                        <li class="flex items-start gap-3">
+                            <span class="w-1.5 h-1.5 rounded-full bg-neon mt-1.5 shrink-0 shadow-[0_0_8px_rgba(0,229,153,0.6)]"></span>
+                            Arquitetura Data Lakehouse (Azure/GCP)
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-1.5 h-1.5 rounded-full bg-neon mt-1.5 shrink-0 shadow-[0_0_8px_rgba(0,229,153,0.6)]"></span>
+                            Pipelines ETL/ELT Automatizados
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-1.5 h-1.5 rounded-full bg-neon mt-1.5 shrink-0 shadow-[0_0_8px_rgba(0,229,153,0.6)]"></span>
+                            Otimização de Consultas SQL
+                        </li>
+                    </ul>
+
+                    <a href="#contato" class="text-neon text-sm font-bold flex items-center gap-2 hover:gap-3 transition-all mt-auto">
+                        Solicitar Orçamento <i class="ph ph-arrow-right"></i>
+                    </a>
                 </div>
 
-                <div class="bg-surface border border-white/5 p-8 rounded-xl hover:border-neon/50 transition duration-300 group">
+                <div class="bg-surface border border-white/5 p-8 rounded-xl hover:border-neon/50 transition duration-300 group flex flex-col">
                     <div class="w-12 h-12 rounded bg-surfaceHighlight flex items-center justify-center mb-6 text-neon text-2xl group-hover:bg-neon group-hover:text-black transition">
                         <i class="ph ph-chart-bar"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 text-white">Power BI & Analytics</h3>
-                    <p class="text-textMuted text-sm mb-6">Criação de <span class="text-neon font-semibold">dashboards</span> e relatórios de alto impacto, incluindo a integração de modelos de <span class="text-neon font-semibold">Inteligência Artificial (IA)</span> para análise preditiva e suporte à decisão.</p>
+                    <h3 class="text-xl font-bold mb-2 text-white">Power BI & Analytics</h3>
+                    <p class="text-textMuted text-xs mb-6 h-10">Transformação de dados em decisões estratégicas visuais.</p>
+                    
+                    <ul class="space-y-3 text-textMuted text-sm mb-8 flex-grow">
+                        <li class="flex items-start gap-3">
+                            <span class="w-1.5 h-1.5 rounded-full bg-neon mt-1.5 shrink-0 shadow-[0_0_8px_rgba(0,229,153,0.6)]"></span>
+                            Dashboards Executivos Interativos
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-1.5 h-1.5 rounded-full bg-neon mt-1.5 shrink-0 shadow-[0_0_8px_rgba(0,229,153,0.6)]"></span>
+                            Datawarehouse e Modelagem de Dados
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-1.5 h-1.5 rounded-full bg-neon mt-1.5 shrink-0 shadow-[0_0_8px_rgba(0,229,153,0.6)]"></span>
+                            Integração com IA
+                        </li>
+                    </ul>
+
+                    <a href="#portfolio" class="text-neon text-sm font-bold flex items-center gap-2 hover:gap-3 transition-all mt-auto">
+                        Ver Exemplos <i class="ph ph-arrow-right"></i>
+                    </a>
                 </div>
 
-                <div class="bg-surface border border-white/5 p-8 rounded-xl hover:border-neon/50 transition duration-300 group">
+                <div class="bg-surface border border-white/5 p-8 rounded-xl hover:border-neon/50 transition duration-300 group flex flex-col">
                     <div class="w-12 h-12 rounded bg-surfaceHighlight flex items-center justify-center mb-6 text-neon text-2xl group-hover:bg-neon group-hover:text-black transition">
                         <i class="ph ph-graduation-cap"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 text-white">Treinamentos & Mentoria Técnica</h3>
-                    <p class="text-textMuted text-sm mb-6">Capacitação individual ou em equipe em <span class="text-neon font-semibold">Power BI</span>, Banco de dados e SQL, padrões de Engenharia de Dados. Ofereço <span class="text-neon font-semibold">treinamentos</span> online e in company (presencial) para o aprimoramento técnico do seu time.</p>
+                    <h3 class="text-xl font-bold mb-2 text-white">Mentoria & Treinamentos</h3>
+                    <p class="text-textMuted text-xs mb-6 h-10">Aceleração de carreira e capacitação de times técnicos.</p>
+                    
+                    <ul class="space-y-3 text-textMuted text-sm mb-8 flex-grow">
+                        <li class="flex items-start gap-3">
+                            <span class="w-1.5 h-1.5 rounded-full bg-neon mt-1.5 shrink-0 shadow-[0_0_8px_rgba(0,229,153,0.6)]"></span>
+                            SQL para Dados
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-1.5 h-1.5 rounded-full bg-neon mt-1.5 shrink-0 shadow-[0_0_8px_rgba(0,229,153,0.6)]"></span>
+                            Visualização de Dados com Power BI
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-1.5 h-1.5 rounded-full bg-neon mt-1.5 shrink-0 shadow-[0_0_8px_rgba(0,229,153,0.6)]"></span>
+                            Treinamentos In-Company e Online
+                        </li>
+                    </ul>
+
+                    <a href="#contato" class="text-neon text-sm font-bold flex items-center gap-2 hover:gap-3 transition-all mt-auto">
+                        Agendar Conversa <i class="ph ph-arrow-right"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <section id="portfolio" class="py-24">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
@@ -413,7 +472,7 @@
             </p>
 
             <div class="bg-surface border border-white/5 p-8 md:p-10 rounded-2xl shadow-2xl text-left">
-                <form action="https://formspree.io/f/seu-id-aqui" method="POST" class="space-y-6">
+                <form action="https://formspree.io/f/mqardgbj" method="POST" class="space-y-6">
                     <div class="grid md:grid-cols-2 gap-6">
                         <div class="space-y-2">
                             <label for="nome" class="text-sm font-medium text-white">Nome</label>
@@ -439,6 +498,23 @@
                         <i class="ph ph-paper-plane-right font-bold"></i> Enviar Mensagem
                     </button>
                 </form>
+            </div>
+            
+            <div style="margin-top: 40px; font-family: sans-serif;">
+                <p style="color: #94a3b8; font-size: 16px; margin-bottom: 8px;">
+                    Ou entre em contato diretamente:
+                </p>
+
+                <a href="mailto:contato@raphaelfranco.com" 
+                    style="display: inline-flex; align-items: center; text-decoration: none; color: #22c55e; transition: opacity 0.2s;">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 10px;">
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                    </svg>
+
+                    <span style="font-weight: 600; font-size: 18px; border-bottom: 2px solid #22c55e;">contato@raphaelfranco.com</span>
+                </a>
             </div>
         </div>
     </section>
