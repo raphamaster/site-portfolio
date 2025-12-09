@@ -1,6 +1,6 @@
 # hugo.toml
 
-baseURL = "https://raphaelfranco.dev/"
+baseURL = "https://raphamaster.github.io/site-portfolio/"
 languageCode = "pt-BR"
 title = "Raphael Franco | Data Engineer"
 theme = ""
