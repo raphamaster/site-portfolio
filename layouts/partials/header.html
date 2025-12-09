@@ -22,9 +22,6 @@
                         sans: ['Inter', 'sans-serif'],
                         mono: ['JetBrains Mono', 'monospace'],
                     },
-                    backgroundImage: {
-                        'grid-pattern': "linear-gradient(to right, #1e293b 1px, transparent 1px), linear-gradient(to bottom, #1e293b 1px, transparent 1px)",
-                    }
                 }
             }
         }
@@ -36,28 +33,45 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <style>
+        /* Estilos Globais e Efeitos Neon */
+        html { scroll-behavior: smooth; }
+        
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        }
+        
+        .neon-text {
+            color: #00E599;
+            text-shadow: 0 0 10px rgba(0, 229, 153, 0.4);
+        }
+    </style>
 </head>
-<body class="overflow-x-hidden relative bg-background text-slate-300">
+
+<body class="overflow-x-hidden relative bg-[#030712] text-slate-300 antialiased selection:bg-[#00E599] selection:text-black">
 
     <nav class="fixed w-full z-50 bg-[#030712]/90 backdrop-blur-md border-b border-white/5">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="font-bold text-xl tracking-tight flex items-center gap-1 font-mono">
-                <span class="neon-text"></span>{{ .Site.Params.logoTitle }}<span class="neon-text"></span>
+            <div class="font-bold text-xl tracking-tight flex items-center gap-1 font-mono text-white">
+                <span class="neon-text">&lt;</span>{{ .Site.Params.logoTitle }}<span class="neon-text">/&gt;</span>
             </div>
             
-            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-textMuted">
-                <a href="{{ site.Home.Permalink }}" class="hover:text-neon transition-colors">Home</a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+                <a href="{{ site.Home.Permalink }}" class="hover:text-[#00E599] transition-colors">Home</a>
                 
-                <a href="{{ site.Home.Permalink }}#sobre" class="hover:text-neon transition-colors">Sobre</a>
-                <a href="{{ site.Home.Permalink }}#servicos" class="hover:text-neon transition-colors">Serviços</a>
-                <a href="{{ site.Home.Permalink }}#portfolio" class="hover:text-neon transition-colors">Portfólio</a>
+                <a href="{{ site.Home.Permalink }}#sobre" class="hover:text-[#00E599] transition-colors">Sobre</a>
+                <a href="{{ site.Home.Permalink }}#servicos" class="hover:text-[#00E599] transition-colors">Serviços</a>
+                <a href="{{ site.Home.Permalink }}#portfolio" class="hover:text-[#00E599] transition-colors">Portfólio</a>
                 
-                <a href="{{ "blog/" | relURL }}" class="hover:text-neon transition-colors">Blog</a>
+                <a href="{{ "blog/" | relURL }}" class="hover:text-[#00E599] transition-colors">Blog</a>
                 
-                <a href="{{ site.Home.Permalink }}#contato" class="hover:text-neon transition-colors">Contato</a>
+                <a href="{{ site.Home.Permalink }}#contato" class="hover:text-[#00E599] transition-colors">Contato</a>
             </div>
 
-            <a href="{{ site.Home.Permalink }}#contato" class="hidden md:inline-flex px-6 py-2.5 rounded font-bold text-sm btn-primary">
+            <a href="{{ site.Home.Permalink }}#contato" class="hidden md:inline-flex px-6 py-2.5 rounded font-bold text-sm bg-[#00E599] text-black hover:bg-[#00c985] transition shadow-[0_0_15px_rgba(0,229,153,0.3)]">
                 Agendar Consultoria
             </a>
         </div>
