@@ -42,21 +42,25 @@
     <nav class="fixed w-full z-50 bg-[#030712]/90 backdrop-blur-md border-b border-white/5">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <div class="font-bold text-xl tracking-tight flex items-center gap-1 font-mono">
-                <span class="neon-text"></span>{{ .Site.Params.logoTitle }}<span class="neon-text"></span>
+                <span class="neon-text">&lt;</span>{{ .Site.Params.logoTitle }}<span class="neon-text">/&gt;</span>
             </div>
             
             <div class="hidden md:flex items-center gap-8 text-sm font-medium text-textMuted">
-                <a href="{{ "/" | relURL }}" class="hover:text-neon transition-colors">Home</a>
-                <a href="{{ "/#sobre" | relURL }}" class="hover:text-neon transition-colors">Sobre</a>
-                <a href="{{ "/#servicos" | relURL }}" class="hover:text-neon transition-colors">Serviços</a>
-                <a href="{{ "/#portfolio" | relURL }}" class="hover:text-neon transition-colors">Portfólio</a>
-                <a href="{{ "/#blog" | relURL }}" class="hover:text-neon transition-colors">Blog</a>
-                <a href="{{ "/#contato" | relURL }}" class="hover:text-neon transition-colors">Contato</a>
+                <a href="{{ site.Home.Permalink }}" class="hover:text-neon transition-colors">Home</a>
+                
+                <a href="{{ site.Home.Permalink }}#sobre" class="hover:text-neon transition-colors">Sobre</a>
+                <a href="{{ site.Home.Permalink }}#servicos" class="hover:text-neon transition-colors">Serviços</a>
+                <a href="{{ site.Home.Permalink }}#portfolio" class="hover:text-neon transition-colors">Portfólio</a>
+                
+                <a href="{{ "blog/" | relURL }}" class="hover:text-neon transition-colors">Blog</a>
+                
+                <a href="{{ site.Home.Permalink }}#contato" class="hover:text-neon transition-colors">Contato</a>
             </div>
 
-            <a href="#contato" class="hidden md:inline-flex px-6 py-2.5 rounded font-bold text-sm btn-primary">
+            <a href="{{ site.Home.Permalink }}#contato" class="hidden md:inline-flex px-6 py-2.5 rounded font-bold text-sm btn-primary">
                 Agendar Consultoria
             </a>
         </div>
     </nav>
+    
     <div id="content">
