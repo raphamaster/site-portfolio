@@ -5,7 +5,7 @@ enableRobotsTXT = true
 
 [params]
   description = "Portfólio de Engenharia de Dados e Business Intelligence."
-  logoTitle = "DataEngineer"
+  logoTitle = "Raphael Franco"
 
   # AUTOR DENTRO DE PARAMS (Formato Moderno)
   # Isso cria um objeto .Site.Params.author com campos name e email
