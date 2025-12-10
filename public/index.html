@@ -25,9 +25,6 @@
                         sans: ['Inter', 'sans-serif'],
                         mono: ['JetBrains Mono', 'monospace'],
                     },
-                    backgroundImage: {
-                        'grid-pattern': "linear-gradient(to right, #1e293b 1px, transparent 1px), linear-gradient(to bottom, #1e293b 1px, transparent 1px)",
-                    }
                 }
             }
         }
@@ -39,28 +36,45 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <style>
+         
+        html { scroll-behavior: smooth; }
+        
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        }
+        
+        .neon-text {
+            color: #00E599;
+            text-shadow: 0 0 10px rgba(0, 229, 153, 0.4);
+        }
+    </style>
 </head>
-<body class="overflow-x-hidden relative bg-background text-slate-300">
+
+<body class="overflow-x-hidden relative bg-[#030712] text-slate-300 antialiased selection:bg-[#00E599] selection:text-black">
 
     <nav class="fixed w-full z-50 bg-[#030712]/90 backdrop-blur-md border-b border-white/5">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="font-bold text-xl tracking-tight flex items-center gap-1 font-mono">
-                <span class="neon-text"></span>Raphael Franco<span class="neon-text"></span>
+            <div class="font-bold text-xl tracking-tight flex items-center gap-1 font-mono text-white">
+                <span class="neon-text">&lt;</span>Raphael Franco<span class="neon-text">/&gt;</span>
             </div>
             
-            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-textMuted">
-                <a href="http://localhost:1313/" class="hover:text-neon transition-colors">Home</a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+                <a href="http://localhost:1313/" class="hover:text-[#00E599] transition-colors">Home</a>
                 
-                <a href="http://localhost:1313/#sobre" class="hover:text-neon transition-colors">Sobre</a>
-                <a href="http://localhost:1313/#servicos" class="hover:text-neon transition-colors">Serviços</a>
-                <a href="http://localhost:1313/#portfolio" class="hover:text-neon transition-colors">Portfólio</a>
+                <a href="http://localhost:1313/#sobre" class="hover:text-[#00E599] transition-colors">Sobre</a>
+                <a href="http://localhost:1313/#servicos" class="hover:text-[#00E599] transition-colors">Serviços</a>
+                <a href="http://localhost:1313/#portfolio" class="hover:text-[#00E599] transition-colors">Portfólio</a>
                 
-                <a href="/blog/" class="hover:text-neon transition-colors">Blog</a>
+                <a href="/blog/" class="hover:text-[#00E599] transition-colors">Blog</a>
                 
-                <a href="http://localhost:1313/#contato" class="hover:text-neon transition-colors">Contato</a>
+                <a href="http://localhost:1313/#contato" class="hover:text-[#00E599] transition-colors">Contato</a>
             </div>
 
-            <a href="http://localhost:1313/#contato" class="hidden md:inline-flex px-6 py-2.5 rounded font-bold text-sm btn-primary">
+            <a href="http://localhost:1313/#contato" class="hidden md:inline-flex px-6 py-2.5 rounded font-bold text-sm bg-[#00E599] text-black hover:bg-[#00c985] transition shadow-[0_0_15px_rgba(0,229,153,0.3)]">
                 Agendar Consultoria
             </a>
         </div>
@@ -75,24 +89,24 @@
         <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
             
             <div class="lg:col-span-8 space-y-8 order-1 text-center lg:text-left">
-                <div class="inline-flex items-center px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-textMuted">
-                    <span class="w-2 h-2 rounded-full bg-neon animate-pulse mr-2"></span>
+                <div class="inline-flex items-center px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-[#94a3b8]">
+                    <span class="w-2 h-2 rounded-full bg-[#00E599] animate-pulse mr-2"></span>
                     Disponível para projetos de Engenharia de Dados & BI
                 </div>
 
                 <h1 class="text-5xl lg:text-7xl font-bold leading-tight text-white tracking-tight">
                     Engenharia de Dados <br class="hidden lg:block">
                     que <span class="neon-text">Escala</span>. <br>
-                    <span class="text-textMuted">Inteligência de Negócio</span> <br>
-                    que <span class="text-white decoration-neon decoration-4 underline-offset-4">Direciona</span>.
+                    <span class="text-[#94a3b8]">Inteligência de Negócio</span> <br>
+                    que <span class="text-white decoration-[#00E599] decoration-4 underline-offset-4">Direciona</span>.
                 </h1>
                 
-                <p class="text-lg text-textMuted max-w-2xl leading-relaxed mx-auto lg:mx-0">
+                <p class="text-lg text-[#94a3b8] max-w-2xl leading-relaxed mx-auto lg:mx-0">
                     Transformo complexidade técnica em clareza estratégica. Especialista em Banco de Dados, Pipelines e Visualização de Dados para empresas Data-Driven.
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
-                    <a href="http://localhost:1313/#portfolio" class="px-8 py-4 rounded font-bold btn-primary flex items-center justify-center gap-2">
+                    <a href="http://localhost:1313/#portfolio" class="px-8 py-4 rounded font-bold bg-[#00E599] text-black hover:bg-[#00c985] transition shadow-[0_0_20px_rgba(0,229,153,0.2)] flex items-center justify-center gap-2">
                         Ver Projetos <i class="ph ph-arrow-right font-bold"></i>
                     </a>
                     <a href="http://localhost:1313/#contato" class="px-8 py-4 rounded border border-white/20 text-white hover:bg-white/5 transition flex items-center justify-center gap-2 font-medium">
@@ -100,61 +114,54 @@
                     </a>
                 </div>
                 
-                <div class="pt-8 flex gap-12 border-t border-white/5 mt-4 justify-center lg:justify-start">
+                <div class="pt-8 flex gap-12 border-t border-white/5 mt-4 justify-center lg:justify-start flex-wrap">
                     <div>
                         <span class="block text-2xl font-bold neon-text">15+</span>
-                        <span class="text-xs text-textMuted">Anos XP</span>
+                        <span class="text-xs text-[#94a3b8]">Anos XP</span>
                     </div>
-                    
                     <div>
                         <span class="block text-2xl font-bold neon-text">Banco de Dados</span>
-                        <span class="text-xs text-textMuted">Especialista</span>
+                        <span class="text-xs text-[#94a3b8]">Especialista</span>
                     </div>
                     <div>
                         <span class="block text-2xl font-bold neon-text">Pipeline</span>
-                        <span class="text-xs text-textMuted">Desenvoldimento & Orquestração</span>
+                        <span class="text-xs text-[#94a3b8]">Desenvolvimento</span>
                     </div>
                     <div>
                         <span class="block text-2xl font-bold neon-text">Dataviz</span>
-                        <span class="text-xs text-textMuted">Visuação de dados</span>
+                        <span class="text-xs text-[#94a3b8]">Visualização</span>
                     </div>
                     <div>
                         <span class="block text-2xl font-bold neon-text">IA</span>
-                        <span class="text-xs text-textMuted">Automações e Agentes</span>
+                        <span class="text-xs text-[#94a3b8]">Automação</span>
                     </div>
                 </div>
             </div>
 
             <div class="lg:col-span-4 relative order-2 flex justify-center lg:justify-end">
                 <div class="relative w-80 h-80 sm:w-96 sm:h-96">
-                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 rounded-full bg-surface border border-white/10 flex items-center justify-center shadow-2xl shadow-neon/20 z-20">
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 rounded-full bg-[#0f172a] border border-white/10 flex items-center justify-center shadow-2xl shadow-[#00E599]/20 z-20">
                         <i class="ph ph-database text-4xl neon-text animate-pulse"></i>
                     </div>
                     
-                    <div class="glass-icon absolute top-10 left-1/2 -translate-x-1/2 w-14 h-14 rounded-xl flex items-center justify-center animate-[bounce_3s_infinite] z-10" title="Azure">
+                    <div class="glass-icon absolute top-10 left-1/2 -translate-x-1/2 w-14 h-14 rounded-xl flex items-center justify-center animate-[bounce_3s_infinite] z-10">
                         <i class="fab fa-microsoft text-2xl text-blue-400"></i>
                     </div>
-                    <div class="glass-icon absolute bottom-10 left-1/2 -translate-x-1/2 w-14 h-14 rounded-xl flex items-center justify-center animate-[bounce_4s_infinite] z-10" title="Power BI">
+                    <div class="glass-icon absolute bottom-10 left-1/2 -translate-x-1/2 w-14 h-14 rounded-xl flex items-center justify-center animate-[bounce_4s_infinite] z-10">
                         <i class="fas fa-chart-bar text-2xl text-yellow-500"></i>
                     </div>
-                    <div class="glass-icon absolute top-1/2 left-10 -translate-y-1/2 w-14 h-14 rounded-xl flex items-center justify-center animate-[bounce_5s_infinite] z-10" title="Python">
+                    <div class="glass-icon absolute top-1/2 left-10 -translate-y-1/2 w-14 h-14 rounded-xl flex items-center justify-center animate-[bounce_5s_infinite] z-10">
                         <i class="fab fa-python text-2xl text-blue-300"></i>
                     </div>
-                    <div class="glass-icon absolute top-1/2 right-10 -translate-y-1/2 w-14 h-14 rounded-xl flex items-center justify-center animate-[bounce_3.5s_infinite] z-10" title="Apache Spark">
+                    <div class="glass-icon absolute top-1/2 right-10 -translate-y-1/2 w-14 h-14 rounded-xl flex items-center justify-center animate-[bounce_3.5s_infinite] z-10">
                         <i class="fas fa-bolt text-2xl text-orange-500"></i>
                     </div>
 
-                    <div class="glass-icon absolute top-0 left-10 w-12 h-12 rounded-lg flex items-center justify-center animate-[bounce_6s_infinite] delay-75" title="Docker">
+                    <div class="glass-icon absolute top-0 left-10 w-12 h-12 rounded-lg flex items-center justify-center animate-[bounce_6s_infinite] delay-75">
                         <i class="fab fa-docker text-xl text-blue-500"></i>
                     </div>
-                    <div class="glass-icon absolute top-0 right-10 w-12 h-12 rounded-lg flex items-center justify-center animate-[bounce_4.5s_infinite] delay-100" title="Airflow">
+                    <div class="glass-icon absolute top-0 right-10 w-12 h-12 rounded-lg flex items-center justify-center animate-[bounce_4.5s_infinite] delay-100">
                         <i class="fas fa-wind text-xl text-slate-300"></i>
-                    </div>
-                    <div class="glass-icon absolute bottom-0 left-10 w-12 h-12 rounded-lg flex items-center justify-center animate-[bounce_5.5s_infinite] delay-150" title="SQL">
-                        <i class="fas fa-table text-xl text-green-400"></i>
-                    </div>
-                    <div class="glass-icon absolute bottom-0 right-10 w-12 h-12 rounded-lg flex items-center justify-center animate-[bounce_4s_infinite] delay-200" title="dbt">
-                        <i class="fas fa-cube text-xl text-orange-600"></i>
                     </div>
                     
                     <div class="absolute inset-16 border border-dashed border-white/5 rounded-full animate-[spin_20s_linear_infinite]"></div>
@@ -175,7 +182,7 @@
                         <div class="w-3 h-3 rounded-full bg-red-500"></div>
                         <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
                         <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                        <span class="ml-2 text-xs text-textMuted font-mono">bash — root@raphaelfranco</span>
+                        <span class="ml-2 text-xs text-[#94a3b8] font-mono">bash — root@raphaelfranco</span>
                     </div>
                     <div class="p-5 font-mono text-sm space-y-4 text-gray-300">
                         <div>
@@ -190,11 +197,11 @@
                         
                         <div class="pl-4 border-l border-white/10 ml-1">
                             <span class="text-[#a3e635]">"cloud"</span>: [<span class="text-[#60a5fa]">"Azure"</span>, <span class="text-[#60a5fa]">"GCP"</span>],<br>
-                            <span class="text-[#a3e635]">"code"</span>: <span class="text-[#e879f9]">"Python/SQL"</span><br>
+                            <span class="text-[#a3e635]">"code"</span>: <span class="text-[#e879f9]">"Python/SQL"</span>,<br>
                             <span class="text-[#a3e635]">"viz"</span>: <span class="text-[#e879f9]">"Power BI"</span>,<br>
-                            <span class="text-[#a3e635]">"pipeline"</span>: [<span class="text-[#60a5fa]">"n8n"</span>, <span class="text-[#60a5fa]">"Aiflow"</span>],<br>
-                            <span class="text-[#a3e635]">"database"</span>: [<span class="text-[#60a5fa]">"SQL Server"</span>, <span class="text-[#60a5fa]">"Postgres"</span>, <span class="text-[#60a5fa]">"MariaDB"</span>],<br>
-                            <span class="text-[#a3e635]">"nosql"</span>: <span class="text-[#e879f9]">"Mongodb"</span>,<br>
+                            <span class="text-[#a3e635]">"pipeline"</span>: [<span class="text-[#60a5fa]">"n8n"</span>, <span class="text-[#60a5fa]">"Airflow"</span>],<br>
+                            <span class="text-[#a3e635]">"database"</span>: [<span class="text-[#60a5fa]">"SQL Server"</span>, <span class="text-[#60a5fa]">"Postgres"</span>],<br>
+                            <span class="text-[#a3e635]">"nosql"</span>: <span class="text-[#e879f9]">"MongoDB"</span>,<br>
                             <span class="text-[#a3e635]">"version"</span>: <span class="text-[#e879f9]">"Git/GitHub"</span>
                         </div>
 
@@ -207,7 +214,7 @@
             </div>
 
             <div class="lg:col-span-7 pl-0 lg:pl-8">
-                <span class="neon-text font-mono text-sm mb-4 block tracking-wider">// Sobre mim</span>
+                <span class="text-[#00E599] font-mono text-sm mb-4 block tracking-wider">// Sobre mim</span>
                 
                 <h2 class="text-3xl md:text-5xl font-bold text-white mb-8 leading-tight">
                     Construindo a <span class="neon-text">infraestrutura de dados</span> que seu negócio precisa
@@ -215,44 +222,26 @@
 
                 <div class="flex flex-col sm:flex-row gap-6 mb-8 items-start">
                     <div class="flex-shrink-0 relative group">
-                        <div class="absolute -inset-0.5 bg-gradient-to-r from-neon to-blue-500 rounded-full blur opacity-30 group-hover:opacity-75 transition duration-500"></div>
+                        <div class="absolute -inset-0.5 bg-gradient-to-r from-[#00E599] to-blue-500 rounded-full blur opacity-30 group-hover:opacity-75 transition duration-500"></div>
                         <img src="https://media.licdn.com/dms/image/v2/D4D03AQHEDhFHUZ0aSw/profile-displayphoto-shrink_800_800/B4DZUbqDCEGkAc-/0/1739925762589?e=1766620800&amp;v=beta&amp;t=zmrl3hNfPST-VboG08YKeoPOlHUPf6N7bK4RFtknlXA" alt="Raphael Franco" class="relative w-24 h-24 rounded-full border-2 border-[#1e293b] object-cover">
                     </div>
                     
                     <div class="space-y-4">
                         <div class="flex gap-4 mb-2">
-                            <a href="https://linkedin.com/in/raphaelfranco" target="_blank" class="text-textMuted hover:text-neon transition transform hover:scale-110">
-                                <i class="ph ph-linkedin-logo text-2xl"></i>
-                            </a>
-                            <a href="https://github.com/raphamaster" target="_blank" class="text-textMuted hover:text-neon transition transform hover:scale-110">
-                                <i class="ph ph-github-logo text-2xl"></i>
-                            </a>
-                            <a href="https://www.instagram.com/raphael.rfranco/" target="_blank" class="text-textMuted hover:text-neon transition transform hover:scale-110">
-                                <i class="ph ph-instagram-logo text-2xl"></i>
-                            </a>
-                            <a href="https://www.youtube.com/@raphaelfranco" target="_blank" class="text-textMuted hover:text-neon transition transform hover:scale-110">
-                                <i class="ph ph-youtube-logo text-2xl"></i>
-                            </a>
-                            <a href="https://raphaelfranco.substack.com/" target="_blank" class="text-textMuted hover:text-neon transition transform hover:scale-110">
-                                <i class="ph ph-pen-nib text-2xl"></i>
-                            </a>
+                            <a href="https://linkedin.com/in/raphaelfranco" target="_blank" class="text-[#94a3b8] hover:text-[#00E599] transition transform hover:scale-110"><i class="ph ph-linkedin-logo text-2xl"></i></a>
+                            <a href="https://github.com/raphamaster" target="_blank" class="text-[#94a3b8] hover:text-[#00E599] transition transform hover:scale-110"><i class="ph ph-github-logo text-2xl"></i></a>
+                            <a href="https://www.instagram.com/raphael.rfranco/" target="_blank" class="text-[#94a3b8] hover:text-[#00E599] transition transform hover:scale-110"><i class="ph ph-instagram-logo text-2xl"></i></a>
+                            <a href="https://www.youtube.com/@raphaelfranco" target="_blank" class="text-[#94a3b8] hover:text-[#00E599] transition transform hover:scale-110"><i class="ph ph-youtube-logo text-2xl"></i></a>
                         </div>
 
-                        <div class="text-textMuted text-base leading-relaxed">
+                        <div class="text-[#94a3b8] text-base leading-relaxed">
                             <p class="mb-4">
                                 Sou <strong class="text-white">Raphael Franco</strong>. Especialista em Engenharia e arquitetura de dados. 
-                                Atuo na construção de pipelines de ETL/ELT e na <span class="text-white font-semibold">visualização estratégica</span> de dados, garantindo 
-                                que grandes volumes de informação sejam processados com segurança e apresentados com clareza para a tomada de decisão."
+                                Atuo na construção de pipelines de ETL/ELT e na <span class="text-white font-semibold">visualização estratégica</span> de dados.
                             </p>
                             <p>
-                                <span class="text-neon font-bold">Minha especialidade:</span> 
-                                
-                                Pipelines robustos (ETL/ELT), arquiteturas de <span class="text-white font-semibold">dados</span> em nuvem.
-
-                                
-                                Expertise em otimização de <span class="text-white font-semibold">Bancos de Dados</span> e na construção de Relatórios e Dashboards estratégicos, 
-                                incluindo a implementação de soluções de <span class="text-white font-semibold">Inteligência Artificial</span>.
-                                
+                                <span class="text-[#00E599] font-bold">Minha especialidade:</span> 
+                                Pipelines robustos, Cloud Data Architecture, otimização de Bancos de Dados e Dashboards com IA.
                             </p>
                         </div>
                     </div>
@@ -261,31 +250,13 @@
                 <div>
                     <h3 class="text-sm font-bold text-white mb-4 font-mono">Tech Stack</h3>
                     <div class="flex flex-wrap gap-3">
-                        <span class="px-4 py-2 rounded-full bg-[#0f172a] border border-white/10 text-white text-sm flex items-center gap-2 hover:border-neon transition hover:-translate-y-1">
-                            <i class="fab fa-linux text-white-400"></i> Linux
-                        </span>
-                        <span class="px-4 py-2 rounded-full bg-[#0f172a] border border-white/10 text-white text-sm flex items-center gap-2 hover:border-neon transition hover:-translate-y-1">
-                            <i class="fab fa-microsoft text-blue-400"></i> Azure
-                        </span>
-                        <span class="px-4 py-2 rounded-full bg-[#0f172a] border border-white/10 text-white text-sm flex items-center gap-2 hover:border-neon transition hover:-translate-y-1">
-                            <i class="fab fa-google text-grey-400"></i> GCP
-                        </span>
-                        <span class="px-4 py-2 rounded-full bg-[#0f172a] border border-white/10 text-white text-sm flex items-center gap-2 hover:border-neon transition hover:-translate-y-1">
-                            <i class="fab fa-docker text-blue-500"></i> Docker
-                        </span>
-                        <span class="px-4 py-2 rounded-full bg-[#0f172a] border border-white/10 text-white text-sm flex items-center gap-2 hover:border-neon transition hover:-translate-y-1">
-                            <i class="fas fa-database text-white"></i> SQL
-                        </span>
-                        <span class="px-4 py-2 rounded-full bg-[#0f172a] border border-white/10 text-white text-sm flex items-center gap-2 hover:border-neon transition hover:-translate-y-1">
-                            <i class="fab fa-python text-blue-300"></i> Python
-                        </span>                        
-                        <span class="px-4 py-2 rounded-full bg-[#0f172a] border border-white/10 text-white text-sm flex items-center gap-2 hover:border-neon transition hover:-translate-y-1">
-                            <i class="fas fa-chart-bar text-yellow-300"></i> Power BI
-                        </span>
-                        <span class="px-4 py-2 rounded-full bg-[#0f172a] border border-white/10 text-white text-sm flex items-center gap-2 hover:border-neon transition hover:-translate-y-1">
-                            <i class="ph ph-notebook text-orange-300"></i> Jupyter
-                        </span>                        
-                        
+                        <span class="px-4 py-2 rounded-full bg-[#0f172a] border border-white/10 text-white text-sm flex items-center gap-2 hover:border-[#00E599] transition hover:-translate-y-1"><i class="fab fa-linux"></i> Linux</span>
+                        <span class="px-4 py-2 rounded-full bg-[#0f172a] border border-white/10 text-white text-sm flex items-center gap-2 hover:border-[#00E599] transition hover:-translate-y-1"><i class="fab fa-microsoft text-blue-400"></i> Azure</span>
+                        <span class="px-4 py-2 rounded-full bg-[#0f172a] border border-white/10 text-white text-sm flex items-center gap-2 hover:border-[#00E599] transition hover:-translate-y-1"><i class="fab fa-google text-grey-400"></i> GCP</span>
+                        <span class="px-4 py-2 rounded-full bg-[#0f172a] border border-white/10 text-white text-sm flex items-center gap-2 hover:border-[#00E599] transition hover:-translate-y-1"><i class="fab fa-docker text-blue-500"></i> Docker</span>
+                        <span class="px-4 py-2 rounded-full bg-[#0f172a] border border-white/10 text-white text-sm flex items-center gap-2 hover:border-[#00E599] transition hover:-translate-y-1"><i class="fas fa-database text-white"></i> SQL</span>
+                        <span class="px-4 py-2 rounded-full bg-[#0f172a] border border-white/10 text-white text-sm flex items-center gap-2 hover:border-[#00E599] transition hover:-translate-y-1"><i class="fab fa-python text-blue-300"></i> Python</span>
+                        <span class="px-4 py-2 rounded-full bg-[#0f172a] border border-white/10 text-white text-sm flex items-center gap-2 hover:border-[#00E599] transition hover:-translate-y-1"><i class="fas fa-chart-bar text-yellow-300"></i> Power BI</span>
                     </div>
                 </div>
             </div>
@@ -295,91 +266,51 @@
     <section id="servicos" class="py-24">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
-                <span class="neon-text font-mono text-sm mb-2 block">// Soluções</span>
+                <span class="text-[#00E599] font-mono text-sm mb-2 block">// Soluções</span>
                 <h2 class="text-3xl md:text-4xl font-bold text-white">Como posso <span class="neon-text">ajudar você</span></h2>
             </div>
 
             <div class="grid md:grid-cols-3 gap-6">
-                
-                <div class="bg-surface border border-white/5 p-8 rounded-xl hover:border-neon/50 transition duration-300 group flex flex-col">
-                    <div class="w-12 h-12 rounded bg-surfaceHighlight flex items-center justify-center mb-6 text-neon text-2xl group-hover:bg-neon group-hover:text-black transition">
+                <div class="bg-[#0f172a] border border-white/5 p-8 rounded-xl hover:border-[#00E599]/50 transition duration-300 group flex flex-col">
+                    <div class="w-12 h-12 rounded bg-[#1e293b] flex items-center justify-center mb-6 text-[#00E599] text-2xl group-hover:bg-[#00E599] group-hover:text-black transition">
                         <i class="ph ph-cloud"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-2 text-white">Engenharia de Dados</h3>
-                    <p class="text-textMuted text-xs mb-6 h-10">Construção de infraestrutura robusta e escalável na nuvem.</p>
-                    
-                    <ul class="space-y-3 text-textMuted text-sm mb-8 flex-grow">
-                        <li class="flex items-start gap-3">
-                            <span class="w-1.5 h-1.5 rounded-full bg-neon mt-1.5 shrink-0 shadow-[0_0_8px_rgba(0,229,153,0.6)]"></span>
-                            Arquitetura Data Lakehouse (Azure/GCP)
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="w-1.5 h-1.5 rounded-full bg-neon mt-1.5 shrink-0 shadow-[0_0_8px_rgba(0,229,153,0.6)]"></span>
-                            Pipelines ETL/ELT Automatizados
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="w-1.5 h-1.5 rounded-full bg-neon mt-1.5 shrink-0 shadow-[0_0_8px_rgba(0,229,153,0.6)]"></span>
-                            Otimização de Consultas SQL
-                        </li>
+                    <p class="text-[#94a3b8] text-xs mb-6 h-10">Construção de infraestrutura robusta e escalável na nuvem.</p>
+                    <ul class="space-y-3 text-[#94a3b8] text-sm mb-8 flex-grow">
+                        <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-[#00E599] mt-1.5 shrink-0 shadow-[0_0_8px_rgba(0,229,153,0.6)]"></span>Arquitetura Data Lakehouse</li>
+                        <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-[#00E599] mt-1.5 shrink-0 shadow-[0_0_8px_rgba(0,229,153,0.6)]"></span>Pipelines ETL/ELT Automatizados</li>
+                        <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-[#00E599] mt-1.5 shrink-0 shadow-[0_0_8px_rgba(0,229,153,0.6)]"></span>Otimização de Consultas SQL</li>
                     </ul>
-
-                    <a href="#contato" class="text-neon text-sm font-bold flex items-center gap-2 hover:gap-3 transition-all mt-auto">
-                        Solicitar Orçamento <i class="ph ph-arrow-right"></i>
-                    </a>
+                    <a href="#contato" class="text-[#00E599] text-sm font-bold flex items-center gap-2 hover:gap-3 transition-all mt-auto">Solicitar Orçamento <i class="ph ph-arrow-right"></i></a>
                 </div>
 
-                <div class="bg-surface border border-white/5 p-8 rounded-xl hover:border-neon/50 transition duration-300 group flex flex-col">
-                    <div class="w-12 h-12 rounded bg-surfaceHighlight flex items-center justify-center mb-6 text-neon text-2xl group-hover:bg-neon group-hover:text-black transition">
+                <div class="bg-[#0f172a] border border-white/5 p-8 rounded-xl hover:border-[#00E599]/50 transition duration-300 group flex flex-col">
+                    <div class="w-12 h-12 rounded bg-[#1e293b] flex items-center justify-center mb-6 text-[#00E599] text-2xl group-hover:bg-[#00E599] group-hover:text-black transition">
                         <i class="ph ph-chart-bar"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-2 text-white">Power BI & Analytics</h3>
-                    <p class="text-textMuted text-xs mb-6 h-10">Transformação de dados em decisões estratégicas visuais.</p>
-                    
-                    <ul class="space-y-3 text-textMuted text-sm mb-8 flex-grow">
-                        <li class="flex items-start gap-3">
-                            <span class="w-1.5 h-1.5 rounded-full bg-neon mt-1.5 shrink-0 shadow-[0_0_8px_rgba(0,229,153,0.6)]"></span>
-                            Dashboards Executivos Interativos
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="w-1.5 h-1.5 rounded-full bg-neon mt-1.5 shrink-0 shadow-[0_0_8px_rgba(0,229,153,0.6)]"></span>
-                            Datawarehouse e Modelagem de Dados
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="w-1.5 h-1.5 rounded-full bg-neon mt-1.5 shrink-0 shadow-[0_0_8px_rgba(0,229,153,0.6)]"></span>
-                            Integração com IA
-                        </li>
+                    <p class="text-[#94a3b8] text-xs mb-6 h-10">Transformação de dados em decisões estratégicas visuais.</p>
+                    <ul class="space-y-3 text-[#94a3b8] text-sm mb-8 flex-grow">
+                        <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-[#00E599] mt-1.5 shrink-0"></span>Dashboards Executivos</li>
+                        <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-[#00E599] mt-1.5 shrink-0"></span>Datawarehouse e Modelagem</li>
+                        <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-[#00E599] mt-1.5 shrink-0"></span>Integração com IA</li>
                     </ul>
-
-                    <a href="#portfolio" class="text-neon text-sm font-bold flex items-center gap-2 hover:gap-3 transition-all mt-auto">
-                        Ver Exemplos <i class="ph ph-arrow-right"></i>
-                    </a>
+                    <a href="#portfolio" class="text-[#00E599] text-sm font-bold flex items-center gap-2 hover:gap-3 transition-all mt-auto">Ver Exemplos <i class="ph ph-arrow-right"></i></a>
                 </div>
 
-                <div class="bg-surface border border-white/5 p-8 rounded-xl hover:border-neon/50 transition duration-300 group flex flex-col">
-                    <div class="w-12 h-12 rounded bg-surfaceHighlight flex items-center justify-center mb-6 text-neon text-2xl group-hover:bg-neon group-hover:text-black transition">
+                <div class="bg-[#0f172a] border border-white/5 p-8 rounded-xl hover:border-[#00E599]/50 transition duration-300 group flex flex-col">
+                    <div class="w-12 h-12 rounded bg-[#1e293b] flex items-center justify-center mb-6 text-[#00E599] text-2xl group-hover:bg-[#00E599] group-hover:text-black transition">
                         <i class="ph ph-graduation-cap"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-2 text-white">Mentoria & Treinamentos</h3>
-                    <p class="text-textMuted text-xs mb-6 h-10">Aceleração de carreira e capacitação de times técnicos.</p>
-                    
-                    <ul class="space-y-3 text-textMuted text-sm mb-8 flex-grow">
-                        <li class="flex items-start gap-3">
-                            <span class="w-1.5 h-1.5 rounded-full bg-neon mt-1.5 shrink-0 shadow-[0_0_8px_rgba(0,229,153,0.6)]"></span>
-                            SQL para Dados
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="w-1.5 h-1.5 rounded-full bg-neon mt-1.5 shrink-0 shadow-[0_0_8px_rgba(0,229,153,0.6)]"></span>
-                            Visualização de Dados com Power BI
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="w-1.5 h-1.5 rounded-full bg-neon mt-1.5 shrink-0 shadow-[0_0_8px_rgba(0,229,153,0.6)]"></span>
-                            Treinamentos In-Company e Online
-                        </li>
+                    <p class="text-[#94a3b8] text-xs mb-6 h-10">Aceleração de carreira e capacitação de times técnicos.</p>
+                    <ul class="space-y-3 text-[#94a3b8] text-sm mb-8 flex-grow">
+                        <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-[#00E599] mt-1.5 shrink-0"></span>SQL para Dados</li>
+                        <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-[#00E599] mt-1.5 shrink-0"></span>Visualização de Dados com Power BI</li>
+                        <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-[#00E599] mt-1.5 shrink-0"></span>Treinamentos In-Company</li>
                     </ul>
-
-                    <a href="#contato" class="text-neon text-sm font-bold flex items-center gap-2 hover:gap-3 transition-all mt-auto">
-                        Agendar Conversa <i class="ph ph-arrow-right"></i>
-                    </a>
+                    <a href="#contato" class="text-[#00E599] text-sm font-bold flex items-center gap-2 hover:gap-3 transition-all mt-auto">Agendar Conversa <i class="ph ph-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -388,81 +319,72 @@
     <section id="portfolio" class="py-24">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
-                <span class="neon-text font-mono text-sm mb-2 block">// Portfólio</span>
+                <span class="text-[#00E599] font-mono text-sm mb-2 block">// Portfólio</span>
                 <h2 class="text-3xl md:text-4xl font-bold text-white">Projetos em <span class="neon-text">Destaque</span></h2>  
                 <div class="text-right">
-                <a href="/projects/" class="hidden md:inline-flex text-neon items-center gap-2 text-sm font-bold hover:gap-3 transition-all">
-                    Ver todos os projetos <i class="ph ph-arrow-right"></i>
-                </a>
-            </div>                
-
+                    <a href="/projects/" class="hidden md:inline-flex text-[#00E599] items-center gap-2 text-sm font-bold hover:gap-3 transition-all">
+                        Ver todos os projetos <i class="ph ph-arrow-right"></i>
+                    </a>
+                </div>
             </div>
-            
-            
 
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="md:col-span-2 bg-surface rounded-xl overflow-hidden border border-white/5 group">
+                <div class="md:col-span-2 bg-[#0f172a] rounded-xl overflow-hidden border border-white/5 group">
                     <div class="grid md:grid-cols-2">
                         <div class="h-64 md:h-auto relative overflow-hidden">
                             <img src="http://localhost:1313//img/projects/mcp-automotivo.png" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Data Lake">
-                            <div class="absolute top-4 left-4 bg-neon text-black text-xs font-bold px-3 py-1 rounded-full">Destaque</div>
+                            <div class="absolute top-4 left-4 bg-[#00E599] text-black text-xs font-bold px-3 py-1 rounded-full">Destaque</div>
                         </div>
                         <div class="p-8 flex flex-col justify-center">
                             <h3 class="text-2xl font-bold text-white mb-2">MCP – Sistema de Análise de Dados Automotivos</h3>
-                            <p class="text-textMuted text-sm mb-6">Este é um projeto MCP (Model Context Protocol) que demonstra a integração entre um modelo de IA generativa (Google Gemini) e um banco de dados MariaDB, permitindo realizar análises de dados usando linguagem natural.</p>
-                            <div class="flex gap-2 mb-6">
-                                <span class="px-3 py-1 bg-surfaceHighlight rounded-full text-xs text-white">Docker</span>
-                                <span class="px-3 py-1 bg-surfaceHighlight rounded-full text-xs text-white">Python</span>
-                                <span class="px-3 py-1 bg-surfaceHighlight rounded-full text-xs text-white">SQL</span>
-                                <span class="px-3 py-1 bg-surfaceHighlight rounded-full text-xs text-white">LLM - Google Gemini</span>
+                            <p class="text-[#94a3b8] text-sm mb-6">Integração entre IA Generativa (Google Gemini) e banco de dados MariaDB.</p>
+                            <div class="flex gap-2 mb-6 flex-wrap">
+                                <span class="px-3 py-1 bg-[#1e293b] rounded-full text-xs text-white">Docker</span>
+                                <span class="px-3 py-1 bg-[#1e293b] rounded-full text-xs text-white">Python</span>
+                                <span class="px-3 py-1 bg-[#1e293b] rounded-full text-xs text-white">SQL</span>
+                                <span class="px-3 py-1 bg-[#1e293b] rounded-full text-xs text-white">Google Gemini</span>
                             </div>
                             <div class="flex gap-4">
-                                <a href="/projects/mcp-automotivo/" class="border border-white/20 text-white px-4 py-2 rounded text-sm hover:border-neon hover:text-neon transition flex items-center gap-2"><i class="ph ph-arrow-square-out"></i> Ver Case</a>
-                                <a href="https://github.com/raphamaster/mcp-automotivo" target="_blank" class="text-textMuted hover:text-white flex items-center gap-2 text-sm"><i class="ph ph-github-logo"></i> GitHub</a>
+                                <a href="/projects/mcp-automotivo/" class="border border-white/20 text-white px-4 py-2 rounded text-sm hover:border-[#00E599] hover:text-[#00E599] transition flex items-center gap-2"><i class="ph ph-arrow-square-out"></i> Ver Case</a>
+                                <a href="https://github.com/raphamaster/mcp-automotivo" target="_blank" class="text-[#94a3b8] hover:text-white flex items-center gap-2 text-sm"><i class="ph ph-github-logo"></i> GitHub</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-surface rounded-xl overflow-hidden border border-white/5 group flex flex-col">
+                <div class="bg-[#0f172a] rounded-xl overflow-hidden border border-white/5 group flex flex-col">
                     <div class="h-48 relative overflow-hidden">
                         <img src="https://raw.githubusercontent.com/raphamaster/fires-risk-monitor/refs/heads/main/reports/screens/Screenshot_55.png" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Dashboard">
                     </div>
                     <div class="p-6 flex-grow flex flex-col">
-                        <h3 class="text-xl font-bold text-white mb-2">Fires Risk Monitor (INPE + Open-Meteo → MongoDB → Parquet → Power BI)</h3>
-                        <p class="text-textMuted text-sm mb-4">Pipeline de dados para monitorar focos de queimadas e riscos associados ao clima</p>
-                        <div class="flex gap-2 mb-6">
-                            <span class="px-3 py-1 bg-surfaceHighlight rounded-full text-xs text-white">Python</span>                            
-                            <span class="px-3 py-1 bg-surfaceHighlight rounded-full text-xs text-white">Parquet</span>
-                            <span class="px-3 py-1 bg-surfaceHighlight rounded-full text-xs text-white">SQL</span>
-                            <span class="px-3 py-1 bg-surfaceHighlight rounded-full text-xs text-white">MongoDB</span>                            
-                            <span class="px-3 py-1 bg-surfaceHighlight rounded-full text-xs text-white">Power BI</span>
-                            
+                        <h3 class="text-xl font-bold text-white mb-2">Fires Risk Monitor</h3>
+                        <p class="text-[#94a3b8] text-sm mb-4">Pipeline para monitorar focos de queimadas e riscos climáticos.</p>
+                        <div class="flex gap-2 mb-6 flex-wrap">
+                            <span class="px-3 py-1 bg-[#1e293b] rounded-full text-xs text-white">Python</span>
+                            <span class="px-3 py-1 bg-[#1e293b] rounded-full text-xs text-white">MongoDB</span>
+                            <span class="px-3 py-1 bg-[#1e293b] rounded-full text-xs text-white">Power BI</span>
                         </div>
                         <div class="mt-auto flex gap-4">
-                            <a href="/projects/fires-risk/" class="border border-white/20 text-white px-4 py-2 rounded text-sm hover:border-neon hover:text-neon transition flex items-center gap-2"><i class="ph ph-arrow-square-out"></i> Ver Case</a>
-                            <a href="https://github.com/raphamaster/fires-risk-monitor" target="_blank" class="text-textMuted hover:text-white flex items-center gap-2 text-sm"><i class="ph ph-github-logo"></i> GitHub</a>
+                            <a href="/projects/fires-risk/" class="border border-white/20 text-white px-4 py-2 rounded text-sm hover:border-[#00E599] hover:text-[#00E599] transition flex items-center gap-2"><i class="ph ph-arrow-square-out"></i> Ver Case</a>
+                            <a href="https://github.com/raphamaster/fires-risk-monitor" target="_blank" class="text-[#94a3b8] hover:text-white flex items-center gap-2 text-sm"><i class="ph ph-github-logo"></i> GitHub</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-surface rounded-xl overflow-hidden border border-white/5 group flex flex-col">
+                <div class="bg-[#0f172a] rounded-xl overflow-hidden border border-white/5 group flex flex-col">
                     <div class="h-48 relative overflow-hidden">
-                        <img src="https://raw.githubusercontent.com/raphamaster/github_radar/main/powerbi/screenshots/Screenshot_4.png" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="ML">
+                        <img src="https://raw.githubusercontent.com/raphamaster/github_radar/main/powerbi/screenshots/Screenshot_4.png" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="GitHub Radar">
                     </div>
                     <div class="p-6 flex-grow flex flex-col">
                         <h3 class="text-xl font-bold text-white mb-2">GitHub Radar</h3>
-                        <p class="text-textMuted text-sm mb-4">Dashboard analítico para inspeção de repositórios GitHub (atividade, concentração/“bus factor”, processo/qualidade e linguagens). O projeto coleta dados via scripts Python (etl/), gera CSVs em out/ e carrega tudo em um relatório Power BI (template .pbit).</p>
-                        <div class="flex gap-2 mb-6">
-                            <span class="px-3 py-1 bg-surfaceHighlight rounded-full text-xs text-white">Python</span>                            
-                            <span class="px-3 py-1 bg-surfaceHighlight rounded-full text-xs text-white">API do GitHub</span>
-                            <span class="px-3 py-1 bg-surfaceHighlight rounded-full text-xs text-white">Figma</span>
-                            <span class="px-3 py-1 bg-surfaceHighlight rounded-full text-xs text-white">Power BI</span>
-                             
+                        <p class="text-[#94a3b8] text-sm mb-4">Dashboard analítico para inspeção de repositórios GitHub.</p>
+                        <div class="flex gap-2 mb-6 flex-wrap">
+                            <span class="px-3 py-1 bg-[#1e293b] rounded-full text-xs text-white">API GitHub</span>
+                            <span class="px-3 py-1 bg-[#1e293b] rounded-full text-xs text-white">Power BI</span>
                         </div>
                         <div class="mt-auto flex gap-4">
-                            <a href="/projects/github-radar/" class="border border-white/20 text-white px-4 py-2 rounded text-sm hover:border-neon hover:text-neon transition flex items-center gap-2"><i class="ph ph-arrow-square-out"></i> Ver Case</a>
-                            <a href="https://github.com/raphamaster/github_radar" target="_blank" class="text-textMuted hover:text-white flex items-center gap-2 text-sm"><i class="ph ph-github-logo"></i> GitHub</a>
+                            <a href="/projects/github-radar/" class="border border-white/20 text-white px-4 py-2 rounded text-sm hover:border-[#00E599] hover:text-[#00E599] transition flex items-center gap-2"><i class="ph ph-arrow-square-out"></i> Ver Case</a>
+                            <a href="https://github.com/raphamaster/github_radar" target="_blank" class="text-[#94a3b8] hover:text-white flex items-center gap-2 text-sm"><i class="ph ph-github-logo"></i> GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -471,175 +393,162 @@
     </section>
 
     <section id="blog" class="py-24 border-t border-white/5">
-    <div class="max-w-7xl mx-auto px-6">
-        <div class="flex justify-between items-end mb-12">
-            <div>
-                <span class="neon-text font-mono text-sm mb-2 block">// Blog</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-white">Artigos <span class="neon-text">Recentes</span></h2>
-                <p class="text-textMuted mt-2">Compartilho conhecimento sobre engenharia de dados e melhores práticas.</p>
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <span class="neon-text font-mono text-sm mb-2 block">// Blog</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Artigos <span class="neon-text">Recentes</span></h2>
+                    <p class="text-textMuted mt-2">Compartilho conhecimento sobre engenharia de dados e melhores práticas.</p>
+                </div>
+                <a href="/blog/" class="hidden md:flex text-neon items-center gap-2 text-sm font-bold hover:gap-3 transition-all">
+                    Ver todos os artigos <i class="ph ph-arrow-right"></i>
+                </a>
             </div>
-            <a href="/blog/" class="hidden md:flex text-neon items-center gap-2 text-sm font-bold hover:gap-3 transition-all">
-                Ver todos os artigos <i class="ph ph-arrow-right"></i>
-            </a>
-        </div>
 
-        <div class="grid md:grid-cols-3 gap-6">
-            
-            
+            <div class="grid md:grid-cols-3 gap-6">
                 
-                <a href="http://localhost:1313/blog/google_ai_studio/" class="bg-surface border border-white/5 p-6 rounded-xl hover:border-neon/50 transition cursor-pointer group flex flex-col justify-between">
-                    <div>
-                        <div class="flex gap-3 text-xs mb-4">
-                            
+                
+                    
+                    <a href="http://localhost:1313/blog/google_ai_studio/" class="bg-surface border border-white/5 p-6 rounded-xl hover:border-neon/50 transition cursor-pointer group flex flex-col justify-between">
+                        <div>
+                            <div class="flex gap-3 text-xs mb-4">
                                 
-                                    <span class="bg-surfaceHighlight px-2 py-1 rounded font-mono text-white text-xs">
-                                        IA
-                                    </span>
+                                    
+                                        <span class="bg-surfaceHighlight px-2 py-1 rounded font-mono text-white text-xs">
+                                            IA
+                                        </span>
+                                    
                                 
+                                
+                                    <span class="text-textMuted flex items-center gap-1 text-xs"><i class="ph ph-clock"></i> 8 min</span>
+                                
+                            </div>
                             
+                            <h3 class="text-lg font-bold text-white mb-3 group-hover:text-neon transition">MCP com Google AI Studio</h3>
                             
-                                <span class="text-textMuted flex items-center gap-1 text-xs"><i class="ph ph-clock"></i> 8 min</span>
-                            
+                            <p class="text-textMuted text-sm mb-4 line-clamp-2">
+                                
+                                    Como gerar sua chave de API no Google AI Studio para usar o Gemini nos seus projetos
+                                
+                            </p>
                         </div>
                         
-                        <h3 class="text-lg font-bold text-white mb-3 group-hover:text-neon transition">MCP com Google AI Studio</h3>
-                        
-                        <p class="text-textMuted text-sm mb-4 line-clamp-2">
-                            
-                                Como gerar sua chave de API no Google AI Studio para usar o Gemini nos seus projetos
-                            
-                        </p>
-                    </div>
+                        <div class="flex justify-between items-center pt-4 border-t border-white/5 mt-auto">
+                            <span class="text-xs text-textMuted">01 Dec 2025</span>
+                            <span class="text-neon text-xs font-bold flex items-center gap-1 group-hover:gap-2 transition-all">Ler mais <i class="ph ph-arrow-right"></i></span>
+                        </div>
+                    </a>
                     
-                    <div class="flex justify-between items-center pt-4 border-t border-white/5 mt-auto">
-                        <span class="text-xs text-textMuted">01 Dec 2025</span>
-                        <span class="text-neon text-xs font-bold flex items-center gap-1 group-hover:gap-2 transition-all">Ler mais <i class="ph ph-arrow-right"></i></span>
-                    </div>
-                </a>
-                
-                <a href="http://localhost:1313/blog/agro_dados/" class="bg-surface border border-white/5 p-6 rounded-xl hover:border-neon/50 transition cursor-pointer group flex flex-col justify-between">
-                    <div>
-                        <div class="flex gap-3 text-xs mb-4">
-                            
+                    <a href="http://localhost:1313/blog/agro_dados/" class="bg-surface border border-white/5 p-6 rounded-xl hover:border-neon/50 transition cursor-pointer group flex flex-col justify-between">
+                        <div>
+                            <div class="flex gap-3 text-xs mb-4">
                                 
-                                    <span class="bg-surfaceHighlight px-2 py-1 rounded font-mono text-white text-xs">
-                                        IA
-                                    </span>
+                                    
+                                        <span class="bg-surfaceHighlight px-2 py-1 rounded font-mono text-white text-xs">
+                                            IA
+                                        </span>
+                                    
                                 
+                                
+                                    <span class="text-textMuted flex items-center gap-1 text-xs"><i class="ph ph-clock"></i> 8 min</span>
+                                
+                            </div>
                             
+                            <h3 class="text-lg font-bold text-white mb-3 group-hover:text-neon transition">O Agro é Tech: 3 Lições que os Dados me Ensinaram sobre Commodities</h3>
                             
-                                <span class="text-textMuted flex items-center gap-1 text-xs"><i class="ph ph-clock"></i> 8 min</span>
-                            
+                            <p class="text-textMuted text-sm mb-4 line-clamp-2">
+                                
+                                    3 Lições que os Dados me Ensinaram sobre Commodities.
+                                
+                            </p>
                         </div>
                         
-                        <h3 class="text-lg font-bold text-white mb-3 group-hover:text-neon transition">O Agro é Tech: 3 Lições que os Dados me Ensinaram sobre Commodities</h3>
-                        
-                        <p class="text-textMuted text-sm mb-4 line-clamp-2">
-                            
-                                3 Lições que os Dados me Ensinaram sobre Commodities.
-                            
-                        </p>
-                    </div>
+                        <div class="flex justify-between items-center pt-4 border-t border-white/5 mt-auto">
+                            <span class="text-xs text-textMuted">17 Nov 2025</span>
+                            <span class="text-neon text-xs font-bold flex items-center gap-1 group-hover:gap-2 transition-all">Ler mais <i class="ph ph-arrow-right"></i></span>
+                        </div>
+                    </a>
                     
-                    <div class="flex justify-between items-center pt-4 border-t border-white/5 mt-auto">
-                        <span class="text-xs text-textMuted">17 Nov 2025</span>
-                        <span class="text-neon text-xs font-bold flex items-center gap-1 group-hover:gap-2 transition-all">Ler mais <i class="ph ph-arrow-right"></i></span>
-                    </div>
-                </a>
-                
-                <a href="http://localhost:1313/blog/pizza-redes/" class="bg-surface border border-white/5 p-6 rounded-xl hover:border-neon/50 transition cursor-pointer group flex flex-col justify-between">
-                    <div>
-                        <div class="flex gap-3 text-xs mb-4">
-                            
+                    <a href="http://localhost:1313/blog/pizza-redes/" class="bg-surface border border-white/5 p-6 rounded-xl hover:border-neon/50 transition cursor-pointer group flex flex-col justify-between">
+                        <div>
+                            <div class="flex gap-3 text-xs mb-4">
                                 
-                                    <span class="bg-surfaceHighlight px-2 py-1 rounded font-mono text-white text-xs">
-                                        Carreira
-                                    </span>
+                                    
+                                        <span class="bg-surfaceHighlight px-2 py-1 rounded font-mono text-white text-xs">
+                                            Carreira
+                                        </span>
+                                    
                                 
+                                
+                                    <span class="text-textMuted flex items-center gap-1 text-xs"><i class="ph ph-clock"></i> 8 min</span>
+                                
+                            </div>
                             
+                            <h3 class="text-lg font-bold text-white mb-3 group-hover:text-neon transition">Pizza com sabor de Redes e Banco de Dados</h3>
                             
-                                <span class="text-textMuted flex items-center gap-1 text-xs"><i class="ph ph-clock"></i> 8 min</span>
-                            
+                            <p class="text-textMuted text-sm mb-4 line-clamp-2">
+                                
+                                    Como “salvei” a pizzaria… e ganhei um refrigerante 😅
+                                
+                            </p>
                         </div>
                         
-                        <h3 class="text-lg font-bold text-white mb-3 group-hover:text-neon transition">Pizza com sabor de Redes e Banco de Dados</h3>
-                        
-                        <p class="text-textMuted text-sm mb-4 line-clamp-2">
-                            
-                                Como “salvei” a pizzaria… e ganhei um refrigerante 😅
-                            
-                        </p>
-                    </div>
+                        <div class="flex justify-between items-center pt-4 border-t border-white/5 mt-auto">
+                            <span class="text-xs text-textMuted">12 Nov 2024</span>
+                            <span class="text-neon text-xs font-bold flex items-center gap-1 group-hover:gap-2 transition-all">Ler mais <i class="ph ph-arrow-right"></i></span>
+                        </div>
+                    </a>
                     
-                    <div class="flex justify-between items-center pt-4 border-t border-white/5 mt-auto">
-                        <span class="text-xs text-textMuted">12 Nov 2024</span>
-                        <span class="text-neon text-xs font-bold flex items-center gap-1 group-hover:gap-2 transition-all">Ler mais <i class="ph ph-arrow-right"></i></span>
-                    </div>
-                </a>
                 
-            
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-    <section id="contato" class="py-24 bg-surface/30">
+    <section id="contato" class="py-24 bg-[#0f172a]/30">
         <div class="max-w-3xl mx-auto px-6 text-center">
-            <span class="text-neon font-mono text-sm mb-2 block uppercase tracking-wider">//Contato</span>
-            <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">
-                Vamos <span class="neon-text">Conversar</span>
-            </h2>
-            <p class="text-textMuted mb-12 max-w-xl mx-auto">
-                Tem um projeto em mente ou precisa de consultoria em dados? Entre em contato e vamos transformar seus dados em resultados.
+            <span class="text-[#00E599] font-mono text-sm mb-2 block uppercase tracking-wider">//Contato</span>
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Vamos <span class="neon-text">Conversar</span></h2>
+            <p class="text-[#94a3b8] mb-12 max-w-xl mx-auto">
+                Tem um projeto em mente ou precisa de consultoria em dados?
             </p>
 
-            <div class="bg-surface border border-white/5 p-8 md:p-10 rounded-2xl shadow-2xl text-left">
+            <div class="bg-[#0f172a] border border-white/5 p-8 md:p-10 rounded-2xl shadow-2xl text-left">
                 <form action="https://formspree.io/f/mqardgbj" method="POST" class="space-y-6">
                     <div class="grid md:grid-cols-2 gap-6">
                         <div class="space-y-2">
                             <label for="nome" class="text-sm font-medium text-white">Nome</label>
-                            <input type="text" id="nome" name="name" placeholder="Seu nome" class="w-full px-4 py-3 rounded-lg form-input" required>
+                            <input type="text" id="nome" name="name" placeholder="Seu nome" class="w-full px-4 py-3 rounded-lg bg-[#1e293b] border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-[#00E599] focus:ring-1 focus:ring-[#00E599]" required>
                         </div>
                         <div class="space-y-2">
                             <label for="email" class="text-sm font-medium text-white">Email</label>
-                            <input type="email" id="email" name="email" placeholder="seu@email.com" class="w-full px-4 py-3 rounded-lg form-input" required>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" class="w-full px-4 py-3 rounded-lg bg-[#1e293b] border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-[#00E599] focus:ring-1 focus:ring-[#00E599]" required>
                         </div>
                     </div>
                     
                     <div class="space-y-2">
                         <label for="assunto" class="text-sm font-medium text-white">Assunto</label>
-                        <input type="text" id="assunto" name="subject" placeholder="Como posso ajudar?" class="w-full px-4 py-3 rounded-lg form-input" required>
+                        <input type="text" id="assunto" name="subject" placeholder="Como posso ajudar?" class="w-full px-4 py-3 rounded-lg bg-[#1e293b] border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-[#00E599] focus:ring-1 focus:ring-[#00E599]" required>
                     </div>
 
                     <div class="space-y-2">
                         <label for="mensagem" class="text-sm font-medium text-white">Mensagem</label>
-                        <textarea id="mensagem" name="message" rows="4" placeholder="Descreva seu projeto ou necessidade..." class="w-full px-4 py-3 rounded-lg form-input resize-none" required></textarea>
+                        <textarea id="mensagem" name="message" rows="4" placeholder="Descreva seu projeto..." class="w-full px-4 py-3 rounded-lg bg-[#1e293b] border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-[#00E599] focus:ring-1 focus:ring-[#00E599] resize-none" required></textarea>
                     </div>
 
-                    <button type="submit" class="w-full py-4 rounded-lg btn-primary flex items-center justify-center gap-2 text-lg">
+                    <button type="submit" class="w-full py-4 rounded-lg bg-[#00E599] text-black hover:bg-[#00c985] transition-colors flex items-center justify-center gap-2 text-lg font-bold">
                         <i class="ph ph-paper-plane-right font-bold"></i> Enviar Mensagem
                     </button>
                 </form>
             </div>
             
-            <div style="margin-top: 40px; font-family: sans-serif;">
-                <p style="color: #94a3b8; font-size: 16px; margin-bottom: 8px;">
-                    Ou entre em contato diretamente:
-                </p>
-
-                <a href="mailto:contato@raphaelfranco.com" 
-                    style="display: inline-flex; align-items: center; text-decoration: none; color: #22c55e; transition: opacity 0.2s;">
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 10px;">
-                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                    </svg>
-
-                    <span style="font-weight: 600; font-size: 18px; border-bottom: 2px solid #22c55e;">contato@raphaelfranco.com</span>
+            <div style="margin-top: 40px;">
+                <p class="text-[#94a3b8] mb-2">Ou entre em contato diretamente:</p>
+                <a href="mailto:contato@raphaelfranco.com" class="inline-flex items-center text-[#22c55e] font-bold text-lg border-b-2 border-[#22c55e]">
+                    <i class="ph ph-envelope-simple mr-2"></i> contato@raphaelfranco.com
                 </a>
             </div>
         </div>
     </section>
-
 
     </div>
     </div> <footer class="bg-surface pt-20 pb-10 border-t border-white/10">
