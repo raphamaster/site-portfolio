@@ -1,0 +1,84 @@
+<body>
+
+<canvas id="bg"></canvas>
+
+<div class="container">
+    <div class="badge">Disponível para projetos</div>
+
+    <h1>Raphael Franco</h1>
+    <div class="subtitle">
+        Engenharia de Dados • SQL Server • Power BI • Inteligência de Negócios
+    </div>
+
+    <a href="#" class="link-button">🌐 Site Oficial</a>
+    <a href="#" class="link-button">💼 LinkedIn</a>
+    <a href="#" class="link-button">💻 GitHub</a>
+    <a href="#" class="link-button">📩 Fale Comigo</a>
+
+    <div class="footer">© 2026 Raphael Franco</div>
+</div>
+
+<script>
+const canvas = document.getElementById("bg");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let particles = [];
+
+for (let i = 0; i < 60; i++) {
+    particles.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        radius: Math.random() * 2,
+        dx: (Math.random() - 0.5) * 0.5,
+        dy: (Math.random() - 0.5) * 0.5
+    });
+}
+
+function draw() {
+    ctx.fillStyle = "#070f1a";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    particles.forEach(p => {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        ctx.fillStyle = "rgba(0, 225, 140, 0.7)";
+        ctx.fill();
+    });
+
+    particles.forEach(p => {
+        p.x += p.dx;
+        p.y += p.dy;
+
+        if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+    });
+
+    requestAnimationFrame(draw);
+}
+
+draw();
+
+window.addEventListener("resize", () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+});
+</script>
+
+<style>
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+}
+</style>
+
+</body>
