@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SQL on Raphael Franco | Data Engineer</title>
-    <link>http://localhost:1313/tags/sql/</link>
+    <link>https://raphaelfranco.com/tags/sql/</link>
     <description>Recent content in SQL on Raphael Franco | Data Engineer</description>
     <generator>Hugo</generator>
     <language>pt-BR</language>
     <managingEditor>raphael@exemplo.com (Raphael Franco)</managingEditor>
     <webMaster>raphael@exemplo.com (Raphael Franco)</webMaster>
     <lastBuildDate>Fri, 28 Nov 2025 10:00:00 -0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://raphaelfranco.com/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MCP Automotivo</title>
-      <link>http://localhost:1313/projects/mcp-automotivo/</link>
+      <link>https://raphaelfranco.com/projects/mcp-automotivo/</link>
       <pubDate>Fri, 28 Nov 2025 10:00:00 -0300</pubDate><author>raphael@exemplo.com (Raphael Franco)</author>
-      <guid>http://localhost:1313/projects/mcp-automotivo/</guid>
+      <guid>https://raphaelfranco.com/projects/mcp-automotivo/</guid>
       <description>&lt;h1 id=&#34;-mcp--sistema-de-análise-de-dados-automotivos&#34;&gt;🚗 MCP – Sistema de Análise de Dados Automotivos&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Sistema inteligente de análise de dados utilizando Google Gemini e MariaDB&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;-sobre-o-projeto&#34;&gt;📋 Sobre o Projeto&lt;/h2&gt;&#xA;&lt;p&gt;Este é um projeto &lt;strong&gt;MCP (Model Context Protocol)&lt;/strong&gt; que demonstra a integração entre um modelo de IA generativa (&lt;strong&gt;Google Gemini&lt;/strong&gt;) e um banco de dados &lt;strong&gt;MariaDB&lt;/strong&gt;, permitindo realizar análises de dados usando linguagem natural.&lt;/p&gt;&#xA;&lt;h3 id=&#34;-objetivos-educacionais&#34;&gt;🎯 Objetivos Educacionais&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Demonstrar na prática a comunicação entre LLMs e bancos de dados&lt;/li&gt;&#xA;&lt;li&gt;Implementar um sistema completo de análise utilizando NLP&lt;/li&gt;&#xA;&lt;li&gt;Criar um ambiente funcional com &lt;strong&gt;Docker + Python + SQL&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Servir como material de estudo em IA aplicada e engenharia de dados&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-tecnologias-utilizadas&#34;&gt;🚀 Tecnologias Utilizadas&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Python 3.10+&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;MariaDB 11.4&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Google Gemini 2.0 Flash&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Docker&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;pandas&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-funcionalidades&#34;&gt;⚙️ Funcionalidades&lt;/h2&gt;&#xA;&lt;h3 id=&#34;-análise-com-linguagem-natural&#34;&gt;🔍 Análise com Linguagem Natural&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Perguntas diretas em português&lt;/li&gt;&#xA;&lt;li&gt;Geração automática de queries SQL&lt;/li&gt;&#xA;&lt;li&gt;Execução e interpretação inteligente dos resultados&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-como-usar&#34;&gt;💡 Como Usar&lt;/h2&gt;&#xA;&lt;p&gt;Exemplos de perguntas simples:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fires Risk</title>
-      <link>http://localhost:1313/projects/fires-risk/</link>
+      <link>https://raphaelfranco.com/projects/fires-risk/</link>
       <pubDate>Thu, 09 Oct 2025 10:00:00 -0300</pubDate><author>raphael@exemplo.com (Raphael Franco)</author>
-      <guid>http://localhost:1313/projects/fires-risk/</guid>
+      <guid>https://raphaelfranco.com/projects/fires-risk/</guid>
       <description>&lt;h2 id=&#34;visão-geral-do-dashboard&#34;&gt;Visão Geral do Dashboard&lt;/h2&gt;&#xA;&lt;p&gt;O relatório Power BI consolidado apresenta três páginas temáticas:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Visão Geral do Risco de Queimadas&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Indicadores de risco médio (7d MA)&lt;/li&gt;&#xA;&lt;li&gt;Série temporal de focos de fogo&lt;/li&gt;&#xA;&lt;li&gt;Distribuição espacial dos eventos por município&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Análise Meteorológica&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Relação entre temperatura média, vento máximo e focos de fogo&lt;/li&gt;&#xA;&lt;li&gt;Heatmap de risco e correlações climáticas&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Mapa de Calor Geográfico&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Distribuição dos focos e faixas de risco (Risk Band)&lt;/li&gt;&#xA;&lt;li&gt;Dados por latitude e longitude&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;📸 Imagens do dashboard (&lt;code&gt;reports/screens&lt;/code&gt;):&lt;/p&gt;</description>
     </item>
   </channel>

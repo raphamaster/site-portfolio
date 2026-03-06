@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MongoDB on Raphael Franco | Data Engineer</title>
-    <link>http://localhost:1313/tags/mongodb/</link>
+    <link>https://raphaelfranco.com/tags/mongodb/</link>
     <description>Recent content in MongoDB on Raphael Franco | Data Engineer</description>
     <generator>Hugo</generator>
     <language>pt-BR</language>
     <managingEditor>raphael@exemplo.com (Raphael Franco)</managingEditor>
     <webMaster>raphael@exemplo.com (Raphael Franco)</webMaster>
     <lastBuildDate>Thu, 09 Oct 2025 10:00:00 -0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://raphaelfranco.com/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fires Risk</title>
-      <link>http://localhost:1313/projects/fires-risk/</link>
+      <link>https://raphaelfranco.com/projects/fires-risk/</link>
       <pubDate>Thu, 09 Oct 2025 10:00:00 -0300</pubDate><author>raphael@exemplo.com (Raphael Franco)</author>
-      <guid>http://localhost:1313/projects/fires-risk/</guid>
+      <guid>https://raphaelfranco.com/projects/fires-risk/</guid>
       <description>&lt;h2 id=&#34;visão-geral-do-dashboard&#34;&gt;Visão Geral do Dashboard&lt;/h2&gt;&#xA;&lt;p&gt;O relatório Power BI consolidado apresenta três páginas temáticas:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Visão Geral do Risco de Queimadas&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Indicadores de risco médio (7d MA)&lt;/li&gt;&#xA;&lt;li&gt;Série temporal de focos de fogo&lt;/li&gt;&#xA;&lt;li&gt;Distribuição espacial dos eventos por município&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Análise Meteorológica&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Relação entre temperatura média, vento máximo e focos de fogo&lt;/li&gt;&#xA;&lt;li&gt;Heatmap de risco e correlações climáticas&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Mapa de Calor Geográfico&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Distribuição dos focos e faixas de risco (Risk Band)&lt;/li&gt;&#xA;&lt;li&gt;Dados por latitude e longitude&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;📸 Imagens do dashboard (&lt;code&gt;reports/screens&lt;/code&gt;):&lt;/p&gt;</description>
     </item>
   </channel>

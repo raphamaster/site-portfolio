@@ -2,159 +2,159 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Raphael Franco | Data Engineer</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://raphaelfranco.com/tags/</link>
     <description>Recent content in Tags on Raphael Franco | Data Engineer</description>
     <generator>Hugo</generator>
     <language>pt-BR</language>
     <managingEditor>raphael@exemplo.com (Raphael Franco)</managingEditor>
     <webMaster>raphael@exemplo.com (Raphael Franco)</webMaster>
     <lastBuildDate>Wed, 03 Dec 2025 10:00:00 -0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://raphaelfranco.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker</title>
-      <link>http://localhost:1313/tags/docker/</link>
+      <link>https://raphaelfranco.com/tags/docker/</link>
       <pubDate>Wed, 03 Dec 2025 10:00:00 -0300</pubDate><author>raphael@exemplo.com (Raphael Franco)</author>
-      <guid>http://localhost:1313/tags/docker/</guid>
+      <guid>https://raphaelfranco.com/tags/docker/</guid>
       <description></description>
     </item>
     <item>
       <title>Jupyter</title>
-      <link>http://localhost:1313/tags/jupyter/</link>
+      <link>https://raphaelfranco.com/tags/jupyter/</link>
       <pubDate>Wed, 03 Dec 2025 10:00:00 -0300</pubDate><author>raphael@exemplo.com (Raphael Franco)</author>
-      <guid>http://localhost:1313/tags/jupyter/</guid>
+      <guid>https://raphaelfranco.com/tags/jupyter/</guid>
       <description></description>
     </item>
     <item>
       <title>Pandas</title>
-      <link>http://localhost:1313/tags/pandas/</link>
+      <link>https://raphaelfranco.com/tags/pandas/</link>
       <pubDate>Wed, 03 Dec 2025 10:00:00 -0300</pubDate><author>raphael@exemplo.com (Raphael Franco)</author>
-      <guid>http://localhost:1313/tags/pandas/</guid>
+      <guid>https://raphaelfranco.com/tags/pandas/</guid>
       <description></description>
     </item>
     <item>
       <title>Gemini</title>
-      <link>http://localhost:1313/tags/gemini/</link>
+      <link>https://raphaelfranco.com/tags/gemini/</link>
       <pubDate>Mon, 01 Dec 2025 10:00:00 -0300</pubDate><author>raphael@exemplo.com (Raphael Franco)</author>
-      <guid>http://localhost:1313/tags/gemini/</guid>
+      <guid>https://raphaelfranco.com/tags/gemini/</guid>
       <description></description>
     </item>
     <item>
       <title>Google</title>
-      <link>http://localhost:1313/tags/google/</link>
+      <link>https://raphaelfranco.com/tags/google/</link>
       <pubDate>Mon, 01 Dec 2025 10:00:00 -0300</pubDate><author>raphael@exemplo.com (Raphael Franco)</author>
-      <guid>http://localhost:1313/tags/google/</guid>
+      <guid>https://raphaelfranco.com/tags/google/</guid>
       <description></description>
     </item>
     <item>
       <title>IA</title>
-      <link>http://localhost:1313/tags/ia/</link>
+      <link>https://raphaelfranco.com/tags/ia/</link>
       <pubDate>Mon, 01 Dec 2025 10:00:00 -0300</pubDate><author>raphael@exemplo.com (Raphael Franco)</author>
-      <guid>http://localhost:1313/tags/ia/</guid>
+      <guid>https://raphaelfranco.com/tags/ia/</guid>
       <description></description>
     </item>
     <item>
       <title>MCP</title>
-      <link>http://localhost:1313/tags/mcp/</link>
+      <link>https://raphaelfranco.com/tags/mcp/</link>
       <pubDate>Mon, 01 Dec 2025 10:00:00 -0300</pubDate><author>raphael@exemplo.com (Raphael Franco)</author>
-      <guid>http://localhost:1313/tags/mcp/</guid>
+      <guid>https://raphaelfranco.com/tags/mcp/</guid>
       <description></description>
     </item>
     <item>
       <title>MariaDB</title>
-      <link>http://localhost:1313/tags/mariadb/</link>
+      <link>https://raphaelfranco.com/tags/mariadb/</link>
       <pubDate>Fri, 28 Nov 2025 10:00:00 -0300</pubDate><author>raphael@exemplo.com (Raphael Franco)</author>
-      <guid>http://localhost:1313/tags/mariadb/</guid>
+      <guid>https://raphaelfranco.com/tags/mariadb/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>http://localhost:1313/tags/python/</link>
+      <link>https://raphaelfranco.com/tags/python/</link>
       <pubDate>Fri, 28 Nov 2025 10:00:00 -0300</pubDate><author>raphael@exemplo.com (Raphael Franco)</author>
-      <guid>http://localhost:1313/tags/python/</guid>
+      <guid>https://raphaelfranco.com/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>SQL</title>
-      <link>http://localhost:1313/tags/sql/</link>
+      <link>https://raphaelfranco.com/tags/sql/</link>
       <pubDate>Fri, 28 Nov 2025 10:00:00 -0300</pubDate><author>raphael@exemplo.com (Raphael Franco)</author>
-      <guid>http://localhost:1313/tags/sql/</guid>
+      <guid>https://raphaelfranco.com/tags/sql/</guid>
       <description></description>
     </item>
     <item>
       <title>Agro</title>
-      <link>http://localhost:1313/tags/agro/</link>
+      <link>https://raphaelfranco.com/tags/agro/</link>
       <pubDate>Mon, 17 Nov 2025 10:00:00 -0300</pubDate><author>raphael@exemplo.com (Raphael Franco)</author>
-      <guid>http://localhost:1313/tags/agro/</guid>
+      <guid>https://raphaelfranco.com/tags/agro/</guid>
       <description></description>
     </item>
     <item>
       <title>Power BI</title>
-      <link>http://localhost:1313/tags/power-bi/</link>
+      <link>https://raphaelfranco.com/tags/power-bi/</link>
       <pubDate>Mon, 03 Nov 2025 10:00:00 -0300</pubDate><author>raphael@exemplo.com (Raphael Franco)</author>
-      <guid>http://localhost:1313/tags/power-bi/</guid>
+      <guid>https://raphaelfranco.com/tags/power-bi/</guid>
       <description></description>
     </item>
     <item>
       <title>MongoDB</title>
-      <link>http://localhost:1313/tags/mongodb/</link>
+      <link>https://raphaelfranco.com/tags/mongodb/</link>
       <pubDate>Thu, 09 Oct 2025 10:00:00 -0300</pubDate><author>raphael@exemplo.com (Raphael Franco)</author>
-      <guid>http://localhost:1313/tags/mongodb/</guid>
+      <guid>https://raphaelfranco.com/tags/mongodb/</guid>
       <description></description>
     </item>
     <item>
       <title>Parquet</title>
-      <link>http://localhost:1313/tags/parquet/</link>
+      <link>https://raphaelfranco.com/tags/parquet/</link>
       <pubDate>Thu, 09 Oct 2025 10:00:00 -0300</pubDate><author>raphael@exemplo.com (Raphael Franco)</author>
-      <guid>http://localhost:1313/tags/parquet/</guid>
+      <guid>https://raphaelfranco.com/tags/parquet/</guid>
       <description></description>
     </item>
     <item>
       <title>Figma</title>
-      <link>http://localhost:1313/tags/figma/</link>
+      <link>https://raphaelfranco.com/tags/figma/</link>
       <pubDate>Sat, 04 Oct 2025 10:00:00 -0300</pubDate><author>raphael@exemplo.com (Raphael Franco)</author>
-      <guid>http://localhost:1313/tags/figma/</guid>
+      <guid>https://raphaelfranco.com/tags/figma/</guid>
       <description></description>
     </item>
     <item>
       <title>Carreira</title>
-      <link>http://localhost:1313/tags/carreira/</link>
+      <link>https://raphaelfranco.com/tags/carreira/</link>
       <pubDate>Tue, 12 Nov 2024 10:00:00 -0300</pubDate><author>raphael@exemplo.com (Raphael Franco)</author>
-      <guid>http://localhost:1313/tags/carreira/</guid>
+      <guid>https://raphaelfranco.com/tags/carreira/</guid>
       <description></description>
     </item>
     <item>
       <title>Redes</title>
-      <link>http://localhost:1313/tags/redes/</link>
+      <link>https://raphaelfranco.com/tags/redes/</link>
       <pubDate>Tue, 12 Nov 2024 10:00:00 -0300</pubDate><author>raphael@exemplo.com (Raphael Franco)</author>
-      <guid>http://localhost:1313/tags/redes/</guid>
+      <guid>https://raphaelfranco.com/tags/redes/</guid>
       <description></description>
     </item>
     <item>
       <title>Trabalho</title>
-      <link>http://localhost:1313/tags/trabalho/</link>
+      <link>https://raphaelfranco.com/tags/trabalho/</link>
       <pubDate>Tue, 12 Nov 2024 10:00:00 -0300</pubDate><author>raphael@exemplo.com (Raphael Franco)</author>
-      <guid>http://localhost:1313/tags/trabalho/</guid>
+      <guid>https://raphaelfranco.com/tags/trabalho/</guid>
       <description></description>
     </item>
     <item>
       <title>API Do BCB/SGS</title>
-      <link>http://localhost:1313/tags/api-do-bcb/sgs/</link>
+      <link>https://raphaelfranco.com/tags/api-do-bcb/sgs/</link>
       <pubDate>Mon, 07 Oct 2024 10:00:00 -0300</pubDate><author>raphael@exemplo.com (Raphael Franco)</author>
-      <guid>http://localhost:1313/tags/api-do-bcb/sgs/</guid>
+      <guid>https://raphaelfranco.com/tags/api-do-bcb/sgs/</guid>
       <description></description>
     </item>
     <item>
       <title>N8n</title>
-      <link>http://localhost:1313/tags/n8n/</link>
+      <link>https://raphaelfranco.com/tags/n8n/</link>
       <pubDate>Mon, 07 Oct 2024 10:00:00 -0300</pubDate><author>raphael@exemplo.com (Raphael Franco)</author>
-      <guid>http://localhost:1313/tags/n8n/</guid>
+      <guid>https://raphaelfranco.com/tags/n8n/</guid>
       <description></description>
     </item>
     <item>
       <title>Postgres </title>
-      <link>http://localhost:1313/tags/postgres-/</link>
+      <link>https://raphaelfranco.com/tags/postgres-/</link>
       <pubDate>Mon, 07 Oct 2024 10:00:00 -0300</pubDate><author>raphael@exemplo.com (Raphael Franco)</author>
-      <guid>http://localhost:1313/tags/postgres-/</guid>
+      <guid>https://raphaelfranco.com/tags/postgres-/</guid>
       <description></description>
     </item>
   </channel>

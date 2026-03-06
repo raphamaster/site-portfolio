@@ -1,143 +1,229 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Raphael Franco | Links</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links | Raphael Franco | Data Engineer</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<style>
-:root {
-    --bg: #070f1a;
-    --card: #0f1b2d;
-    --primary: #00e18c;
-    --text: #e6edf3;
-    --text-soft: #94a3b8;
-}
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#030712', 
+                        surface: '#0f172a',    
+                        surfaceHighlight: '#1e293b', 
+                        neon: '#00E599',       
+                        textMain: '#f8fafc',
+                        textMuted: '#94a3b8',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    
+    <link rel="stylesheet" href="https://raphaelfranco.com/css/style.css">
 
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
-.container {
-    width: 100%;
-    max-width: 420px;
-    padding: 20px;
-    text-align: center;
-}
+    <style>
+         
+        html { scroll-behavior: smooth; }
+        
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        }
+        
+        .neon-text {
+            color: #00E599;
+            text-shadow: 0 0 10px rgba(0, 229, 153, 0.4);
+        }
+    </style>
 
-h1 {
-    margin-bottom: 8px;
-    font-size: 26px;
-    font-weight: 600;
-}
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W6D5Q2C0N2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-.profile-img {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-    border: 1px solid #00e18c;
-    /*box-shadow: 0 0 25px rgba(0, 225, 140, 0.35);*/
-    transition: transform 0.3s ease;
-}
+    gtag('config', 'G-W6D5Q2C0N2');
+    </script>
 
-.profile-img:hover {
-    transform: scale(1.05);
-}
-
-.subtitle {
-    color: var(--text-soft);
-    font-size: 14px;
-    margin-bottom: 30px;
-}
-
-.link-button {
-    display: block;
-    background: var(--card);
-    color: var(--text);
-    text-decoration: none;
-    padding: 16px;
-    margin: 14px 0;
-    border-radius: 10px;
-    font-weight: 500;
-    border: 1px solid rgba(255,255,255,0.05);
-    transition: all 0.25s ease;
-}
-
-.link-button:hover {
-    background: var(--primary);
-    color: #000;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0,225,140,0.25);
-}
-
-.badge {
-    display: inline-block;
-    background: rgba(0,225,140,0.1);
-    color: var(--primary);
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 12px;
-    margin-bottom: 20px;
-}
-
-.footer {
-    margin-top: 40px;
-    font-size: 12px;
-    color: var(--text-soft);
-}
-</style>
 </head>
 
-<body>
+<body class="overflow-x-hidden relative bg-[#030712] text-slate-300 antialiased selection:bg-[#00E599] selection:text-black">
 
-<div class="container">
-
-    <img src="https://avatars.githubusercontent.com/u/23094?v=4" alt="Raphael Franco" class="profile-img">
-    <!--<div class="badge">Disponível para projetos</div>-->
-
-    <h1>Raphael Franco</h1>
-    <div class="subtitle">
-        Engenharia de Dados • Analytics • Performance e Visualização
-    </div>
-
-    <a href="https://raphaelfranco.com" class="link-button">
-        🌐 Site Oficial
-    </a>
-
-    <a href="https://raphaelfranco.com/projects" class="link-button">
-        👨‍💻 Portfólio
-    </a>
-
-    <a href="https://www.linkedin.com/in/raphaelfranco" class="link-button">
-        💼 LinkedIn
-    </a>
-
-    <a href="https://github.com/raphamaster" class="link-button">
-        💻 GitHub
-    </a>
-
-    <a href="https://raphaelfranco.com/#contato" class="link-button">
-        📩 Fale Comigo
-    </a>
-
-    <a href="https://substack.com/@raphaelfranco" class="link-button">
-        📘 Substack
-    </a>
     
-    <div class="footer">
-        © 2026 Raphael Franco
+    
+    <nav class="fixed w-full z-50 bg-[#030712]/90 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="font-bold text-xl tracking-tight flex items-center gap-1 font-mono text-white">
+                Raphael Franco
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+                <a href="/" class="hover:text-[#00E599] transition-colors">Home</a>
+                
+                <a href='/servicos/#sobre' class="hover:text-[#00E599] transition-colors">Sobre</a>
+                <a href="/servicos/" class="hover:text-[#00E599] transition-colors">Serviços</a>
+                <a href='/servicos/#portfolio' class="hover:text-[#00E599] transition-colors">Portfólio</a>
+                
+                <a href="/blog/" class="hover:text-[#00E599] transition-colors">Blog</a>
+                
+                <a href='/servicos/#contato' class="hover:text-[#00E599] transition-colors">Contato</a>
+            </div>
+
+            <a href='/servicos/#contato' class="hidden md:inline-flex px-6 py-2.5 rounded font-bold text-sm bg-[#00E599] text-black hover:bg-[#00c985] transition shadow-[0_0_15px_rgba(0,229,153,0.3)]">
+                Agendar Consultoria
+            </a>
+        </div>
+    </nav>
+    
+    <div id="content">
+
+    <div id="content" class="min-h-screen pt-20"> 
+        
+    <section class="relative min-h-[calc(100vh-5rem)] flex items-center justify-center bg-[#030712] py-20">
+    <div class="absolute inset-0 bg-grid opacity-30 pointer-events-none"></div>
+    <div class="relative w-full max-w-md text-center px-6 space-y-6">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 text-xs uppercase tracking-[0.2em] text-[#94a3b8]">
+            <span class="w-2 h-2 rounded-full bg-[#00E599] animate-pulse"></span>
+            Disponível para projetos
+        </div>
+
+        <img src="https://github.com/raphamaster.png" alt="Raphael Franco" class="w-36 h-36 rounded-full object-cover border border-white/20 mx-auto shadow-[0_0_30px_rgba(0,229,153,0.15)]">
+        <div>
+            <p class="text-sm text-[#94a3b8] font-mono tracking-[0.35em] mb-2">DATA ENGINEER • BI</p>
+            <h1 class="text-3xl font-bold text-white">Raphael Franco</h1>
+            <p class="text-[#cbd5f5] text-sm leading-relaxed mt-2">Engenharia de Dados • Analytics • Performance e Visualização</p>
+        </div>
+
+        <div class="space-y-3 pt-4">
+            <a href="/servicos/" class="block w-full rounded-xl border border-white/10 bg-white/5 px-6 py-4 text-white font-semibold tracking-wide transition transform hover:-translate-y-0.5 hover:bg-[#00E599] hover:text-black shadow-[0_10px_35px_rgba(0,229,153,0.15)]">
+                🛠️ Serviços
+            </a>
+            <a href="/servicos/" class="link-card">🌐 Site Oficial</a>
+            <a href="/projects/" class="link-card">👨‍💻 Portfólio</a>
+            <a href="https://www.linkedin.com/in/raphaelfranco" class="link-card" target="_blank" rel="noopener">💼 LinkedIn</a>
+            <a href="https://github.com/raphamaster" class="link-card" target="_blank" rel="noopener">💻 GitHub</a>
+            <a href="/servicos/#contato" class="link-card">📩 Fale Comigo</a>
+            <a href="https://substack.com/@raphaelfranco" class="link-card" target="_blank" rel="noopener">📘 Substack</a>
+        </div>
+
+        <p class="text-xs text-[#94a3b8]">© 2026 Raphael Franco</p>
     </div>
+</section>
 
-</div>
+<style>
+    .link-card {
+        display: block;
+        width: 100%;
+        border-radius: 0.75rem;
+        border: 1px solid rgba(255,255,255,0.08);
+        padding: 1rem 1.5rem;
+        background: rgba(15,27,45,0.8);
+        color: #e6edf3;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        transition: all 0.25s ease;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.35);
+    }
 
+    .link-card:hover {
+        background: #00E599;
+        color: #030712;
+        transform: translateY(-4px);
+        box-shadow: 0 25px 45px rgba(0,229,153,0.25);
+    }
+</style>
+
+
+    </div>
+    </div> <footer class="bg-surface pt-20 pb-10 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <div class="md:col-span-1">
+                    <div class="font-bold text-xl tracking-tight flex items-center gap-1 mb-4 font-mono">
+                        <span class="neon-text"></span>Raphael Franco<span class="neon-text"></span>
+                    </div>
+                    <p class="text-sm text-textMuted leading-relaxed mb-6">
+                        Engenharia de Dados & BI Intelligence.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://linkedin.com/in/raphaelfranco" class="w-10 h-10 rounded bg-surfaceHighlight flex items-center justify-center text-textMuted hover:bg-neon hover:text-black transition"><i class="fab fa-linkedin-in text-xl"></i></a>
+                        <a href="https://github.com/raphamaster" class="w-10 h-10 rounded bg-surfaceHighlight flex items-center justify-center text-textMuted hover:bg-neon hover:text-black transition"><i class="fab fa-github text-xl"></i></a>
+                        <a href="https://www.instagram.com/raphael.rfranco/" class="w-10 h-10 rounded bg-surfaceHighlight flex items-center justify-center text-textMuted hover:bg-neon hover:text-black transition"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="https://www.youtube.com/@raphaelfranco/" class="w-10 h-10 rounded bg-surfaceHighlight flex items-center justify-center text-textMuted hover:bg-neon hover:text-black transition"><i class="ph ph-youtube-logo text-xl"></i></a>
+                        <a href="https://raphaelfranco.substack.com/" class="w-10 h-10 rounded bg-surfaceHighlight flex items-center justify-center text-textMuted hover:bg-neon hover:text-black transition"><i class="ph ph-pen-nib text-xl"></i></a>
+                    </div>
+                </div>
+
+                <div class="md:col-start-3">
+                    <h4 class="text-white font-bold mb-4">Links Rápidos</h4>
+                    
+                    
+                    <ul class="space-y-3 text-sm text-textMuted">                      
+                        <li><a href="/" class="hover:text-neon transition-colors">Home</a></li>
+                        <li><a href='/servicos/#sobre' class="hover:text-neon transition-colors">Sobre</a></li>
+                        <li><a href="/servicos/" class="hover:text-neon transition-colors">Serviços</a></li>
+                        <li><a href='/servicos/#portfolio' class="hover:text-neon transition-colors">Portfólio</a></li>
+                        <li><a href="/blog/" class="hover:text-neon transition-colors">Blog</a></li>
+                        <li><a href='/servicos/#contato' class="hover:text-neon transition-colors">Contato</a></li>
+
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4">Newsletter</h4>
+                    <p class="text-xs text-textMuted mb-4">Dicas de Engenharia de Dados no seu email.</p>
+                    
+                    <form onsubmit="submeterSubstack(event)" class="flex gap-2">
+                        <input type="email" id="email-newsletter" placeholder="seu@email.com" required 
+                               class="bg-surfaceHighlight border border-white/10 rounded px-4 py-2 w-full text-sm focus:outline-none focus:border-neon text-white placeholder-gray-500">
+                        
+                        <button type="submit" class="bg-neon text-black rounded p-2 hover:bg-[#00c985] transition group">
+                            <i class="ph ph-paper-plane-right font-bold group-hover:translate-x-1 transition-transform"></i>
+                        </button>
+                    </form>
+
+                    <script>
+                        function submeterSubstack(e) {
+                            e.preventDefault();
+                            const email = document.getElementById('email-newsletter').value;
+                            
+                            const substackDomain = "raphaelfranco.substack.com"; 
+                            
+                            const url = `https://${substackDomain}/subscribe?email=${encodeURIComponent(email)}`;
+                            window.open(url, '_blank');
+                        }
+                    </script>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs text-textMuted">
+                <p>&copy; 2025 Raphael Franco. Todos os direitos reservados.</p>
+                <div class="font-mono mt-4 md:mt-0">
+                    <span class="neon-text">feito com:  </span><span class="text-red-500">"suor, lagrimas & código"</span>;
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+</html>
+
 </html>

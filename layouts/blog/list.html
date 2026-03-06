@@ -1,0 +1,53 @@
+{{ define "main" }}
+<main class="py-28 bg-[#030712] text-white">
+    <div class="max-w-4xl mx-auto px-6">
+        {{ $author := .Site.Params.author.name | default .Site.Title }}
+        {{ $avatar := .Site.Params.author.avatar | default "https://github.com/raphamaster.png" }}
+        <header class="text-center mb-16">
+            <div class="flex justify-between items-center text-sm text-textMuted mb-6">
+                <span class="font-mono tracking-widest uppercase text-[#00E599]">// Blog</span>
+                <a href="{{ "/" | relURL }}" class="underline hover:text-[#00E599] transition">Voltar ao Início</a>
+            </div>
+            <img src="{{ $avatar }}" alt="{{ $author }}" class="w-28 h-28 rounded-full border-4 border-[#00E599]/40 mx-auto mb-6 object-cover">
+            <p class="text-2xl md:text-3xl font-semibold leading-relaxed text-slate-100">
+                Olá! Eu sou {{ $author }} e escrevo sobre Engenharia de Dados, BI e automações inteligentes. Explore abaixo os artigos mais recentes.
+            </p>
+            <p class="text-textMuted mt-6 max-w-2xl mx-auto">{{ .Site.Params.description }}</p>
+        </header>
+
+        <div class="max-w-3xl mx-auto">
+            {{ $posts := .Pages.ByDate.Reverse }}
+            {{ $monthMap := dict "January" "Janeiro" "February" "Fevereiro" "March" "Março" "April" "Abril" "May" "Maio" "June" "Junho" "July" "Julho" "August" "Agosto" "September" "Setembro" "October" "Outubro" "November" "Novembro" "December" "Dezembro" }}
+            {{ if gt (len $posts) 0 }}
+                {{ range $posts }}
+                {{ $month := index $monthMap (.Date.Format "January") | default (.Date.Format "January") }}
+                <article class="py-10 border-b border-white/5">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="px-4 py-1 rounded-full bg-white/10 text-xs font-mono tracking-wide text-[#00E599]">{{ printf "%s/%s" $month (.Date.Format "2006") }}</span>
+                        <span class="text-sm text-textMuted">{{ printf "%s de %s" (.Date.Format "02") $month }}</span>
+                    </div>
+                    <h2 class="text-2xl font-bold text-white mb-3">
+                        <a href="{{ .Permalink }}" class="hover:text-[#00E599] transition">{{ .Title }}</a>
+                    </h2>
+                    <p class="text-textMuted text-base leading-relaxed mb-4">
+                        {{ if .Params.description }}
+                            {{ .Params.description }}
+                        {{ else if .Summary }}
+                            {{ .Summary }}
+                        {{ else }}
+                            {{ .Plain | truncate 140 }}
+                        {{ end }}
+                    </p>
+                    <div class="flex flex-col gap-2 text-sm">
+                        <a href="{{ .Permalink }}" class="text-[#00E599] font-semibold inline-flex items-center gap-2">Ler artigo <i class="ph ph-arrow-right"></i></a>
+                        <span class="text-xs text-textMuted break-all">{{ .Permalink }}</span>
+                    </div>
+                </article>
+                {{ end }}
+            {{ else }}
+                <p class="text-center text-textMuted py-20">Nenhum artigo publicado por enquanto.</p>
+            {{ end }}
+        </div>
+    </div>
+</main>
+{{ end }}

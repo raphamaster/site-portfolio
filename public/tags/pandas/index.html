@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pandas | Raphael Franco | Data Engineer</title>
@@ -30,7 +30,7 @@
     </script>
     
     
-    <link rel="stylesheet" href="http://localhost:1313/css/style.css">
+    <link rel="stylesheet" href="https://raphaelfranco.com/css/style.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -51,10 +51,23 @@
             text-shadow: 0 0 10px rgba(0, 229, 153, 0.4);
         }
     </style>
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W6D5Q2C0N2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-W6D5Q2C0N2');
+    </script>
+
 </head>
 
 <body class="overflow-x-hidden relative bg-[#030712] text-slate-300 antialiased selection:bg-[#00E599] selection:text-black">
 
+    
+    
     <nav class="fixed w-full z-50 bg-[#030712]/90 backdrop-blur-md border-b border-white/5">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <div class="font-bold text-xl tracking-tight flex items-center gap-1 font-mono text-white">
@@ -62,24 +75,25 @@
             </div>
             
             <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
-                <a href="http://localhost:1313/" class="hover:text-[#00E599] transition-colors">Home</a>
+                <a href="/" class="hover:text-[#00E599] transition-colors">Home</a>
                 
-                <a href="http://localhost:1313/#sobre" class="hover:text-[#00E599] transition-colors">Sobre</a>
-                <a href="http://localhost:1313/#servicos" class="hover:text-[#00E599] transition-colors">Serviços</a>
-                <a href="http://localhost:1313/#portfolio" class="hover:text-[#00E599] transition-colors">Portfólio</a>
+                <a href='/servicos/#sobre' class="hover:text-[#00E599] transition-colors">Sobre</a>
+                <a href="/servicos/" class="hover:text-[#00E599] transition-colors">Serviços</a>
+                <a href='/servicos/#portfolio' class="hover:text-[#00E599] transition-colors">Portfólio</a>
                 
                 <a href="/blog/" class="hover:text-[#00E599] transition-colors">Blog</a>
                 
-                <a href="http://localhost:1313/#contato" class="hover:text-[#00E599] transition-colors">Contato</a>
+                <a href='/servicos/#contato' class="hover:text-[#00E599] transition-colors">Contato</a>
             </div>
 
-            <a href="http://localhost:1313/#contato" class="hidden md:inline-flex px-6 py-2.5 rounded font-bold text-sm bg-[#00E599] text-black hover:bg-[#00c985] transition shadow-[0_0_15px_rgba(0,229,153,0.3)]">
+            <a href='/servicos/#contato' class="hidden md:inline-flex px-6 py-2.5 rounded font-bold text-sm bg-[#00E599] text-black hover:bg-[#00c985] transition shadow-[0_0_15px_rgba(0,229,153,0.3)]">
                 Agendar Consultoria
             </a>
         </div>
     </nav>
     
     <div id="content">
+
     <div id="content" class="min-h-screen pt-20"> 
         
 <main class="py-32">
@@ -100,7 +114,7 @@
             
             
                 
-                <a href="http://localhost:1313/projects/ic-br/" class="bg-surface border border-white/5 p-6 rounded-xl hover:border-neon/50 transition cursor-pointer group flex flex-col justify-between">
+                <a href="https://raphaelfranco.com/projects/ic-br/" class="bg-surface border border-white/5 p-6 rounded-xl hover:border-neon/50 transition cursor-pointer group flex flex-col justify-between">
                     <div>
                         
                             
@@ -166,13 +180,15 @@
 
                 <div class="md:col-start-3">
                     <h4 class="text-white font-bold mb-4">Links Rápidos</h4>
+                    
+                    
                     <ul class="space-y-3 text-sm text-textMuted">                      
-                        <li><a href="http://localhost:1313/" class="hover:text-neon transition-colors">Home</a></li>
-                        <li><a href="http://localhost:1313/#sobre" class="hover:text-neon transition-colors">Sobre</a></li>
-                        <li><a href="http://localhost:1313/#servicos" class="hover:text-neon transition-colors">Serviços</a></li>
-                        <li><a href="http://localhost:1313/#portfolio" class="hover:text-neon transition-colors">Portfólio</a></li>
-                        <li><a href="http://localhost:1313/#blog" class="hover:text-neon transition-colors">Blog</a></li>
-                        <li><a href="http://localhost:1313/#contato" class="hover:text-neon transition-colors">Contato</a></li>
+                        <li><a href="/" class="hover:text-neon transition-colors">Home</a></li>
+                        <li><a href='/servicos/#sobre' class="hover:text-neon transition-colors">Sobre</a></li>
+                        <li><a href="/servicos/" class="hover:text-neon transition-colors">Serviços</a></li>
+                        <li><a href='/servicos/#portfolio' class="hover:text-neon transition-colors">Portfólio</a></li>
+                        <li><a href="/blog/" class="hover:text-neon transition-colors">Blog</a></li>
+                        <li><a href='/servicos/#contato' class="hover:text-neon transition-colors">Contato</a></li>
 
                     </ul>
                 </div>
@@ -215,4 +231,5 @@
     </footer>
 </body>
 </html>
+
 </html>

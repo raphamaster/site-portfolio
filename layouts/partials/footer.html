@@ -19,13 +19,15 @@
 
                 <div class="md:col-start-3">
                     <h4 class="text-white font-bold mb-4">Links Rápidos</h4>
+                    {{ $homeURL := relURL "/" }}
+                    {{ $servicesURL := relURL "/servicos/" }}
                     <ul class="space-y-3 text-sm text-textMuted">                      
-                        <li><a href="{{ site.Home.Permalink }}" class="hover:text-neon transition-colors">Home</a></li>
-                        <li><a href="{{ site.Home.Permalink }}#sobre" class="hover:text-neon transition-colors">Sobre</a></li>
-                        <li><a href="{{ site.Home.Permalink }}#servicos" class="hover:text-neon transition-colors">Serviços</a></li>
-                        <li><a href="{{ site.Home.Permalink }}#portfolio" class="hover:text-neon transition-colors">Portfólio</a></li>
-                        <li><a href="{{ site.Home.Permalink }}#blog" class="hover:text-neon transition-colors">Blog</a></li>
-                        <li><a href="{{ site.Home.Permalink }}#contato" class="hover:text-neon transition-colors">Contato</a></li>
+                        <li><a href="{{ $homeURL }}" class="hover:text-neon transition-colors">Home</a></li>
+                        <li><a href='{{ printf "%s#sobre" $servicesURL }}' class="hover:text-neon transition-colors">Sobre</a></li>
+                        <li><a href="{{ $servicesURL }}" class="hover:text-neon transition-colors">Serviços</a></li>
+                        <li><a href='{{ printf "%s#portfolio" $servicesURL }}' class="hover:text-neon transition-colors">Portfólio</a></li>
+                        <li><a href="{{ "/blog/" | relURL }}" class="hover:text-neon transition-colors">Blog</a></li>
+                        <li><a href='{{ printf "%s#contato" $servicesURL }}' class="hover:text-neon transition-colors">Contato</a></li>
 
                     </ul>
                 </div>
