@@ -4,9 +4,13 @@ date: 2026-06-16T10:00:00-03:00
 draft: false
 tags: ["Python", "SQL", "SQLite"]
 description: "Gerenciador desktop open-source de consultas SQL: organize, descreva, categorize e encontre suas queries por conteúdo, tabela ou campo — sem perder a propriedade dos arquivos."
-featured_image: "https://raw.githubusercontent.com/raphamaster/SQLShelf/main/images/Screenshot_SQLShelf.png"
+featured_image: "https://raw.githubusercontent.com/raphamaster/SQLShelf/main/images/logo_sqlshelf.png"
 github_url: "https://github.com/raphamaster/SQLShelf"
 ---
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/raphamaster/SQLShelf/main/images/logo_sqlshelf.png" alt="SQLShelf" height="80">
+</p>
 
 Gerenciador desktop open-source de consultas SQL: organize, descreva, categorize e encontre suas queries por **conteúdo**, **tabela** ou **campo** — sem perder a propriedade dos arquivos.
 
