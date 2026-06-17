@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Raphael Franco | Data Engineer</title>
-    <link>https://raphaelfranco.com/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on Raphael Franco | Data Engineer</description>
     <generator>Hugo</generator>
     <language>pt-BR</language>
     <managingEditor>raphael@exemplo.com (Raphael Franco)</managingEditor>
     <webMaster>raphael@exemplo.com (Raphael Franco)</webMaster>
-    <atom:link href="https://raphaelfranco.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

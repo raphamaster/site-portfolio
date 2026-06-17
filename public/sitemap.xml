@@ -2,112 +2,112 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://raphaelfranco.com/tags/docker/</loc>
+    <loc>http://localhost:1313/tags/docker/</loc>
     <lastmod>2025-12-03T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/tags/jupyter/</loc>
+    <loc>http://localhost:1313/tags/jupyter/</loc>
     <lastmod>2025-12-03T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/projects/ic-br/</loc>
+    <loc>http://localhost:1313/projects/ic-br/</loc>
     <lastmod>2025-12-03T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/tags/pandas/</loc>
+    <loc>http://localhost:1313/tags/pandas/</loc>
     <lastmod>2025-12-03T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/projects/</loc>
+    <loc>http://localhost:1313/projects/</loc>
     <lastmod>2025-12-03T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-12-03T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-12-03T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/blog/</loc>
+    <loc>http://localhost:1313/blog/</loc>
     <lastmod>2025-12-01T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/tags/gemini/</loc>
+    <loc>http://localhost:1313/tags/gemini/</loc>
     <lastmod>2025-12-01T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/tags/google/</loc>
+    <loc>http://localhost:1313/tags/google/</loc>
     <lastmod>2025-12-01T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/tags/ia/</loc>
+    <loc>http://localhost:1313/tags/ia/</loc>
     <lastmod>2025-12-01T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/tags/mcp/</loc>
+    <loc>http://localhost:1313/tags/mcp/</loc>
     <lastmod>2025-12-01T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/blog/google_ai_studio/</loc>
+    <loc>http://localhost:1313/blog/google_ai_studio/</loc>
     <lastmod>2025-12-01T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/tags/mariadb/</loc>
+    <loc>http://localhost:1313/tags/mariadb/</loc>
     <lastmod>2025-11-28T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/projects/mcp-automotivo/</loc>
+    <loc>http://localhost:1313/projects/mcp-automotivo/</loc>
     <lastmod>2025-11-28T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/tags/python/</loc>
+    <loc>http://localhost:1313/tags/python/</loc>
     <lastmod>2025-11-28T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/tags/sql/</loc>
+    <loc>http://localhost:1313/tags/sql/</loc>
     <lastmod>2025-11-28T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/tags/agro/</loc>
+    <loc>http://localhost:1313/tags/agro/</loc>
     <lastmod>2025-11-17T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/blog/agro_dados/</loc>
+    <loc>http://localhost:1313/blog/agro_dados/</loc>
     <lastmod>2025-11-17T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/projects/market-data/</loc>
+    <loc>http://localhost:1313/projects/market-data/</loc>
     <lastmod>2025-11-03T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/tags/power-bi/</loc>
+    <loc>http://localhost:1313/tags/power-bi/</loc>
     <lastmod>2025-11-03T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/projects/fires-risk/</loc>
+    <loc>http://localhost:1313/projects/fires-risk/</loc>
     <lastmod>2025-10-09T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/tags/mongodb/</loc>
+    <loc>http://localhost:1313/tags/mongodb/</loc>
     <lastmod>2025-10-09T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/tags/parquet/</loc>
+    <loc>http://localhost:1313/tags/parquet/</loc>
     <lastmod>2025-10-09T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/tags/figma/</loc>
+    <loc>http://localhost:1313/tags/figma/</loc>
     <lastmod>2025-10-04T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/projects/github-radar/</loc>
+    <loc>http://localhost:1313/projects/github-radar/</loc>
     <lastmod>2025-10-04T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/tags/carreira/</loc>
+    <loc>http://localhost:1313/tags/carreira/</loc>
     <lastmod>2024-11-12T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/blog/pizza-redes/</loc>
+    <loc>http://localhost:1313/blog/pizza-redes/</loc>
     <lastmod>2024-11-12T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/tags/redes/</loc>
+    <loc>http://localhost:1313/tags/redes/</loc>
     <lastmod>2024-11-12T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/tags/trabalho/</loc>
+    <loc>http://localhost:1313/tags/trabalho/</loc>
     <lastmod>2024-11-12T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/tags/api-do-bcb/sgs/</loc>
+    <loc>http://localhost:1313/tags/api-do-bcb/sgs/</loc>
     <lastmod>2024-10-07T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/tags/n8n/</loc>
+    <loc>http://localhost:1313/tags/n8n/</loc>
     <lastmod>2024-10-07T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/projects/pipeline-macro/</loc>
+    <loc>http://localhost:1313/projects/pipeline-macro/</loc>
     <lastmod>2024-10-07T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/tags/postgres-/</loc>
+    <loc>http://localhost:1313/tags/postgres-/</loc>
     <lastmod>2024-10-07T10:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://raphaelfranco.com/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://raphaelfranco.com/links/</loc>
+    <loc>http://localhost:1313/links/</loc>
   </url><url>
-    <loc>https://raphaelfranco.com/servicos/</loc>
+    <loc>http://localhost:1313/servicos/</loc>
   </url>
 </urlset>
