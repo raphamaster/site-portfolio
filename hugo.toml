@@ -13,5 +13,8 @@ enableRobotsTXT = true
     name = "Raphael Franco"
     email = "raphael@exemplo.com"
 
+[markup.goldmark.renderer]
+  unsafe = true
+
 [outputs]
   home = ["HTML", "RSS"]

@@ -8,8 +8,8 @@ featured_image: "https://raw.githubusercontent.com/raphamaster/SQLShelf/main/ima
 github_url: "https://github.com/raphamaster/SQLShelf"
 ---
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/raphamaster/SQLShelf/main/images/logo_sqlshelf.png" alt="SQLShelf" height="80">
+<p style="text-align:center; margin: 2rem 0;">
+  <img src="https://raw.githubusercontent.com/raphamaster/SQLShelf/main/images/logo_sqlshelf.png" alt="SQLShelf" style="height:80px; width:auto; border:none; border-radius:0; margin:0 auto; display:inline-block;">
 </p>
 
 Gerenciador desktop open-source de consultas SQL: organize, descreva, categorize e encontre suas queries por **conteúdo**, **tabela** ou **campo** — sem perder a propriedade dos arquivos.
